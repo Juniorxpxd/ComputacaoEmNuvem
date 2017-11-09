@@ -16,5 +16,15 @@ namespace AluguelDeCarros
         {
             InitializeComponent();
         }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
