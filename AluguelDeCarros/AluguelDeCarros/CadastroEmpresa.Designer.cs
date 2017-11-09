@@ -84,6 +84,7 @@
             this.txtEmpresa.Size = new System.Drawing.Size(156, 20);
             this.txtEmpresa.TabIndex = 142;
             this.txtEmpresa.Text = "Nome da Empresa";
+            this.txtEmpresa.Click += new System.EventHandler(this.txtEmpresa_Click);
             // 
             // txtRua
             // 
@@ -92,6 +93,7 @@
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(139, 20);
             this.txtRua.TabIndex = 139;
+            this.txtRua.TextChanged += new System.EventHandler(this.txtRua_TextChanged);
             // 
             // lblRua
             // 
@@ -131,6 +133,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(204, 20);
             this.txtSenha.TabIndex = 124;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // lblSenha
             // 
@@ -170,6 +173,7 @@
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(132, 20);
             this.txtEst.TabIndex = 130;
+            this.txtEst.TextChanged += new System.EventHandler(this.txtEst_TextChanged);
             // 
             // lblEst
             // 
@@ -190,6 +194,7 @@
             this.mskCPF.Size = new System.Drawing.Size(93, 20);
             this.mskCPF.TabIndex = 125;
             this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCPF_MaskInputRejected);
             // 
             // lblCel
             // 
@@ -232,6 +237,7 @@
             this.mskCel.Size = new System.Drawing.Size(100, 20);
             this.mskCel.TabIndex = 129;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskCel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCel_MaskInputRejected);
             // 
             // txtNome
             // 
@@ -240,6 +246,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(204, 20);
             this.txtNome.TabIndex = 122;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // mskTel
             // 
@@ -249,6 +256,7 @@
             this.mskTel.Size = new System.Drawing.Size(100, 20);
             this.mskTel.TabIndex = 128;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskTel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTel_MaskInputRejected);
             // 
             // btnSalvar
             // 
