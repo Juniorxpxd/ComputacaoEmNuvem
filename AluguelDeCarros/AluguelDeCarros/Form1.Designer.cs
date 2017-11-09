@@ -255,7 +255,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(111, 19);
+            this.txtNome.Location = new System.Drawing.Point(12, 19);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(292, 20);
