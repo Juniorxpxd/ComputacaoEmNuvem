@@ -90,7 +90,7 @@
             this.txtRua.Location = new System.Drawing.Point(423, 68);
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(144, 20);
+            this.txtRua.Size = new System.Drawing.Size(139, 20);
             this.txtRua.TabIndex = 139;
             // 
             // lblRua
