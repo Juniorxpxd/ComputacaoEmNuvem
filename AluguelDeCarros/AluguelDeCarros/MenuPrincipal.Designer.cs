@@ -1,6 +1,6 @@
 ﻿namespace AluguelDeCarros
 {
-    partial class Form1
+    partial class MenuPrincipal
     {
         /// <summary>
         /// Required designer variable.

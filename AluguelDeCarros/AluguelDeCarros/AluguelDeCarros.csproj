@@ -72,11 +72,11 @@
       <DependentUpon>CadastroEmpresa.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\Singleton.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201711112102468_Criar Banco.cs" />
     <Compile Include="Migrations\201711112102468_Criar Banco.Designer.cs">
@@ -88,11 +88,11 @@
     <Compile Include="Model\Entities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TeladeLogin.cs">
+    <Compile Include="TelaDeLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TeladeLogin.Designer.cs">
-      <DependentUpon>TeladeLogin.cs</DependentUpon>
+    <Compile Include="TelaDeLogin.Designer.cs">
+      <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CadastroCarro.resx">
       <DependentUpon>CadastroCarro.cs</DependentUpon>
@@ -103,8 +103,8 @@
     <EmbeddedResource Include="CadastroEmpresa.resx">
       <DependentUpon>CadastroEmpresa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711112102468_Criar Banco.resx">
       <DependentUpon>201711112102468_Criar Banco.cs</DependentUpon>
@@ -119,8 +119,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TeladeLogin.resx">
-      <DependentUpon>TeladeLogin.cs</DependentUpon>
+    <EmbeddedResource Include="TelaDeLogin.resx">
+      <DependentUpon>TelaDeLogin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AluguelDeCarros
 {
-    public partial class TeladeLogin : Form
+    public partial class TelaDeLogin : Form
     {
-        public TeladeLogin()
+        public TelaDeLogin()
         {
             InitializeComponent();
         }

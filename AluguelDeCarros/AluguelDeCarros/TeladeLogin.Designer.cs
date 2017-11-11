@@ -1,6 +1,6 @@
 ﻿namespace AluguelDeCarros
 {
-    partial class TeladeLogin
+    partial class TelaDeLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeladeLogin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaDeLogin));
             this.btnEntrar = new System.Windows.Forms.Button();
             this.bntCadastro = new System.Windows.Forms.Button();
             this.lblEmail = new System.Windows.Forms.Label();
