@@ -1,4 +1,10 @@
 # Computação em Nuvem
+Conexão com o banco no App.Config:
+- Usar essa conexão que já esta definido no app.config no seu SQL SERVER MANAGEMENT STUDIO
+- (LocalDB)\MSSQLLocalDB
+- EntityFramework já está instalado, não precisa instalar novamente no projeto
+- Migrations já instalada, não precisa instalar novamente no projeto
+- Add-migration está automática, não precisa colocar nome depois do : add-migration
 
 Sprint 1 - Entrega 14/11/2017
 
