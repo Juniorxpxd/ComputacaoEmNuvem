@@ -78,6 +78,10 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711112102468_Criar Banco.cs" />
+    <Compile Include="Migrations\201711112102468_Criar Banco.Designer.cs">
+      <DependentUpon>201711112102468_Criar Banco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Entities.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711112102468_Criar Banco.resx">
+      <DependentUpon>201711112102468_Criar Banco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
