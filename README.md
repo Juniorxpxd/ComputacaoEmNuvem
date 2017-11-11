@@ -4,7 +4,7 @@ Conexão com o banco no App.Config:
 - (LocalDB)\MSSQLLocalDB
 - EntityFramework já está instalado, não precisa instalar novamente no projeto
 - Migrations já instalada, não precisa instalar novamente no projeto
-- Add-migration está automática, não precisa colocar nome depois do : add-migration
+- Add-migration está automática
 
 Sprint 1 - Entrega 14/11/2017
 
