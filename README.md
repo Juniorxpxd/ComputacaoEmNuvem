@@ -1,7 +1,10 @@
 # Computação em Nuvem
 Conexão com o banco no App.Config:
+- Não Alterar NADA na APP.CONFIG !!!!!!!!
 - Usar essa conexão que já esta definido no app.config no seu SQL SERVER MANAGEMENT STUDIO
 - (LocalDB)\MSSQLLocalDB
+- Se não tiver esse servidor criado no seu computador, ir no CMD
+-> sqllocaldb create "MSSQLLocalDB"
 - EntityFramework já está instalado, não precisa instalar novamente no projeto
 - Migrations já instalada, não precisa instalar novamente no projeto
 - Add-migration está automática
