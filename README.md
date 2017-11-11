@@ -1,7 +1,9 @@
 # Computação em Nuvem
 
 Sprint 1 - Entrega 14/11/2017
+
 Sprint 2 - Entrega 21/11/2017
+
 Entrega do trabalho - 28/11/2017
 
 1 - Clone ( Copiar o Projeto )
