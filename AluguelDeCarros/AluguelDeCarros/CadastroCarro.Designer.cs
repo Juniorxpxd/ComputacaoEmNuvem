@@ -45,7 +45,7 @@
             this.lblPlaca = new System.Windows.Forms.Label();
             this.txtCambio = new System.Windows.Forms.TextBox();
             this.lblCambio = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCor = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.lblPreco = new System.Windows.Forms.Label();
@@ -59,10 +59,11 @@
             this.btnVoltar.Location = new System.Drawing.Point(404, 200);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(89, 59);
-            this.btnVoltar.TabIndex = 168;
+            this.btnVoltar.TabIndex = 10;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // txtQuilometragem
             // 
@@ -70,7 +71,7 @@
             this.txtQuilometragem.MaxLength = 100;
             this.txtQuilometragem.Name = "txtQuilometragem";
             this.txtQuilometragem.Size = new System.Drawing.Size(124, 20);
-            this.txtQuilometragem.TabIndex = 164;
+            this.txtQuilometragem.TabIndex = 6;
             // 
             // lblQuilometragem
             // 
@@ -90,7 +91,7 @@
             this.txtAno.MaxLength = 100;
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(292, 20);
-            this.txtAno.TabIndex = 150;
+            this.txtAno.TabIndex = 2;
             // 
             // lblAno
             // 
@@ -110,7 +111,7 @@
             this.txtMarca.MaxLength = 100;
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(292, 20);
-            this.txtMarca.TabIndex = 149;
+            this.txtMarca.TabIndex = 1;
             // 
             // lblMarca
             // 
@@ -130,7 +131,7 @@
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(292, 20);
-            this.txtNome.TabIndex = 148;
+            this.txtNome.TabIndex = 0;
             // 
             // btnSalvar
             // 
@@ -140,10 +141,11 @@
             this.btnSalvar.Location = new System.Drawing.Point(7, 199);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(159, 59);
-            this.btnSalvar.TabIndex = 159;
+            this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Cadastrar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblNome
             // 
@@ -163,7 +165,7 @@
             this.txtPorta.MaxLength = 100;
             this.txtPorta.Name = "txtPorta";
             this.txtPorta.Size = new System.Drawing.Size(169, 20);
-            this.txtPorta.TabIndex = 170;
+            this.txtPorta.TabIndex = 3;
             // 
             // lblPorta
             // 
@@ -183,7 +185,7 @@
             this.txtPlaca.MaxLength = 100;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(169, 20);
-            this.txtPlaca.TabIndex = 172;
+            this.txtPlaca.TabIndex = 4;
             // 
             // lblPlaca
             // 
@@ -203,7 +205,7 @@
             this.txtCambio.MaxLength = 100;
             this.txtCambio.Name = "txtCambio";
             this.txtCambio.Size = new System.Drawing.Size(169, 20);
-            this.txtCambio.TabIndex = 174;
+            this.txtCambio.TabIndex = 5;
             // 
             // lblCambio
             // 
@@ -217,13 +219,13 @@
             this.lblCambio.TabIndex = 173;
             this.lblCambio.Text = "Câmbio";
             // 
-            // textBox4
+            // txtCor
             // 
-            this.textBox4.Location = new System.Drawing.Point(153, 174);
-            this.textBox4.MaxLength = 100;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 20);
-            this.textBox4.TabIndex = 176;
+            this.txtCor.Location = new System.Drawing.Point(153, 174);
+            this.txtCor.MaxLength = 100;
+            this.txtCor.Name = "txtCor";
+            this.txtCor.Size = new System.Drawing.Size(146, 20);
+            this.txtCor.TabIndex = 7;
             // 
             // label4
             // 
@@ -243,7 +245,7 @@
             this.txtPreco.MaxLength = 100;
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(169, 20);
-            this.txtPreco.TabIndex = 178;
+            this.txtPreco.TabIndex = 8;
             // 
             // lblPreco
             // 
@@ -257,7 +259,7 @@
             this.lblPreco.TabIndex = 177;
             this.lblPreco.Text = "Preço";
             // 
-            // CadastrarCarro
+            // CadastroCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -266,7 +268,7 @@
             this.ClientSize = new System.Drawing.Size(499, 263);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.lblPreco);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCor);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCambio);
             this.Controls.Add(this.lblCambio);
@@ -286,7 +288,7 @@
             this.Controls.Add(this.lblNome);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "CadastrarCarro";
+            this.Name = "CadastroCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro do Carro";
             this.ResumeLayout(false);
@@ -311,7 +313,7 @@
         private System.Windows.Forms.Label lblPlaca;
         private System.Windows.Forms.TextBox txtCambio;
         private System.Windows.Forms.Label lblCambio;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label lblPreco;

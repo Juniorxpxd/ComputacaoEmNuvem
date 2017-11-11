@@ -22,5 +22,11 @@ namespace AluguelDeCarros
             CadastroCliente cadCliente = new CadastroCliente();
             cadCliente.ShowDialog();
         }
+
+        private void btnCadCarro_Click(object sender, EventArgs e)
+        {
+            CadastroCarro cadCarro = new CadastroCarro();
+            cadCarro.ShowDialog();
+        }
     }
 }

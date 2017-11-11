@@ -10,6 +10,6 @@ namespace AluguelDeCarros.Model
     class Entities : DbContext
     {
         public DbSet<Cliente> Clientes { get; set; }
-
+        public DbSet<Carro> Carros { get; set; }
     }
 }

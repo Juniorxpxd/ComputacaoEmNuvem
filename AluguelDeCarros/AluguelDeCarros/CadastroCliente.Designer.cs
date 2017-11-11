@@ -63,7 +63,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(443, 204);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(89, 59);
-            this.btnVoltar.TabIndex = 144;
+            this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVoltar.UseVisualStyleBackColor = true;
@@ -75,7 +75,7 @@
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(160, 20);
-            this.txtRua.TabIndex = 139;
+            this.txtRua.TabIndex = 9;
             // 
             // lblRua
             // 
@@ -95,7 +95,7 @@
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(231, 20);
-            this.txtCid.TabIndex = 138;
+            this.txtCid.TabIndex = 8;
             // 
             // lblCid
             // 
@@ -115,7 +115,7 @@
             this.txtSenha.MaxLength = 100;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(292, 20);
-            this.txtSenha.TabIndex = 124;
+            this.txtSenha.TabIndex = 2;
             // 
             // lblSenha
             // 
@@ -135,7 +135,7 @@
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(292, 20);
-            this.txtEmail.TabIndex = 123;
+            this.txtEmail.TabIndex = 1;
             // 
             // lblEmail
             // 
@@ -155,7 +155,7 @@
             this.txtEst.MaxLength = 100;
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(218, 20);
-            this.txtEst.TabIndex = 130;
+            this.txtEst.TabIndex = 7;
             // 
             // lblEst
             // 
@@ -175,7 +175,7 @@
             this.mskRG.Mask = "99\\.999\\.999\\-9";
             this.mskRG.Name = "mskRG";
             this.mskRG.Size = new System.Drawing.Size(100, 20);
-            this.mskRG.TabIndex = 126;
+            this.mskRG.TabIndex = 4;
             this.mskRG.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lblRG
@@ -196,7 +196,7 @@
             this.mskCPF.Mask = "999\\.999\\.999\\-99";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(100, 20);
-            this.mskCPF.TabIndex = 125;
+            this.mskCPF.TabIndex = 3;
             this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lblCel
@@ -241,7 +241,7 @@
             this.mskCel.Mask = "\\(99\\) 99999 \\- 9999";
             this.mskCel.Name = "mskCel";
             this.mskCel.Size = new System.Drawing.Size(100, 20);
-            this.mskCel.TabIndex = 129;
+            this.mskCel.TabIndex = 6;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtNome
@@ -250,7 +250,7 @@
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(292, 20);
-            this.txtNome.TabIndex = 122;
+            this.txtNome.TabIndex = 0;
             // 
             // mskTel
             // 
@@ -258,7 +258,7 @@
             this.mskTel.Mask = "\\(99\\) 9999 \\- 9999";
             this.mskTel.Name = "mskTel";
             this.mskTel.Size = new System.Drawing.Size(100, 20);
-            this.mskTel.TabIndex = 128;
+            this.mskTel.TabIndex = 5;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // btnSalvar
@@ -269,7 +269,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(7, 204);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(159, 59);
-            this.btnSalvar.TabIndex = 133;
+            this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Cadastrar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -293,7 +293,7 @@
             this.txtNumero.MaxLength = 100;
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(100, 20);
-            this.txtNumero.TabIndex = 145;
+            this.txtNumero.TabIndex = 10;
             // 
             // lblNumero
             // 
