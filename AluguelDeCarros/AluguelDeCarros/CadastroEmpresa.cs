@@ -22,7 +22,7 @@ namespace AluguelDeCarros
         }
 
         SqlConnection sqlCon = null;
-        private string strCon = ;
+        //private string strCon = ;
         private string strSql = string.Empty;
 
 
@@ -80,7 +80,7 @@ namespace AluguelDeCarros
         {
             strSql = "INSERT INTO CadastroEmpresa(Nome, Email, Senha, NomeEmpresa, CNPJ, Telefone, Estado, Cidade, Celular, Rua) values(@Nome, @Email, @Senha, @NomeEmpresa, @CNPJ, @Telefone, @Estado, @Cidade, @Celular, @Rua)";
 
-            sqlCon = new SqlConnection(strCon);
+            //sqlCon = new SqlConnection(strCon);
 
             SqlCommand comando = new SqlCommand(strSql, sqlCon);
 

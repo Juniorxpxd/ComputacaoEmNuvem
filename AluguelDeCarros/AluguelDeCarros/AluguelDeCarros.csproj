@@ -71,6 +71,7 @@
     <Compile Include="CadastroEmpresa.Designer.cs">
       <DependentUpon>CadastroEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\Singleton.cs" />
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -81,6 +82,10 @@
     <Compile Include="Migrations\201711112102468_Criar Banco.cs" />
     <Compile Include="Migrations\201711112102468_Criar Banco.Designer.cs">
       <DependentUpon>201711112102468_Criar Banco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711112144018_UpdateCliente.cs" />
+    <Compile Include="Migrations\201711112144018_UpdateCliente.Designer.cs">
+      <DependentUpon>201711112144018_UpdateCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Cliente.cs" />
@@ -108,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711112102468_Criar Banco.resx">
       <DependentUpon>201711112102468_Criar Banco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711112144018_UpdateCliente.resx">
+      <DependentUpon>201711112144018_UpdateCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

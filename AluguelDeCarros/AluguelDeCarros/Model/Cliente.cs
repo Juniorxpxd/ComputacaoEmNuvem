@@ -23,6 +23,6 @@ namespace AluguelDeCarros.Model
         public string Rua { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
-        public int DataNasc { get; set; }
+        public int Numero { get; set; }
     }
 }

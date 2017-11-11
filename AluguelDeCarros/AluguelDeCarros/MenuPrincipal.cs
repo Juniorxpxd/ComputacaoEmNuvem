@@ -16,5 +16,11 @@ namespace AluguelDeCarros
         {
             InitializeComponent();
         }
+
+        private void btnCadCliente_Click(object sender, EventArgs e)
+        {
+            CadastroCliente cadCliente = new CadastroCliente();
+            cadCliente.ShowDialog();
+        }
     }
 }
