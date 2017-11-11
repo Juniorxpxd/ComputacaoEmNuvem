@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AluguelDeCarros
 {
-    public partial class CadastrarCarro : Form
+    public partial class CadastroCarro : Form
     {
-        public CadastrarCarro()
+        public CadastroCarro()
         {
             InitializeComponent();
         }

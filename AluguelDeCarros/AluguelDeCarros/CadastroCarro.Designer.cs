@@ -1,6 +1,6 @@
 ﻿namespace AluguelDeCarros
 {
-    partial class CadastrarCarro
+    partial class CadastroCarro
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastrarCarro));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroCarro));
             this.btnVoltar = new System.Windows.Forms.Button();
             this.txtQuilometragem = new System.Windows.Forms.TextBox();
             this.lblQuilometragem = new System.Windows.Forms.Label();
