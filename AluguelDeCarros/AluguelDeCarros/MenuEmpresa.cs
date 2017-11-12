@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AluguelDeCarros
 {
-    public partial class MenuPrincipal : Form
+    public partial class MenuEmpresa : Form
     {
-        public MenuPrincipal()
+        public MenuEmpresa()
         {
             InitializeComponent();
         }
@@ -27,6 +27,12 @@ namespace AluguelDeCarros
         {
             CadastroCarro cadCarro = new CadastroCarro();
             cadCarro.ShowDialog();
+        }
+
+        private void btnCadEmpresa_Click(object sender, EventArgs e)
+        {
+            CadastroEmpresa cadEmpresa = new CadastroEmpresa();
+            cadEmpresa.ShowDialog();
         }
     }
 }

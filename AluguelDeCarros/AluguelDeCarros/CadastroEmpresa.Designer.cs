@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.txtNomeEmpresa = new System.Windows.Forms.TextBox();
             this.txtEmpresa = new System.Windows.Forms.Label();
             this.txtRua = new System.Windows.Forms.TextBox();
             this.lblRua = new System.Windows.Forms.Label();
@@ -41,7 +41,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtEst = new System.Windows.Forms.TextBox();
             this.lblEst = new System.Windows.Forms.Label();
-            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mskCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.lblCel = new System.Windows.Forms.Label();
             this.lblTel = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
@@ -52,53 +52,53 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btnVoltar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(565, 215);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 43);
-            this.button1.TabIndex = 144;
-            this.button1.Text = "Voltar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.Location = new System.Drawing.Point(462, 206);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(89, 43);
+            this.btnVoltar.TabIndex = 144;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtNomeEmpresa
             // 
-            this.textBox1.Location = new System.Drawing.Point(16, 173);
-            this.textBox1.MaxLength = 100;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 20);
-            this.textBox1.TabIndex = 143;
+            this.txtNomeEmpresa.Location = new System.Drawing.Point(5, 176);
+            this.txtNomeEmpresa.MaxLength = 100;
+            this.txtNomeEmpresa.Name = "txtNomeEmpresa";
+            this.txtNomeEmpresa.Size = new System.Drawing.Size(204, 20);
+            this.txtNomeEmpresa.TabIndex = 143;
             // 
             // txtEmpresa
             // 
             this.txtEmpresa.AutoSize = true;
+            this.txtEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.txtEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpresa.ForeColor = System.Drawing.Color.Crimson;
-            this.txtEmpresa.Location = new System.Drawing.Point(12, 150);
+            this.txtEmpresa.Location = new System.Drawing.Point(1, 153);
             this.txtEmpresa.Name = "txtEmpresa";
             this.txtEmpresa.Size = new System.Drawing.Size(156, 20);
             this.txtEmpresa.TabIndex = 142;
             this.txtEmpresa.Text = "Nome da Empresa";
-            this.txtEmpresa.Click += new System.EventHandler(this.txtEmpresa_Click);
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(423, 68);
+            this.txtRua.Location = new System.Drawing.Point(412, 71);
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(139, 20);
             this.txtRua.TabIndex = 139;
-            this.txtRua.TextChanged += new System.EventHandler(this.txtRua_TextChanged);
             // 
             // lblRua
             // 
             this.lblRua.AutoSize = true;
+            this.lblRua.BackColor = System.Drawing.Color.Transparent;
             this.lblRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRua.ForeColor = System.Drawing.Color.Crimson;
-            this.lblRua.Location = new System.Drawing.Point(419, 45);
+            this.lblRua.Location = new System.Drawing.Point(408, 48);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(42, 20);
             this.lblRua.TabIndex = 141;
@@ -106,19 +106,19 @@
             // 
             // txtCid
             // 
-            this.txtCid.Location = new System.Drawing.Point(263, 173);
+            this.txtCid.Location = new System.Drawing.Point(252, 176);
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(132, 20);
             this.txtCid.TabIndex = 138;
-            this.txtCid.TextChanged += new System.EventHandler(this.txtCid_TextChanged);
             // 
             // lblCid
             // 
             this.lblCid.AutoSize = true;
+            this.lblCid.BackColor = System.Drawing.Color.Transparent;
             this.lblCid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCid.ForeColor = System.Drawing.Color.Crimson;
-            this.lblCid.Location = new System.Drawing.Point(259, 150);
+            this.lblCid.Location = new System.Drawing.Point(248, 153);
             this.lblCid.Name = "lblCid";
             this.lblCid.Size = new System.Drawing.Size(65, 20);
             this.lblCid.TabIndex = 140;
@@ -126,19 +126,19 @@
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(16, 118);
+            this.txtSenha.Location = new System.Drawing.Point(5, 121);
             this.txtSenha.MaxLength = 100;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(204, 20);
             this.txtSenha.TabIndex = 124;
-            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.Color.Crimson;
-            this.lblSenha.Location = new System.Drawing.Point(12, 97);
+            this.lblSenha.Location = new System.Drawing.Point(1, 100);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(61, 20);
             this.lblSenha.TabIndex = 137;
@@ -146,19 +146,19 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(16, 68);
+            this.txtEmail.Location = new System.Drawing.Point(5, 71);
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 20);
             this.txtEmail.TabIndex = 123;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged);
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Crimson;
-            this.lblEmail.Location = new System.Drawing.Point(12, 45);
+            this.lblEmail.Location = new System.Drawing.Point(1, 48);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(53, 20);
             this.lblEmail.TabIndex = 136;
@@ -166,40 +166,40 @@
             // 
             // txtEst
             // 
-            this.txtEst.Location = new System.Drawing.Point(263, 120);
+            this.txtEst.Location = new System.Drawing.Point(252, 123);
             this.txtEst.MaxLength = 100;
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(132, 20);
             this.txtEst.TabIndex = 130;
-            this.txtEst.TextChanged += new System.EventHandler(this.txtEst_TextChanged);
             // 
             // lblEst
             // 
             this.lblEst.AutoSize = true;
+            this.lblEst.BackColor = System.Drawing.Color.Transparent;
             this.lblEst.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEst.ForeColor = System.Drawing.Color.Crimson;
-            this.lblEst.Location = new System.Drawing.Point(259, 97);
+            this.lblEst.Location = new System.Drawing.Point(248, 100);
             this.lblEst.Name = "lblEst";
             this.lblEst.Size = new System.Drawing.Size(66, 20);
             this.lblEst.TabIndex = 135;
             this.lblEst.Text = "Estado";
             // 
-            // mskCPF
+            // mskCNPJ
             // 
-            this.mskCPF.Location = new System.Drawing.Point(264, 22);
-            this.mskCPF.Mask = "999\\.999\\.999\\-99";
-            this.mskCPF.Name = "mskCPF";
-            this.mskCPF.Size = new System.Drawing.Size(93, 20);
-            this.mskCPF.TabIndex = 125;
-            this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskCPF.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCPF_MaskInputRejected);
+            this.mskCNPJ.Location = new System.Drawing.Point(253, 25);
+            this.mskCNPJ.Mask = "99\\.999\\.999\\/9999\\-99";
+            this.mskCNPJ.Name = "mskCNPJ";
+            this.mskCNPJ.Size = new System.Drawing.Size(107, 20);
+            this.mskCNPJ.TabIndex = 125;
+            this.mskCNPJ.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lblCel
             // 
             this.lblCel.AutoSize = true;
+            this.lblCel.BackColor = System.Drawing.Color.Transparent;
             this.lblCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCel.ForeColor = System.Drawing.Color.Crimson;
-            this.lblCel.Location = new System.Drawing.Point(419, -1);
+            this.lblCel.Location = new System.Drawing.Point(408, 2);
             this.lblCel.Name = "lblCel";
             this.lblCel.Size = new System.Drawing.Size(65, 20);
             this.lblCel.TabIndex = 132;
@@ -208,9 +208,10 @@
             // lblTel
             // 
             this.lblTel.AutoSize = true;
+            this.lblTel.BackColor = System.Drawing.Color.Transparent;
             this.lblTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTel.ForeColor = System.Drawing.Color.Crimson;
-            this.lblTel.Location = new System.Drawing.Point(260, 45);
+            this.lblTel.Location = new System.Drawing.Point(249, 48);
             this.lblTel.Name = "lblTel";
             this.lblTel.Size = new System.Drawing.Size(79, 20);
             this.lblTel.TabIndex = 131;
@@ -219,9 +220,10 @@
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
+            this.lblCPF.BackColor = System.Drawing.Color.Transparent;
             this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.ForeColor = System.Drawing.Color.Crimson;
-            this.lblCPF.Location = new System.Drawing.Point(260, -1);
+            this.lblCPF.Location = new System.Drawing.Point(249, 2);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(53, 20);
             this.lblCPF.TabIndex = 127;
@@ -229,38 +231,35 @@
             // 
             // mskCel
             // 
-            this.mskCel.Location = new System.Drawing.Point(423, 22);
+            this.mskCel.Location = new System.Drawing.Point(412, 25);
             this.mskCel.Mask = "\\(99\\) 99999 \\- 9999";
             this.mskCel.Name = "mskCel";
             this.mskCel.Size = new System.Drawing.Size(100, 20);
             this.mskCel.TabIndex = 129;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskCel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskCel_MaskInputRejected);
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(16, 22);
+            this.txtNome.Location = new System.Drawing.Point(5, 25);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(204, 20);
             this.txtNome.TabIndex = 122;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // mskTel
             // 
-            this.mskTel.Location = new System.Drawing.Point(263, 68);
+            this.mskTel.Location = new System.Drawing.Point(252, 71);
             this.mskTel.Mask = "\\(99\\) 9999 \\- 9999";
             this.mskTel.Name = "mskTel";
-            this.mskTel.Size = new System.Drawing.Size(100, 20);
+            this.mskTel.Size = new System.Drawing.Size(108, 20);
             this.mskTel.TabIndex = 128;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
-            this.mskTel.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTel_MaskInputRejected);
             // 
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalvar.Location = new System.Drawing.Point(9, 215);
+            this.btnSalvar.Location = new System.Drawing.Point(5, 206);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(159, 43);
             this.btnSalvar.TabIndex = 133;
@@ -272,9 +271,10 @@
             // lblNome
             // 
             this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Crimson;
-            this.lblNome.Location = new System.Drawing.Point(12, -1);
+            this.lblNome.Location = new System.Drawing.Point(1, 2);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(55, 20);
             this.lblNome.TabIndex = 121;
@@ -286,9 +286,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.download1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(673, 261);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(560, 261);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.txtNomeEmpresa);
             this.Controls.Add(this.txtEmpresa);
             this.Controls.Add(this.txtRua);
             this.Controls.Add(this.lblRua);
@@ -300,7 +300,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtEst);
             this.Controls.Add(this.lblEst);
-            this.Controls.Add(this.mskCPF);
+            this.Controls.Add(this.mskCNPJ);
             this.Controls.Add(this.lblCel);
             this.Controls.Add(this.lblTel);
             this.Controls.Add(this.lblCPF);
@@ -310,6 +310,7 @@
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblNome);
             this.Name = "CadastroEmpresa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroEmpresa";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -318,8 +319,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox txtNomeEmpresa;
         private System.Windows.Forms.Label txtEmpresa;
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label lblRua;
@@ -331,7 +332,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtEst;
         private System.Windows.Forms.Label lblEst;
-        private System.Windows.Forms.MaskedTextBox mskCPF;
+        private System.Windows.Forms.MaskedTextBox mskCNPJ;
         private System.Windows.Forms.Label lblCel;
         private System.Windows.Forms.Label lblTel;
         private System.Windows.Forms.Label lblCPF;

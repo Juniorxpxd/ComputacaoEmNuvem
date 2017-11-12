@@ -14,6 +14,7 @@ namespace AluguelDeCarros.Model
         [Key]
         public int Id { get; set; }
         public string Nome { get; set; }
+        public string NomeEmpresa { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
         public string CNPJ { get; set; }
@@ -22,6 +23,7 @@ namespace AluguelDeCarros.Model
         public string Rua { get; set; }
         public string Cidade { get; set; }
         public string Estado { get; set; }
+        public List<Carro> Carro { get; set; }
     }   
 }
 

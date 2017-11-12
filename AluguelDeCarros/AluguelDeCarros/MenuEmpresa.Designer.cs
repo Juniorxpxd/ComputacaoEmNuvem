@@ -1,6 +1,6 @@
 ﻿namespace AluguelDeCarros
 {
-    partial class MenuPrincipal
+    partial class MenuEmpresa
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,7 @@
             // 
             // btnCadCliente
             // 
-            this.btnCadCliente.Location = new System.Drawing.Point(186, 43);
+            this.btnCadCliente.Location = new System.Drawing.Point(35, 43);
             this.btnCadCliente.Name = "btnCadCliente";
             this.btnCadCliente.Size = new System.Drawing.Size(139, 51);
             this.btnCadCliente.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnCadCarro
             // 
-            this.btnCadCarro.Location = new System.Drawing.Point(186, 127);
+            this.btnCadCarro.Location = new System.Drawing.Point(311, 43);
             this.btnCadCarro.Name = "btnCadCarro";
             this.btnCadCarro.Size = new System.Drawing.Size(139, 51);
             this.btnCadCarro.TabIndex = 1;
@@ -52,18 +52,18 @@
             this.btnCadCarro.UseVisualStyleBackColor = true;
             this.btnCadCarro.Click += new System.EventHandler(this.btnCadCarro_Click);
             // 
-            // MenuPrincipal
+            // MenuEmpresa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 250);
+            this.ClientSize = new System.Drawing.Size(481, 131);
             this.Controls.Add(this.btnCadCarro);
             this.Controls.Add(this.btnCadCliente);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "MenuPrincipal";
+            this.Name = "MenuEmpresa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Menu da Empresa";
             this.ResumeLayout(false);
 
         }

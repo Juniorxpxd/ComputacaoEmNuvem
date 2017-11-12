@@ -13,6 +13,7 @@ namespace AluguelDeCarros.Model
     {
         [Key]
         public int Id { get; set; }
+        public Empresa Empresa { get; set; }
         public string Nome { get; set; }
         public string Marca { get; set; }
         public string Quilometragem { get; set; }

@@ -8,111 +8,50 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using AluguelDeCarros.Model;
+using AluguelDeCarros.DAO;
 
 namespace AluguelDeCarros
 {
     public partial class CadastroEmpresa : Form
     {
+        Empresa empresa = new Empresa();
         public CadastroEmpresa()
         {
-
             InitializeComponent();
-
-
         }
-
-        SqlConnection sqlCon = null;
-        //private string strCon = ;
-        private string strSql = string.Empty;
-
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
+        public void dbInsert()
         {
+            try
+            {
+                empresa.Nome = txtNome.Text;
+                empresa.Celular = mskCel.Text;
+                empresa.Cidade = txtCid.Text;
+                empresa.CNPJ = mskCNPJ.Text;
+                empresa.Email = txtEmail.Text;
+                empresa.Estado = txtEst.Text;
+                empresa.NomeEmpresa = txtNomeEmpresa.Text;
+                empresa.Rua = txtRua.Text;
+                empresa.Senha = txtSenha.Text;
+                empresa.Telefone = mskTel.Text;
+                EmpresaDAO.Incluir(empresa);
 
-        }
-
-        private void txtCid_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtEmpresa_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mskCPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void mskTel_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void txtEst_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mskCel_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void txtRua_TextChanged(object sender, EventArgs e)
-        {
-
+                MessageBox.Show("O cadastro da empresa: " + empresa.NomeEmpresa + " foi concluido com sucesso", "Cadastrado");
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e + "Erro ao cadastrar", "Erro");
+            }
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            strSql = "INSERT INTO CadastroEmpresa(Nome, Email, Senha, NomeEmpresa, CNPJ, Telefone, Estado, Cidade, Celular, Rua) values(@Nome, @Email, @Senha, @NomeEmpresa, @CNPJ, @Telefone, @Estado, @Cidade, @Celular, @Rua)";
+            dbInsert();
+        }
 
-            //sqlCon = new SqlConnection(strCon);
-
-            SqlCommand comando = new SqlCommand(strSql, sqlCon);
-
-            comando.Parameters.Add("@Nome", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Email", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Senha", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@NomeEmpresa", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@CNPJ", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Telefone", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Estado", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Cidade", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Celular", SqlDbType.VarChar).Value = txtNome.Text;
-            comando.Parameters.Add("@Rua", SqlDbType.VarChar).Value = txtNome.Text;
-
-            try
-            {
-                sqlCon.Open();
-
-                comando.ExecuteNonQuery();
-
-                MessageBox.Show("Cadastro efetuado");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlCon.Close();
-            }
-
-
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
