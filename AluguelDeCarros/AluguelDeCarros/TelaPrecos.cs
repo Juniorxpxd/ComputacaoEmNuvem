@@ -22,5 +22,17 @@ namespace AluguelDeCarros
             TelaDeLoginEmpresa loginEmpresa = new TelaDeLoginEmpresa();
             loginEmpresa.ShowDialog();
         }
+
+        private void btnAssinarPequeno_Click(object sender, EventArgs e)
+        {
+            CadastroEmpresa cadEmpresa = new CadastroEmpresa();
+            cadEmpresa.ShowDialog();
+        }
+
+        private void btnAssinarGigante_Click(object sender, EventArgs e)
+        {
+            CadastroEmpresa cadEmpresa = new CadastroEmpresa();
+            cadEmpresa.ShowDialog();
+        }
     }
 }

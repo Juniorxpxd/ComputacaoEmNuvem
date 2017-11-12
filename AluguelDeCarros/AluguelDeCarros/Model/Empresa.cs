@@ -13,6 +13,7 @@ namespace AluguelDeCarros.Model
     {
         [Key]
         public int Id { get; set; }
+        public string Plano { get; set; }
         public string Nome { get; set; }
         public string NomeEmpresa { get; set; }
         public string Email { get; set; }

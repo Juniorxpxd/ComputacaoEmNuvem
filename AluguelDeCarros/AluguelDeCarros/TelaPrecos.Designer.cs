@@ -42,8 +42,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnAssinarPequeno = new System.Windows.Forms.Button();
+            this.btnAssinarGigante = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -184,33 +184,35 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // btnAssinarPequeno
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button3.Location = new System.Drawing.Point(39, 267);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 36);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Assinar Agora";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAssinarPequeno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAssinarPequeno.Location = new System.Drawing.Point(39, 267);
+            this.btnAssinarPequeno.Name = "btnAssinarPequeno";
+            this.btnAssinarPequeno.Size = new System.Drawing.Size(160, 36);
+            this.btnAssinarPequeno.TabIndex = 33;
+            this.btnAssinarPequeno.Text = "Assinar Agora";
+            this.btnAssinarPequeno.UseVisualStyleBackColor = true;
+            this.btnAssinarPequeno.Click += new System.EventHandler(this.btnAssinarPequeno_Click);
             // 
-            // button4
+            // btnAssinarGigante
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button4.Location = new System.Drawing.Point(505, 267);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 36);
-            this.button4.TabIndex = 34;
-            this.button4.Text = "Assinar Agora";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAssinarGigante.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnAssinarGigante.Location = new System.Drawing.Point(505, 267);
+            this.btnAssinarGigante.Name = "btnAssinarGigante";
+            this.btnAssinarGigante.Size = new System.Drawing.Size(164, 36);
+            this.btnAssinarGigante.TabIndex = 34;
+            this.btnAssinarGigante.Text = "Assinar Agora";
+            this.btnAssinarGigante.UseVisualStyleBackColor = true;
+            this.btnAssinarGigante.Click += new System.EventHandler(this.btnAssinarGigante_Click);
             // 
             // TelaPrecos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(731, 314);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnAssinarGigante);
+            this.Controls.Add(this.btnAssinarPequeno);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -250,7 +252,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnAssinarPequeno;
+        private System.Windows.Forms.Button btnAssinarGigante;
     }
 }
