@@ -23,5 +23,9 @@ namespace AluguelDeCarros.DAO
                 return false;
             }
         }
+        public static Empresa BuscarEmpresaPorEmailESenha(Empresa Empresa)
+        {
+            return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email) && x.Senha.Equals(Empresa.Senha));
+        }
     }
 }

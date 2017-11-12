@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AluguelDeCarros.DAO;
+using AluguelDeCarros.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,19 +19,16 @@ namespace AluguelDeCarros
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEntrar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TeladeLogin_Load(object sender, EventArgs e)
-        {
-            
+            Empresa empresa = new Empresa();
+            empresa.Email = txtEmail.Text;
+            empresa.Senha = txtSenha.Text;
+            if(EmpresaDAO.BuscarEmpresaPorEmailESenha(empresa) != null)
+            {
+                MenuEmpresa menuEmpresa = new MenuEmpresa();
+                menuEmpresa.ShowDialog();
+            }
         }
     }
 }
