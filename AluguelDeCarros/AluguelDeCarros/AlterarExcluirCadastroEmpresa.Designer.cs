@@ -296,7 +296,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(193, 35);
             this.button1.TabIndex = 152;
-            this.button1.Text = "Alterar";
+            this.button1.Text = "Editar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // AlterarExcluirCadastroEmpresa

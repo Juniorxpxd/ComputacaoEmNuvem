@@ -73,6 +73,16 @@ namespace AluguelDeCarros.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap download__1_ {
+            get {
+                object obj = ResourceManager.GetObject("download (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download1 {
             get {
                 object obj = ResourceManager.GetObject("download1", resourceCulture);

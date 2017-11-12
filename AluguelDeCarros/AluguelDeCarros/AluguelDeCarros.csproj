@@ -81,6 +81,12 @@
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\EmpresaDAO.cs" />
     <Compile Include="DAO\Singleton.cs" />
+    <Compile Include="EditarExcluirCadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarExcluirCadastroCliente.Designer.cs">
+      <DependentUpon>EditarExcluirCadastroCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroEmpresa.resx">
       <DependentUpon>CadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarExcluirCadastroCliente.resx">
+      <DependentUpon>EditarExcluirCadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuEmpresa.resx">
       <DependentUpon>MenuEmpresa.cs</DependentUpon>
@@ -183,6 +192,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
