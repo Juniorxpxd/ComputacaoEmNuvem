@@ -49,250 +49,270 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.lblPreco = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnVoltar
             // 
+            this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVoltar.Location = new System.Drawing.Point(404, 200);
+            this.btnVoltar.Location = new System.Drawing.Point(10, 335);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(89, 59);
+            this.btnVoltar.Size = new System.Drawing.Size(152, 59);
             this.btnVoltar.TabIndex = 10;
-            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.Text = "Cancelar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // txtQuilometragem
             // 
-            this.txtQuilometragem.Location = new System.Drawing.Point(7, 173);
+            this.txtQuilometragem.Location = new System.Drawing.Point(205, 150);
             this.txtQuilometragem.MaxLength = 100;
             this.txtQuilometragem.Name = "txtQuilometragem";
-            this.txtQuilometragem.Size = new System.Drawing.Size(124, 20);
+            this.txtQuilometragem.Size = new System.Drawing.Size(169, 26);
             this.txtQuilometragem.TabIndex = 6;
             // 
             // lblQuilometragem
             // 
             this.lblQuilometragem.AutoSize = true;
             this.lblQuilometragem.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuilometragem.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuilometragem.ForeColor = System.Drawing.Color.White;
-            this.lblQuilometragem.Location = new System.Drawing.Point(3, 149);
+            this.lblQuilometragem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuilometragem.ForeColor = System.Drawing.Color.Black;
+            this.lblQuilometragem.Location = new System.Drawing.Point(201, 129);
             this.lblQuilometragem.Name = "lblQuilometragem";
-            this.lblQuilometragem.Size = new System.Drawing.Size(128, 22);
+            this.lblQuilometragem.Size = new System.Drawing.Size(130, 20);
             this.lblQuilometragem.TabIndex = 166;
             this.lblQuilometragem.Text = "Quilometragem";
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(7, 123);
+            this.txtAno.Location = new System.Drawing.Point(10, 150);
             this.txtAno.MaxLength = 100;
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(292, 20);
+            this.txtAno.Size = new System.Drawing.Size(169, 26);
             this.txtAno.TabIndex = 2;
             // 
             // lblAno
             // 
             this.lblAno.AutoSize = true;
             this.lblAno.BackColor = System.Drawing.Color.Transparent;
-            this.lblAno.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAno.ForeColor = System.Drawing.Color.White;
-            this.lblAno.Location = new System.Drawing.Point(3, 100);
+            this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAno.ForeColor = System.Drawing.Color.Black;
+            this.lblAno.Location = new System.Drawing.Point(6, 127);
             this.lblAno.Name = "lblAno";
-            this.lblAno.Size = new System.Drawing.Size(41, 22);
+            this.lblAno.Size = new System.Drawing.Size(41, 20);
             this.lblAno.TabIndex = 163;
             this.lblAno.Text = "Ano";
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(7, 73);
+            this.txtMarca.Location = new System.Drawing.Point(10, 100);
             this.txtMarca.MaxLength = 100;
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(292, 20);
+            this.txtMarca.Size = new System.Drawing.Size(169, 26);
             this.txtMarca.TabIndex = 1;
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarca.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.ForeColor = System.Drawing.Color.White;
-            this.lblMarca.Location = new System.Drawing.Point(3, 50);
+            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.ForeColor = System.Drawing.Color.Black;
+            this.lblMarca.Location = new System.Drawing.Point(6, 82);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(56, 22);
+            this.lblMarca.Size = new System.Drawing.Size(58, 20);
             this.lblMarca.TabIndex = 162;
             this.lblMarca.Text = "Marca";
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(7, 27);
+            this.txtNome.Location = new System.Drawing.Point(10, 54);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(292, 20);
+            this.txtNome.Size = new System.Drawing.Size(169, 26);
             this.txtNome.TabIndex = 0;
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalvar.Location = new System.Drawing.Point(7, 199);
+            this.btnSalvar.Location = new System.Drawing.Point(215, 335);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(159, 59);
             this.btnSalvar.TabIndex = 9;
             this.btnSalvar.Text = "Cadastrar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblNome.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.ForeColor = System.Drawing.Color.White;
-            this.lblNome.Location = new System.Drawing.Point(3, 4);
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.Black;
+            this.lblNome.Location = new System.Drawing.Point(6, 31);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(55, 22);
+            this.lblNome.Size = new System.Drawing.Size(55, 20);
             this.lblNome.TabIndex = 147;
             this.lblNome.Text = "Nome";
             // 
             // txtPorta
             // 
-            this.txtPorta.Location = new System.Drawing.Point(324, 27);
+            this.txtPorta.Location = new System.Drawing.Point(10, 202);
             this.txtPorta.MaxLength = 100;
             this.txtPorta.Name = "txtPorta";
-            this.txtPorta.Size = new System.Drawing.Size(169, 20);
+            this.txtPorta.Size = new System.Drawing.Size(169, 26);
             this.txtPorta.TabIndex = 3;
             // 
             // lblPorta
             // 
             this.lblPorta.AutoSize = true;
             this.lblPorta.BackColor = System.Drawing.Color.Transparent;
-            this.lblPorta.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPorta.ForeColor = System.Drawing.Color.White;
-            this.lblPorta.Location = new System.Drawing.Point(320, 4);
+            this.lblPorta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPorta.ForeColor = System.Drawing.Color.Black;
+            this.lblPorta.Location = new System.Drawing.Point(6, 179);
             this.lblPorta.Name = "lblPorta";
-            this.lblPorta.Size = new System.Drawing.Size(57, 22);
+            this.lblPorta.Size = new System.Drawing.Size(61, 20);
             this.lblPorta.TabIndex = 169;
             this.lblPorta.Text = "Portas";
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(324, 73);
+            this.txtPlaca.Location = new System.Drawing.Point(10, 248);
             this.txtPlaca.MaxLength = 100;
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(169, 20);
+            this.txtPlaca.Size = new System.Drawing.Size(169, 26);
             this.txtPlaca.TabIndex = 4;
             // 
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
             this.lblPlaca.BackColor = System.Drawing.Color.Transparent;
-            this.lblPlaca.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlaca.ForeColor = System.Drawing.Color.White;
-            this.lblPlaca.Location = new System.Drawing.Point(320, 50);
+            this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaca.ForeColor = System.Drawing.Color.Black;
+            this.lblPlaca.Location = new System.Drawing.Point(6, 228);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(47, 22);
+            this.lblPlaca.Size = new System.Drawing.Size(53, 20);
             this.lblPlaca.TabIndex = 171;
             this.lblPlaca.Text = "Placa";
             // 
             // txtCambio
             // 
-            this.txtCambio.Location = new System.Drawing.Point(324, 123);
+            this.txtCambio.Location = new System.Drawing.Point(205, 54);
             this.txtCambio.MaxLength = 100;
             this.txtCambio.Name = "txtCambio";
-            this.txtCambio.Size = new System.Drawing.Size(169, 20);
+            this.txtCambio.Size = new System.Drawing.Size(169, 26);
             this.txtCambio.TabIndex = 5;
             // 
             // lblCambio
             // 
             this.lblCambio.AutoSize = true;
             this.lblCambio.BackColor = System.Drawing.Color.Transparent;
-            this.lblCambio.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCambio.ForeColor = System.Drawing.Color.White;
-            this.lblCambio.Location = new System.Drawing.Point(320, 100);
+            this.lblCambio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCambio.ForeColor = System.Drawing.Color.Black;
+            this.lblCambio.Location = new System.Drawing.Point(201, 31);
             this.lblCambio.Name = "lblCambio";
-            this.lblCambio.Size = new System.Drawing.Size(69, 22);
+            this.lblCambio.Size = new System.Drawing.Size(69, 20);
             this.lblCambio.TabIndex = 173;
             this.lblCambio.Text = "Câmbio";
             // 
             // txtCor
             // 
-            this.txtCor.Location = new System.Drawing.Point(153, 174);
+            this.txtCor.Location = new System.Drawing.Point(205, 202);
             this.txtCor.MaxLength = 100;
             this.txtCor.Name = "txtCor";
-            this.txtCor.Size = new System.Drawing.Size(146, 20);
+            this.txtCor.Size = new System.Drawing.Size(169, 26);
             this.txtCor.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(149, 149);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(205, 179);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 22);
+            this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 175;
             this.label4.Text = "Cor";
             // 
             // txtPreco
             // 
-            this.txtPreco.Location = new System.Drawing.Point(324, 174);
+            this.txtPreco.Location = new System.Drawing.Point(205, 100);
             this.txtPreco.MaxLength = 100;
             this.txtPreco.Name = "txtPreco";
-            this.txtPreco.Size = new System.Drawing.Size(169, 20);
+            this.txtPreco.Size = new System.Drawing.Size(169, 26);
             this.txtPreco.TabIndex = 8;
             // 
             // lblPreco
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreco.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreco.ForeColor = System.Drawing.Color.White;
-            this.lblPreco.Location = new System.Drawing.Point(320, 149);
+            this.lblPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPreco.ForeColor = System.Drawing.Color.Black;
+            this.lblPreco.Location = new System.Drawing.Point(201, 81);
             this.lblPreco.Name = "lblPreco";
-            this.lblPreco.Size = new System.Drawing.Size(51, 22);
+            this.lblPreco.Size = new System.Drawing.Size(55, 20);
             this.lblPreco.TabIndex = 177;
             this.lblPreco.Text = "Preço";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.lblNome);
+            this.groupBox1.Controls.Add(this.txtPreco);
+            this.groupBox1.Controls.Add(this.btnSalvar);
+            this.groupBox1.Controls.Add(this.lblPreco);
+            this.groupBox1.Controls.Add(this.txtNome);
+            this.groupBox1.Controls.Add(this.txtCor);
+            this.groupBox1.Controls.Add(this.lblMarca);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txtMarca);
+            this.groupBox1.Controls.Add(this.txtCambio);
+            this.groupBox1.Controls.Add(this.lblAno);
+            this.groupBox1.Controls.Add(this.lblCambio);
+            this.groupBox1.Controls.Add(this.txtAno);
+            this.groupBox1.Controls.Add(this.txtPlaca);
+            this.groupBox1.Controls.Add(this.lblQuilometragem);
+            this.groupBox1.Controls.Add(this.lblPlaca);
+            this.groupBox1.Controls.Add(this.txtQuilometragem);
+            this.groupBox1.Controls.Add(this.txtPorta);
+            this.groupBox1.Controls.Add(this.btnVoltar);
+            this.groupBox1.Controls.Add(this.lblPorta);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(383, 400);
+            this.groupBox1.TabIndex = 178;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados do Carro";
             // 
             // CadastroCarro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(499, 263);
-            this.Controls.Add(this.txtPreco);
-            this.Controls.Add(this.lblPreco);
-            this.Controls.Add(this.txtCor);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtCambio);
-            this.Controls.Add(this.lblCambio);
-            this.Controls.Add(this.txtPlaca);
-            this.Controls.Add(this.lblPlaca);
-            this.Controls.Add(this.txtPorta);
-            this.Controls.Add(this.lblPorta);
-            this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.txtQuilometragem);
-            this.Controls.Add(this.lblQuilometragem);
-            this.Controls.Add(this.txtAno);
-            this.Controls.Add(this.lblAno);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.lblNome);
+            this.ClientSize = new System.Drawing.Size(403, 423);
+            this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "CadastroCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro do Carro";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -317,5 +337,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label lblPreco;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

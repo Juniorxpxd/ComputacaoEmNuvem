@@ -17,12 +17,6 @@ namespace AluguelDeCarros
             InitializeComponent();
         }
 
-        private void btnLoginEmpresa_Click(object sender, EventArgs e)
-        {
-            TelaDeLoginEmpresa loginEmpresa = new TelaDeLoginEmpresa();
-            loginEmpresa.ShowDialog();
-        }
-
         private void btnAssinarPequeno_Click(object sender, EventArgs e)
         {
             CadastroEmpresa cadEmpresa = new CadastroEmpresa();
@@ -33,6 +27,16 @@ namespace AluguelDeCarros
         {
             CadastroEmpresa cadEmpresa = new CadastroEmpresa();
             cadEmpresa.ShowDialog();
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -93,6 +93,12 @@
     <Compile Include="MenuEmpresa.Designer.cs">
       <DependentUpon>MenuEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipalCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     <EmbeddedResource Include="MenuEmpresa.resx">
       <DependentUpon>MenuEmpresa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipalCliente.resx">
       <DependentUpon>MenuPrincipalCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +181,9 @@
     </Compile>
     <EmbeddedResource Include="TelaDeLoginEmpresa.resx">
       <DependentUpon>TelaDeLoginEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrecos.dje.resx">
+      <DependentUpon>TelaPrecos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrecos.resx">
       <DependentUpon>TelaPrecos.cs</DependentUpon>
@@ -210,6 +222,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resumo-de-fundo-com-um-desenho-geometrico_1048-1450.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen-login-template.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fullscreen-login-template.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Very-Basic-Key-Filled-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sZK3FrwFxjQOQy36VqLC-yA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popcorntime-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\568653.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\846127_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fantasy-hd-background-18457-18924-hd-wallpapers.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

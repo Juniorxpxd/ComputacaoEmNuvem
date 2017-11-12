@@ -26,9 +26,20 @@ namespace AluguelDeCarros
             empresa.Senha = txtSenha.Text;
             if(EmpresaDAO.BuscarEmpresaPorEmailESenha(empresa) != null)
             {
+                this.Close();
                 MenuEmpresa menuEmpresa = new MenuEmpresa();
-                menuEmpresa.ShowDialog();
+                menuEmpresa.ShowDialog();  
             }
+            else
+            {
+                MessageBox.Show("Login ou Senha Inválida", "Dados Inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

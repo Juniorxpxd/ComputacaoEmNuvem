@@ -16,7 +16,7 @@ namespace AluguelDeCarros
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TelaPrecos());
+            Application.Run(new MenuPrincipal());
         }
     }
 }
