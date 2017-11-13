@@ -31,7 +31,8 @@ namespace AluguelDeCarros
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-
+            TelaDeLoginCliente loginCliente = new TelaDeLoginCliente();
+            loginCliente.ShowDialog();
         }
 
         private void pctSair_Click(object sender, EventArgs e)

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace AluguelDeCarros
 {
     public partial class MenuPrincipalCliente : Form
     {
-        public MenuPrincipalCliente()
+        private string email;
+
+        public MenuPrincipalCliente(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
+
     }
 }
