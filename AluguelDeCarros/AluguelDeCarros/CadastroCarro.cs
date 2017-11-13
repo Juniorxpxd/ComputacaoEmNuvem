@@ -41,7 +41,7 @@ namespace AluguelDeCarros
                 carro.Quilometragem = txtQuilometragem.Text;
                 carro.Placa = txtPlaca.Text;
                 carro.Portas = int.Parse(txtPorta.Text);
-                carro.Ano = int.Parse(txtPorta.Text);
+                carro.Ano = int.Parse(txtAno.Text);
                 carro.Preco = txtPreco.Text;
                 CarroDAO.Incluir(carro);
 
