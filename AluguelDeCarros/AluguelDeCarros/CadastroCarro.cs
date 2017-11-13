@@ -19,8 +19,11 @@ namespace AluguelDeCarros
     {
         Carro carro = new Carro();
         Empresa empresa = new Empresa();
-        public CadastroCarro()
+        private string email;
+
+        public CadastroCarro(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 
@@ -28,17 +31,9 @@ namespace AluguelDeCarros
         {
             try
             {
-                
-
-                //string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-
-                //System.Environment.UserName.ToString();
-                //if (Thread.CurrentPrincipal.Identity.IsAuthenticated)
-                //{
-                //    empresa.Email = Thread.CurrentPrincipal.Identity.Name;
-                //}
-
-                carro.Empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+                empresa.Email = this.email;
+                empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+                carro.Empresa = empresa;
                 carro.Nome = txtNome.Text;
                 carro.Cambio = txtCambio.Text;
                 carro.Cor = txtCor.Text;
@@ -51,6 +46,7 @@ namespace AluguelDeCarros
                 CarroDAO.Incluir(carro);
 
                 MessageBox.Show("O cadastro do carro: " + carro.Nome + " foi concluido com sucesso", "Cadastrado");
+                this.Close();
             }
             catch (SqlException e)
             {

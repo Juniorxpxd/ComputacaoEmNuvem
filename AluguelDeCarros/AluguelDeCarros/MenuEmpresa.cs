@@ -12,8 +12,11 @@ namespace AluguelDeCarros
 {
     public partial class MenuEmpresa : Form
     {
-        public MenuEmpresa()
+        private string email;
+
+        public MenuEmpresa(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 
@@ -25,7 +28,7 @@ namespace AluguelDeCarros
 
         private void btnCadCarro_Click(object sender, EventArgs e)
         {
-            CadastroCarro cadCarro = new CadastroCarro();
+            CadastroCarro cadCarro = new CadastroCarro(this.email);
             cadCarro.ShowDialog();
         }
 

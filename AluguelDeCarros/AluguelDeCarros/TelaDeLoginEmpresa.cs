@@ -28,7 +28,7 @@ namespace AluguelDeCarros
             {
                 empresa = EmpresaDAO.BuscarEmpresaPorEmailESenha(empresa);
                 this.Close();
-                MenuEmpresa menuEmpresa = new MenuEmpresa();
+                MenuEmpresa menuEmpresa = new MenuEmpresa(empresa.Email);
                 menuEmpresa.ShowDialog();  
             }
             else

@@ -75,7 +75,7 @@
             this.txtQuilometragem.MaxLength = 100;
             this.txtQuilometragem.Name = "txtQuilometragem";
             this.txtQuilometragem.Size = new System.Drawing.Size(169, 26);
-            this.txtQuilometragem.TabIndex = 6;
+            this.txtQuilometragem.TabIndex = 7;
             // 
             // lblQuilometragem
             // 
@@ -231,7 +231,7 @@
             this.txtCor.MaxLength = 100;
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(169, 26);
-            this.txtCor.TabIndex = 7;
+            this.txtCor.TabIndex = 8;
             // 
             // label4
             // 
@@ -251,7 +251,7 @@
             this.txtPreco.MaxLength = 100;
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(169, 26);
-            this.txtPreco.TabIndex = 8;
+            this.txtPreco.TabIndex = 6;
             // 
             // lblPreco
             // 
