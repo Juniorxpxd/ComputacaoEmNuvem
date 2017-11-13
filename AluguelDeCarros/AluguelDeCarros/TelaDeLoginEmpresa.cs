@@ -26,6 +26,7 @@ namespace AluguelDeCarros
             empresa.Senha = txtSenha.Text;
             if(EmpresaDAO.BuscarEmpresaPorEmailESenha(empresa) != null)
             {
+                empresa = EmpresaDAO.BuscarEmpresaPorEmailESenha(empresa);
                 this.Close();
                 MenuEmpresa menuEmpresa = new MenuEmpresa();
                 menuEmpresa.ShowDialog();  
@@ -41,5 +42,6 @@ namespace AluguelDeCarros
         {
             Close();
         }
+
     }
 }

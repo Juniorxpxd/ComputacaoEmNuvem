@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data.Entity;
 using System.Threading.Tasks;
 
 namespace AluguelDeCarros.DAO
@@ -26,6 +27,14 @@ namespace AluguelDeCarros.DAO
         public static Empresa BuscarEmpresaPorEmailESenha(Empresa Empresa)
         {
             return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email) && x.Senha.Equals(Empresa.Senha));
+        }
+        public static Empresa BuscarEmpresaPorId(int? id)
+        {
+            return entities.Empresas.Find(id);
+        }
+        public static Empresa BuscarEmpresaPorEmail(Empresa Empresa)
+        {
+            return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email));
         }
     }
 }

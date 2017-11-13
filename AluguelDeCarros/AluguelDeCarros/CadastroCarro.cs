@@ -7,7 +7,9 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,6 +18,7 @@ namespace AluguelDeCarros
     public partial class CadastroCarro : Form
     {
         Carro carro = new Carro();
+        Empresa empresa = new Empresa();
         public CadastroCarro()
         {
             InitializeComponent();
@@ -25,6 +28,17 @@ namespace AluguelDeCarros
         {
             try
             {
+                
+
+                //string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+
+                //System.Environment.UserName.ToString();
+                //if (Thread.CurrentPrincipal.Identity.IsAuthenticated)
+                //{
+                //    empresa.Email = Thread.CurrentPrincipal.Identity.Name;
+                //}
+
+                carro.Empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
                 carro.Nome = txtNome.Text;
                 carro.Cambio = txtCambio.Text;
                 carro.Cor = txtCor.Text;

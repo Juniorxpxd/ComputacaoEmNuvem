@@ -34,7 +34,7 @@ namespace AluguelDeCarros
 
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void pctSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

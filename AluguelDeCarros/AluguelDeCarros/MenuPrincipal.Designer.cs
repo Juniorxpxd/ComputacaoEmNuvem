@@ -28,28 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSair = new System.Windows.Forms.Button();
             this.btnCliente = new System.Windows.Forms.Button();
             this.btnLoginEmpresa = new System.Windows.Forms.Button();
             this.btnPlanos = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.pctSair = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctSair)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnSair
-            // 
-            this.btnSair.BackColor = System.Drawing.SystemColors.Window;
-            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnSair.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnSair.Location = new System.Drawing.Point(377, 377);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(91, 34);
-            this.btnSair.TabIndex = 38;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = false;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnCliente
             // 
@@ -60,7 +47,7 @@
             this.btnCliente.Location = new System.Drawing.Point(152, 295);
             this.btnCliente.Name = "btnCliente";
             this.btnCliente.Size = new System.Drawing.Size(193, 64);
-            this.btnCliente.TabIndex = 37;
+            this.btnCliente.TabIndex = 3;
             this.btnCliente.Text = "Login Cliente";
             this.btnCliente.UseVisualStyleBackColor = false;
             this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
@@ -74,7 +61,7 @@
             this.btnLoginEmpresa.Location = new System.Drawing.Point(152, 207);
             this.btnLoginEmpresa.Name = "btnLoginEmpresa";
             this.btnLoginEmpresa.Size = new System.Drawing.Size(193, 64);
-            this.btnLoginEmpresa.TabIndex = 36;
+            this.btnLoginEmpresa.TabIndex = 2;
             this.btnLoginEmpresa.Text = "Login Empresa";
             this.btnLoginEmpresa.UseVisualStyleBackColor = false;
             this.btnLoginEmpresa.Click += new System.EventHandler(this.btnLoginEmpresa_Click);
@@ -88,7 +75,7 @@
             this.btnPlanos.Location = new System.Drawing.Point(169, 151);
             this.btnPlanos.Name = "btnPlanos";
             this.btnPlanos.Size = new System.Drawing.Size(160, 36);
-            this.btnPlanos.TabIndex = 39;
+            this.btnPlanos.TabIndex = 1;
             this.btnPlanos.Text = "Planos";
             this.btnPlanos.UseVisualStyleBackColor = false;
             this.btnPlanos.Click += new System.EventHandler(this.btnPlanos_Click);
@@ -97,10 +84,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::AluguelDeCarros.Properties.Resources.popcorntime_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 13);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 130);
+            this.pictureBox1.Size = new System.Drawing.Size(132, 130);
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
@@ -109,11 +96,23 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Verdana", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(126, 62);
+            this.label3.Location = new System.Drawing.Point(124, 62);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(308, 42);
             this.label3.TabIndex = 43;
             this.label3.Text = "Menu Principal";
+            // 
+            // pctSair
+            // 
+            this.pctSair.BackColor = System.Drawing.Color.Transparent;
+            this.pctSair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pctSair.Image = global::AluguelDeCarros.Properties.Resources.logout_icon;
+            this.pctSair.Location = new System.Drawing.Point(374, 325);
+            this.pctSair.Name = "pctSair";
+            this.pctSair.Size = new System.Drawing.Size(118, 107);
+            this.pctSair.TabIndex = 44;
+            this.pctSair.TabStop = false;
+            this.pctSair.Click += new System.EventHandler(this.pctSair_Click);
             // 
             // MenuPrincipal
             // 
@@ -122,10 +121,10 @@
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.fantasy_hd_background_18457_18924_hd_wallpapers;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(495, 433);
+            this.Controls.Add(this.pctSair);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnPlanos);
-            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.btnLoginEmpresa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -133,18 +132,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pctSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Button btnLoginEmpresa;
         private System.Windows.Forms.Button btnPlanos;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pctSair;
     }
 }

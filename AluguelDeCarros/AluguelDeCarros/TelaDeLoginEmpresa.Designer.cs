@@ -46,6 +46,7 @@
             // 
             // textBox1
             // 
+            textBox1.AcceptsTab = true;
             textBox1.Cursor = System.Windows.Forms.Cursors.Default;
             textBox1.Location = new System.Drawing.Point(17, 135);
             textBox1.Margin = new System.Windows.Forms.Padding(4);
@@ -54,9 +55,11 @@
             textBox1.ReadOnly = true;
             textBox1.Size = new System.Drawing.Size(61, 40);
             textBox1.TabIndex = 21;
+            textBox1.TabStop = false;
             // 
             // textBox2
             // 
+            textBox2.AcceptsTab = true;
             textBox2.Cursor = System.Windows.Forms.Cursors.Default;
             textBox2.Location = new System.Drawing.Point(17, 199);
             textBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -65,6 +68,7 @@
             textBox2.ReadOnly = true;
             textBox2.Size = new System.Drawing.Size(61, 40);
             textBox2.TabIndex = 23;
+            textBox2.TabStop = false;
             // 
             // btnEntrar
             // 
@@ -75,7 +79,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(262, 275);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(122, 52);
-            this.btnEntrar.TabIndex = 0;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -87,7 +91,7 @@
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(289, 40);
-            this.txtEmail.TabIndex = 4;
+            this.txtEmail.TabIndex = 0;
             // 
             // txtSenha
             // 
@@ -97,7 +101,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(289, 40);
-            this.txtSenha.TabIndex = 5;
+            this.txtSenha.TabIndex = 1;
             // 
             // pictureBox3
             // 
@@ -142,7 +146,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(17, 275);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(122, 52);
-            this.btnVoltar.TabIndex = 25;
+            this.btnVoltar.TabIndex = 3;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
