@@ -2,12 +2,15 @@
 Conexão com o banco no App.Config:
 - Não Alterar NADA na APP.CONFIG !!!!!!!!
 - Usar essa conexão que já esta definido no app.config no seu SQL SERVER MANAGEMENT STUDIO
-- (LocalDB)\MSSQLLocalDB
+- Servidor: (LocalDB)\MSSQLLocalDB
 - Se não tiver esse servidor criado no seu computador, ir no Prompt de Comando ou CMD
+- Ver os servidores criados no pc: sqllocaldb list
 - Digitar: sqllocaldb create "MSSQLLocalDB"
+- No management studio, criar uma database chamada : AluguelCarros
 - EntityFramework já está instalado, não precisa instalar novamente no projeto
 - Migrations já instalada, não precisa instalar novamente no projeto
 - Add-migration está automática
+- No visual studio fazer um: update-database -force
 
 Sprint 1 - Entrega 14/11/2017
 
