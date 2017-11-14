@@ -63,6 +63,16 @@ namespace AluguelDeCarros.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _303066 {
+            get {
+                object obj = ResourceManager.GetObject("303066", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _568653 {
             get {
                 object obj = ResourceManager.GetObject("568653", resourceCulture);
@@ -86,6 +96,16 @@ namespace AluguelDeCarros.Properties {
         internal static System.Drawing.Bitmap arrow_next_1_icon {
             get {
                 object obj = ResourceManager.GetObject("arrow-next-1-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Carros_Antigos {
+            get {
+                object obj = ResourceManager.GetObject("Carros-Antigos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

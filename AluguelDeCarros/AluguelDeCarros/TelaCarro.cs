@@ -8,23 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace AluguelDeCarros
 {
-    public partial class MenuPrincipalCliente : Form
+    public partial class TelaCarro : Form
     {
-        private string email;
-
-        public MenuPrincipalCliente(string email)
+        public TelaCarro()
         {
-            this.email = email;
             InitializeComponent();
         }
 
-        private void btnCarros_Click(object sender, EventArgs e)
+        private void btnFechar_Click(object sender, EventArgs e)
         {
-            TelaCarro listaCarro = new TelaCarro();
-            listaCarro.ShowDialog();
+            Close();
         }
     }
 }

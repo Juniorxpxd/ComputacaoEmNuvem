@@ -37,5 +37,16 @@ namespace AluguelDeCarros
             CadastroEmpresa cadEmpresa = new CadastroEmpresa();
             cadEmpresa.ShowDialog();
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnCarros_Click(object sender, EventArgs e)
+        {
+            TelaCarro listaCarro = new TelaCarro();
+            listaCarro.ShowDialog();
+        }
     }
 }
