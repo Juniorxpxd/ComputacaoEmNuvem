@@ -34,14 +34,14 @@
             this.tbCarros = new System.Windows.Forms.TabPage();
             this.txtInicialCarro = new System.Windows.Forms.TextBox();
             this.lblIniciais = new System.Windows.Forms.Label();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.lstCarros = new System.Windows.Forms.ListView();
             this.Placa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Marca = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Nome = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Disponibilidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Ano = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Preco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Disponibilidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.grpCarros.SuspendLayout();
             this.tbDados.SuspendLayout();
             this.tbCarros.SuspendLayout();
@@ -121,18 +121,6 @@
             this.lblIniciais.TabIndex = 3;
             this.lblIniciais.Text = "Nome do Carro";
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.ForeColor = System.Drawing.Color.Black;
-            this.btnConsultar.Location = new System.Drawing.Point(552, 9);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(82, 25);
-            this.btnConsultar.TabIndex = 1;
-            this.btnConsultar.Text = "&OK";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
             // lstCarros
             // 
             this.lstCarros.Activation = System.Windows.Forms.ItemActivation.OneClick;
@@ -169,11 +157,6 @@
             this.Nome.Text = "Nome";
             this.Nome.Width = 140;
             // 
-            // Disponibilidade
-            // 
-            this.Disponibilidade.Text = "Disponibilidade";
-            this.Disponibilidade.Width = 121;
-            // 
             // Ano
             // 
             this.Ano.Text = "Ano";
@@ -181,8 +164,25 @@
             // 
             // Preco
             // 
-            this.Preco.Text = "Preço";
-            this.Preco.Width = 81;
+            this.Preco.Text = "Preço - Diária";
+            this.Preco.Width = 115;
+            // 
+            // Disponibilidade
+            // 
+            this.Disponibilidade.Text = "Disponibilidade";
+            this.Disponibilidade.Width = 121;
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.Black;
+            this.btnConsultar.Location = new System.Drawing.Point(552, 9);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(82, 25);
+            this.btnConsultar.TabIndex = 1;
+            this.btnConsultar.Text = "&OK";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // TelaCarro
             // 
