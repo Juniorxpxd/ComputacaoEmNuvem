@@ -31,20 +31,34 @@ namespace AluguelDeCarros
 
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-            Cliente cliente = new Cliente();
-            cliente.Email = txtEmail.Text;
-            cliente.Senha = txtSenha.Text;
-            if (ClienteDAO.BuscarClientePorEmailESenha(cliente) != null)
+            if (!txtEmail.Text.Equals(""))
             {
-                cliente = ClienteDAO.BuscarClientePorEmailESenha(cliente);
-                this.Close();
-                MenuPrincipalCliente menuPrincipalCliente = new MenuPrincipalCliente(cliente.Email);
-                menuPrincipalCliente.ShowDialog();
+                if (!txtSenha.Text.Equals(""))
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.Email = txtEmail.Text;
+                    cliente.Senha = txtSenha.Text;
+                    if (ClienteDAO.BuscarClientePorEmailESenha(cliente) != null)
+                    {
+                        cliente = ClienteDAO.BuscarClientePorEmailESenha(cliente);
+                        this.Close();
+                        MenuPrincipalCliente menuPrincipalCliente = new MenuPrincipalCliente(cliente.Email);
+                        menuPrincipalCliente.ShowDialog();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login ou Senha Inválida", "Dados Inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("O campo Senha é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             else
             {
-                MessageBox.Show("Login ou Senha Inválida", "Dados Inválidos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                MessageBox.Show("O campo Email é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }
