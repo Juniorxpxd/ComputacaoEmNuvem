@@ -43,6 +43,7 @@ namespace AluguelDeCarros
                 carro.Portas = int.Parse(txtPorta.Text);
                 carro.Ano = int.Parse(txtAno.Text);
                 carro.Preco = txtPreco.Text;
+                carro.EstadoDisp = true;
                 CarroDAO.Incluir(carro);
 
                 MessageBox.Show("O cadastro do carro: " + carro.Nome + " foi concluido com sucesso", "Cadastrado");

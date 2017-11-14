@@ -23,5 +23,6 @@ namespace AluguelDeCarros.Model
         public int Ano { get; set; }
         public int Portas { get; set; }
         public string Preco { get; set; }
+        public bool EstadoDisp { get; set; }
     }
 }

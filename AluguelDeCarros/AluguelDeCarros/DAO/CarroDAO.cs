@@ -23,5 +23,38 @@ namespace AluguelDeCarros.DAO
                 return false;
             }
         }
+        public static IOrderedEnumerable<Carro> ObterCarros()
+        {
+            try
+            {
+                return entities.Carros.ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static IOrderedEnumerable<Carro> ObterCarros(string iniciais)
+        {
+            try
+            {
+                return entities.Carros.Where(x => x.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static string EstadoDisp(bool EstadoDisp)
+        {
+            if (EstadoDisp == true)
+            {
+                return "Disponivel";
+            }
+            else
+            {
+                return "Alugado";
+            }
+        }
     }
 }
