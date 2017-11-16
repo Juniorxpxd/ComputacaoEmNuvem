@@ -96,6 +96,7 @@
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(169, 26);
             this.txtAno.TabIndex = 2;
+            this.txtAno.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAno_KeyPress);
             // 
             // lblAno
             // 
@@ -172,6 +173,7 @@
             this.txtPorta.Name = "txtPorta";
             this.txtPorta.Size = new System.Drawing.Size(169, 26);
             this.txtPorta.TabIndex = 3;
+            this.txtPorta.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPorta_KeyPress);
             // 
             // lblPorta
             // 
