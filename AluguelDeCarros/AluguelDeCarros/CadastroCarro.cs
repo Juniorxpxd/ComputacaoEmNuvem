@@ -34,20 +34,93 @@ namespace AluguelDeCarros
                 empresa.Email = this.email;
                 empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
                 carro.Empresa = empresa;
-                carro.Nome = txtNome.Text;
-                carro.Cambio = txtCambio.Text;
-                carro.Cor = txtCor.Text;
-                carro.Marca = txtMarca.Text;
-                carro.Quilometragem = txtQuilometragem.Text;
-                carro.Placa = txtPlaca.Text;
-                carro.Portas = int.Parse(txtPorta.Text);
-                carro.Ano = int.Parse(txtAno.Text);
-                carro.Preco = txtPreco.Text;
-                carro.EstadoDisp = true;
-                CarroDAO.Incluir(carro);
+                if (!txtNome.Equals(""))
+                {
+                    if (!txtCambio.Equals(""))
+                    {
+                        if (!txtCor.Equals(""))
+                        {
+                            if (!txtMarca.Equals(""))
+                            {
+                                if (!txtQuilometragem.Equals(""))
+                                {
+                                    if (!txtPlaca.Equals(""))
+                                    {
+                                        if (!txtPorta.Equals(""))
+                                        {
+                                            if (!txtAno.Equals(""))
+                                            {
+                                                if (!txtPreco.Equals(""))
+                                                {
+                                                    carro.Placa = txtPlaca.Text;
+                                                    if (CarroDAO.BuscarCarroPorPlaca(carro) == null)
+                                                    {
+                                                        carro.Placa = txtPlaca.Text;
+                                                        carro.Nome = txtNome.Text;
+                                                        carro.Cambio = txtCambio.Text;
+                                                        carro.Cor = txtCor.Text;
+                                                        carro.Marca = txtMarca.Text;
+                                                        carro.Quilometragem = txtQuilometragem.Text;
+                                                        carro.Portas = int.Parse(txtPorta.Text);
+                                                        carro.Ano = int.Parse(txtAno.Text);
+                                                        carro.Preco = txtPreco.Text;
+                                                        carro.EstadoDisp = true;
+                                                        CarroDAO.Incluir(carro);
 
-                MessageBox.Show("O cadastro do carro: " + carro.Nome + " foi concluido com sucesso", "Cadastrado");
-                this.Close();
+                                                        MessageBox.Show("O cadastro do carro: " + carro.Nome + " foi concluido com sucesso", "Cadastrado");
+                                                        this.Close();
+                                                    }else
+                                                    {
+                                                        MessageBox.Show("Placa já foi Registrado.", "Placa já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    MessageBox.Show("O campo Preço é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                }
+                                            }
+                                            else
+                                            {
+                                                MessageBox.Show("O campo Ano é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                            }
+                                        }
+                                        else
+                                        {
+                                            MessageBox.Show("O campo Portas é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        MessageBox.Show("O campo Placa é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("O campo Quilometragem é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("O campo Marca é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+
+                        else
+                        {
+                            MessageBox.Show("O campo Cor é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+
+                    else
+                    {
+                        MessageBox.Show("O campo Câmbio é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("O campo Nome é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+
             }
             catch (SqlException e)
             {
