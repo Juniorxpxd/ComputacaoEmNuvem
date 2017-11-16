@@ -49,6 +49,7 @@
             this.lblPorta = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.Mostrar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNome
@@ -237,13 +238,14 @@
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSalvar.Location = new System.Drawing.Point(217, 310);
+            this.btnSalvar.Location = new System.Drawing.Point(306, 310);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(159, 59);
+            this.btnSalvar.Size = new System.Drawing.Size(89, 59);
             this.btnSalvar.TabIndex = 187;
             this.btnSalvar.Text = "Editar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnVoltar
             // 
@@ -259,6 +261,22 @@
             this.btnVoltar.Text = "Excluir";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
+            // Mostrar
+            // 
+            this.Mostrar.BackColor = System.Drawing.SystemColors.Window;
+            this.Mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mostrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Mostrar.Location = new System.Drawing.Point(193, 310);
+            this.Mostrar.Name = "Mostrar";
+            this.Mostrar.Size = new System.Drawing.Size(89, 59);
+            this.Mostrar.TabIndex = 198;
+            this.Mostrar.Text = "Mostrar";
+            this.Mostrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Mostrar.UseVisualStyleBackColor = false;
+            this.Mostrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // EditarExcluirCadastroCarro
             // 
@@ -267,6 +285,7 @@
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.images__3_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(407, 373);
+            this.Controls.Add(this.Mostrar);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.btnSalvar);
@@ -289,6 +308,7 @@
             this.Controls.Add(this.lblPorta);
             this.Name = "EditarExcluirCadastroCarro";
             this.Text = "EditarExcluirCadastroCarro";
+            this.Load += new System.EventHandler(this.EditarExcluirCadastroCarro_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -316,5 +336,6 @@
         private System.Windows.Forms.TextBox txtPorta;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label lblPorta;
+        private System.Windows.Forms.Button Mostrar;
     }
 }

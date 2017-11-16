@@ -56,5 +56,10 @@ namespace AluguelDeCarros.DAO
                 return "Alugado";
             }
         }
+
+        public static Carro obterPlaca(Carro carro)
+        {
+            return entities.Carros.FirstOrDefault (x => x.Placa.Equals(carro.Placa));
+        }
     }
 }
