@@ -29,6 +29,20 @@ namespace AluguelDeCarros.DAO
             return entities.Clientes.FirstOrDefault(x => x.Email.Equals(cliente.Email) && x.Senha.Equals(cliente.Senha));
         }
 
-        
+        public static Cliente BuscarClientePorCPF(Cliente Cliente)
+        {
+            return entities.Clientes.FirstOrDefault(x => x.Cpf.Equals(Cliente.Cpf));
+        }
+
+        public static Cliente BuscarClientePorRG(Cliente Cliente)
+        {
+            return entities.Clientes.FirstOrDefault(x => x.Rg.Equals(Cliente.Rg));
+        }
+        public static Cliente BuscarCLientePorEmail(Cliente Cliente)
+        {
+            return entities.Clientes.FirstOrDefault(x => x.Email.Equals(Cliente.Email));
+        }
+
+
     }
 }
