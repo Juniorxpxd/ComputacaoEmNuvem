@@ -34,23 +34,23 @@ namespace AluguelDeCarros
                 empresa.Email = this.email;
                 empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
                 carro.Empresa = empresa;
-                if (!txtNome.Equals(""))
+                if (!txtNome.Text.Equals(""))
                 {
-                    if (!txtCambio.Equals(""))
+                    if (!txtCambio.Text.Equals(""))
                     {
-                        if (!txtCor.Equals(""))
+                        if (!txtCor.Text.Equals(""))
                         {
-                            if (!txtMarca.Equals(""))
+                            if (!txtMarca.Text.Equals(""))
                             {
-                                if (!txtQuilometragem.Equals(""))
+                                if (!txtQuilometragem.Text.Equals(""))
                                 {
-                                    if (!txtPlaca.Equals(""))
+                                    if (!txtPlaca.Text.Equals(""))
                                     {
-                                        if (!txtPorta.Equals(""))
+                                        if (!txtPorta.Text.Equals(""))
                                         {
-                                            if (!txtAno.Equals(""))
+                                            if (!txtAno.Text.Equals(""))
                                             {
-                                                if (!txtPreco.Equals(""))
+                                                if (!txtPreco.Text.Equals(""))
                                                 {
                                                     carro.Placa = txtPlaca.Text;
                                                     if (CarroDAO.BuscarCarroPorPlaca(carro) == null)
