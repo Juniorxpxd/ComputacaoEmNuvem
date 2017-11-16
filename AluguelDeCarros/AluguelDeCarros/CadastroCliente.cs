@@ -55,5 +55,10 @@ namespace AluguelDeCarros
         {
             Close();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

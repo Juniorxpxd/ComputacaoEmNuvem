@@ -28,5 +28,7 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Clientes.FirstOrDefault(x => x.Email.Equals(cliente.Email) && x.Senha.Equals(cliente.Senha));
         }
+
+        
     }
 }
