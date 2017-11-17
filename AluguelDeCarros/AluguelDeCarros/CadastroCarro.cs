@@ -53,7 +53,7 @@ namespace AluguelDeCarros
                                                 if (!txtPreco.Text.Equals(""))
                                                 {
                                                     carro.Placa = txtPlaca.Text;
-                                                    if (CarroDAO.BuscarCarroPorPlaca(carro) == null)
+                                                    if (CarroDAO.obterPlaca(carro) == null)
                                                     {
                                                         carro.Placa = txtPlaca.Text;
                                                         carro.Nome = txtNome.Text;

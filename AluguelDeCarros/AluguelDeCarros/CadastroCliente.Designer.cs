@@ -332,7 +332,6 @@
             this.groupBox1.TabIndex = 179;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do Cliente";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnVoltar
             // 
