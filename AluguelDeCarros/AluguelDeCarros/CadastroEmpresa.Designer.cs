@@ -79,7 +79,7 @@
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(440, 114);
+            this.txtRua.Location = new System.Drawing.Point(497, 114);
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(161, 26);
@@ -91,7 +91,7 @@
             this.lblRua.BackColor = System.Drawing.Color.Transparent;
             this.lblRua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRua.ForeColor = System.Drawing.Color.Black;
-            this.lblRua.Location = new System.Drawing.Point(436, 91);
+            this.lblRua.Location = new System.Drawing.Point(493, 91);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(42, 20);
             this.lblRua.TabIndex = 141;
@@ -102,7 +102,7 @@
             this.txtCid.Location = new System.Drawing.Point(279, 219);
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
-            this.txtCid.Size = new System.Drawing.Size(142, 26);
+            this.txtCid.Size = new System.Drawing.Size(180, 26);
             this.txtCid.TabIndex = 138;
             // 
             // lblCid
@@ -122,6 +122,7 @@
             this.txtSenha.Location = new System.Drawing.Point(33, 164);
             this.txtSenha.MaxLength = 100;
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(204, 26);
             this.txtSenha.TabIndex = 124;
             // 
@@ -162,7 +163,7 @@
             this.txtEst.Location = new System.Drawing.Point(279, 164);
             this.txtEst.MaxLength = 100;
             this.txtEst.Name = "txtEst";
-            this.txtEst.Size = new System.Drawing.Size(141, 26);
+            this.txtEst.Size = new System.Drawing.Size(180, 26);
             this.txtEst.TabIndex = 130;
             // 
             // lblEst
@@ -182,9 +183,10 @@
             this.mskCNPJ.Location = new System.Drawing.Point(280, 62);
             this.mskCNPJ.Mask = "99\\.999\\.999\\/9999\\-99";
             this.mskCNPJ.Name = "mskCNPJ";
-            this.mskCNPJ.Size = new System.Drawing.Size(141, 26);
+            this.mskCNPJ.Size = new System.Drawing.Size(179, 26);
             this.mskCNPJ.TabIndex = 125;
             this.mskCNPJ.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskCNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCNPJ_KeyPress);
             // 
             // lblCel
             // 
@@ -192,7 +194,7 @@
             this.lblCel.BackColor = System.Drawing.Color.Transparent;
             this.lblCel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCel.ForeColor = System.Drawing.Color.Black;
-            this.lblCel.Location = new System.Drawing.Point(436, 39);
+            this.lblCel.Location = new System.Drawing.Point(493, 39);
             this.lblCel.Name = "lblCel";
             this.lblCel.Size = new System.Drawing.Size(65, 20);
             this.lblCel.TabIndex = 132;
@@ -224,12 +226,13 @@
             // 
             // mskCel
             // 
-            this.mskCel.Location = new System.Drawing.Point(440, 62);
+            this.mskCel.Location = new System.Drawing.Point(497, 62);
             this.mskCel.Mask = "\\(99\\) 99999 \\- 9999";
             this.mskCel.Name = "mskCel";
             this.mskCel.Size = new System.Drawing.Size(161, 26);
             this.mskCel.TabIndex = 129;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskCel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCel_KeyPress);
             // 
             // txtNome
             // 
@@ -244,9 +247,10 @@
             this.mskTel.Location = new System.Drawing.Point(279, 114);
             this.mskTel.Mask = "\\(99\\) 9999 \\- 9999";
             this.mskTel.Name = "mskTel";
-            this.mskTel.Size = new System.Drawing.Size(141, 26);
+            this.mskTel.Size = new System.Drawing.Size(180, 26);
             this.mskTel.TabIndex = 128;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
+            this.mskTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskTel_KeyPress);
             // 
             // lblNome
             // 
@@ -266,7 +270,7 @@
             this.lblPlano.BackColor = System.Drawing.Color.Transparent;
             this.lblPlano.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlano.ForeColor = System.Drawing.Color.Black;
-            this.lblPlano.Location = new System.Drawing.Point(436, 143);
+            this.lblPlano.Location = new System.Drawing.Point(493, 143);
             this.lblPlano.Name = "lblPlano";
             this.lblPlano.Size = new System.Drawing.Size(63, 20);
             this.lblPlano.TabIndex = 146;
@@ -275,7 +279,7 @@
             // cmbPlano
             // 
             this.cmbPlano.FormattingEnabled = true;
-            this.cmbPlano.Location = new System.Drawing.Point(440, 162);
+            this.cmbPlano.Location = new System.Drawing.Point(497, 162);
             this.cmbPlano.Name = "cmbPlano";
             this.cmbPlano.Size = new System.Drawing.Size(161, 28);
             this.cmbPlano.TabIndex = 147;
@@ -299,7 +303,7 @@
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Image = ((System.Drawing.Image)(resources.GetObject("btnVoltar.Image")));
             this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVoltar.Location = new System.Drawing.Point(512, 268);
+            this.btnVoltar.Location = new System.Drawing.Point(569, 268);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(89, 51);
             this.btnVoltar.TabIndex = 149;
@@ -310,7 +314,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
+            this.groupBox1.BackgroundImage = global::AluguelDeCarros.Properties.Resources.Business_hand_shake1;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Controls.Add(this.lblNome);
             this.groupBox1.Controls.Add(this.btnVoltar);
@@ -340,7 +344,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(31, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(629, 336);
+            this.groupBox1.Size = new System.Drawing.Size(679, 336);
             this.groupBox1.TabIndex = 150;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados da Empresa";
@@ -349,9 +353,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.Business_hand_shake;
+            this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(692, 365);
+            this.ClientSize = new System.Drawing.Size(742, 365);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "CadastroEmpresa";

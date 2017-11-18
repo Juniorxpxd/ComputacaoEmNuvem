@@ -36,5 +36,13 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email));
         }
+        public static Empresa BuscarEmpresaPorCNPJ(Empresa Empresa)
+        {
+            return entities.Empresas.FirstOrDefault(x => x.CNPJ.Equals(Empresa.CNPJ));
+        }
+        public static Empresa BuscarEmpresaPorNomeEmpresa(Empresa Empresa)
+        {
+            return entities.Empresas.FirstOrDefault(x => x.NomeEmpresa.Equals(Empresa.NomeEmpresa));
+        }
     }
 }
