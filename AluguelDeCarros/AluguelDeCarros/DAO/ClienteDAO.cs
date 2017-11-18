@@ -43,6 +43,32 @@ namespace AluguelDeCarros.DAO
             return entities.Clientes.FirstOrDefault(x => x.Email.Equals(Cliente.Email));
         }
 
+        public static bool Excluir(Cliente Cliente)
+        {
+            try
+            {
+                entities.Clientes.Remove(Cliente);
+                entities.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
+        public static bool Editar(Cliente Cliente)
+        { 
+            try
+            {
+                entities.Clientes.Update(Cliente);
+                entities.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

@@ -61,5 +61,31 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Carros.FirstOrDefault (x => x.Placa.Equals(carro.Placa));
         }
+        public static bool Excluir(Carro Carro)
+        {
+            try
+            {
+                entities.Carros.Remove(Carro);
+                entities.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        public static bool Editar(Carro Carro)
+        {
+            try
+            {
+                entities.Carros.Update(Carro);
+                entities.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
     }
 }

@@ -130,6 +130,7 @@
             this.btnVoltar.TabIndex = 157;
             this.btnVoltar.Text = "Excluir";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // txtRua
             // 
