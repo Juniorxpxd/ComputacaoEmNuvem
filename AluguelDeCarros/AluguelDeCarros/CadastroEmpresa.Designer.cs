@@ -102,7 +102,7 @@
             this.txtCid.Location = new System.Drawing.Point(279, 219);
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
-            this.txtCid.Size = new System.Drawing.Size(141, 26);
+            this.txtCid.Size = new System.Drawing.Size(142, 26);
             this.txtCid.TabIndex = 138;
             // 
             // lblCid
