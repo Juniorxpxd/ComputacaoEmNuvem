@@ -1,6 +1,7 @@
 ﻿using AluguelDeCarros.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -61,7 +62,7 @@ namespace AluguelDeCarros.DAO
         { 
             try
             {
-                entities.Clientes.Update(Cliente);
+                entities.Entry(Cliente).State = EntityState.Modified;
                 entities.SaveChanges();
                 return true;
             }

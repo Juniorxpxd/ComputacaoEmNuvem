@@ -66,6 +66,7 @@ namespace AluguelDeCarros
                                                                     EmpresaDAO.Incluir(empresa);
 
                                                                     MessageBox.Show("O cadastro da empresa: " + empresa.NomeEmpresa + " foi concluido com sucesso", "Cadastrado");
+                                                                    this.Close();
                                                                 }
                                                                 else
                                                                 {
@@ -172,6 +173,11 @@ namespace AluguelDeCarros
             {
                 e.Handled = true;
             }
+        }
+
+        private void CadastroEmpresa_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

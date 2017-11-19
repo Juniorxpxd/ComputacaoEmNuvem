@@ -1,6 +1,7 @@
 ﻿using AluguelDeCarros.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,7 +57,18 @@ namespace AluguelDeCarros.DAO
                 return "Alugado";
             }
         }
-
+        public static string Plano(int Plano)
+        {
+          
+            if (Plano == 1)
+            {
+                return "Pequeno";
+            }
+            else
+            {
+                return "Grande";
+            }
+        }
         public static Carro obterPlaca(Carro carro)
         {
             return entities.Carros.FirstOrDefault (x => x.Placa.Equals(carro.Placa));
@@ -78,7 +90,7 @@ namespace AluguelDeCarros.DAO
         {
             try
             {
-                entities.Carros.Update(Carro);
+                entities.Entry(Carro).State = EntityState.Modified;
                 entities.SaveChanges();
                 return true;
             }
