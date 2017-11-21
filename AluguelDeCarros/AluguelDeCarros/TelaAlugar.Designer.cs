@@ -194,6 +194,7 @@
             // 
             // txtDays
             // 
+            this.txtDays.Enabled = false;
             this.txtDays.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDays.Location = new System.Drawing.Point(505, 88);
             this.txtDays.Name = "txtDays";
