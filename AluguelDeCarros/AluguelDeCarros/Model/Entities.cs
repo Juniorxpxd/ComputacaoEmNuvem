@@ -12,5 +12,6 @@ namespace AluguelDeCarros.Model
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Carro> Carros { get; set; }
         public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<Alugado> Alugados { get; set; }
     }
 }

@@ -55,7 +55,7 @@ namespace AluguelDeCarros
                     carro.Placa = txtPlaca.Text;
                     carro.Portas = int.Parse(txtPorta.Text);
                     carro.Ano = int.Parse(txtAno.Text);
-                    carro.Preco = txtPreco.Text;
+                    carro.Preco = double.Parse(txtPreco.Text);
                     carro.EstadoDisp = true;
                 }
                 else

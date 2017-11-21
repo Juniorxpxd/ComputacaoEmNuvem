@@ -41,7 +41,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnAssinarPequeno = new System.Windows.Forms.Button();
-            this.btnAssinarGigante = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -128,14 +127,6 @@
             this.btnAssinarPequeno.UseVisualStyleBackColor = false;
             this.btnAssinarPequeno.Click += new System.EventHandler(this.btnAssinarPequeno_Click);
             // 
-            // btnAssinarGigante
-            // 
-            this.btnAssinarGigante.BackColor = System.Drawing.SystemColors.Window;
-            resources.ApplyResources(this.btnAssinarGigante, "btnAssinarGigante");
-            this.btnAssinarGigante.Name = "btnAssinarGigante";
-            this.btnAssinarGigante.UseVisualStyleBackColor = false;
-            this.btnAssinarGigante.Click += new System.EventHandler(this.btnAssinarGigante_Click);
-            // 
             // btnVoltar
             // 
             this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
@@ -150,7 +141,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnAssinarGigante);
             this.Controls.Add(this.btnAssinarPequeno);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -187,7 +177,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAssinarPequeno;
-        private System.Windows.Forms.Button btnAssinarGigante;
         private System.Windows.Forms.Button btnVoltar;
     }
 }

@@ -28,7 +28,7 @@ namespace AluguelDeCarros.DAO
         {
             try
             {
-                return entities.Carros.ToList().OrderBy(x => x.Placa);
+                return entities.Carros.Include("Empresa").ToList().OrderBy(x => x.Placa);
             }
             catch
             {
@@ -39,7 +39,51 @@ namespace AluguelDeCarros.DAO
         {
             try
             {
-                return entities.Carros.Where(x => x.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+                return entities.Carros.Include("Empresa").Where(x => x.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static IOrderedEnumerable<Carro> ObterCarrosCidade(string iniciais)
+        {
+            try
+            {
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Cidade.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static IOrderedEnumerable<Carro> ObterCarrosEmpresa(string iniciais)
+        {
+            try
+            {
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static IEnumerable<Carro> ObterCarrosPelaEmpresa(Carro carro)
+        {
+            try
+            {
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Id == carro.Empresa.Id);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static IEnumerable<Carro> ObterCarrosPelaEmpresa(string iniciais, Carro carro)
+        {
+            try
+            {
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Id == carro.Empresa.Id && x.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
             }
             catch
             {

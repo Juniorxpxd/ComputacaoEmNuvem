@@ -45,7 +45,7 @@ namespace AluguelDeCarros
 
         private void btnCarros_Click(object sender, EventArgs e)
         {
-            TelaCarro listaCarro = new TelaCarro();
+            TelaCarro listaCarro = new TelaCarro(this.email);
             listaCarro.ShowDialog();
         }
     }
