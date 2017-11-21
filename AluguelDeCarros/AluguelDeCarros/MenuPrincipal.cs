@@ -50,5 +50,10 @@ namespace AluguelDeCarros
             CadastrarPlano CadastrarPlano = new CadastrarPlano();
             CadastrarPlano.ShowDialog();
         }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

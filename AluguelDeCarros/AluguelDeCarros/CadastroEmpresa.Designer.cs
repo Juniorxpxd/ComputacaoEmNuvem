@@ -278,6 +278,7 @@
             // 
             // cmbPlano
             // 
+            this.cmbPlano.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbPlano.FormattingEnabled = true;
             this.cmbPlano.Location = new System.Drawing.Point(497, 162);
             this.cmbPlano.Name = "cmbPlano";

@@ -147,6 +147,7 @@
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).EndInit();
             this.ResumeLayout(false);

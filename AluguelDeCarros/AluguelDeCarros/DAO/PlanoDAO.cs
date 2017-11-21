@@ -28,5 +28,15 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Planos.FirstOrDefault(x => x.PlanoCarro.Equals(Plano.PlanoCarro));
         }
+
+        public static IOrderedEnumerable<Plano> obterPlanos()
+        {
+            return entities.Planos.ToList().OrderBy(x => x.PlanoCarro);
+        }
+
+        public static Plano NomeMesmo(Plano Plano)
+        {
+            return entities.Planos.FirstOrDefault(x => x.PlanoCarro.Equals(Plano.PlanoCarro));
+        }
     }
 }

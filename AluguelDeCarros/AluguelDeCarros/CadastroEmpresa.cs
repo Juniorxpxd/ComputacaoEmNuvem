@@ -63,6 +63,10 @@ namespace AluguelDeCarros
                                                                     empresa.Rua = txtRua.Text;
                                                                     empresa.Senha = txtSenha.Text;
                                                                     empresa.Telefone = mskTel.Text;
+                                                                    Plano Plano = new Plano();
+                                                                    Plano.PlanoCarro = cmbPlano.Text;
+                                                                    Plano = PlanoDAO.NomeMesmo(Plano);
+                                                                    empresa.Plano = Plano;
                                                                     EmpresaDAO.Incluir(empresa);
 
                                                                     MessageBox.Show("O cadastro da empresa: " + empresa.NomeEmpresa + " foi concluido com sucesso", "Cadastrado");
@@ -177,7 +181,10 @@ namespace AluguelDeCarros
 
         private void CadastroEmpresa_Load(object sender, EventArgs e)
         {
-
+            foreach (Plano x in PlanoDAO.obterPlanos())
+            {
+                cmbPlano.Items.Add(x.PlanoCarro);
+            }
         }
     }
 }
