@@ -33,15 +33,12 @@
             this.txtReceiptNumber = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
-            this.btnRentalRates = new System.Windows.Forms.Button();
             this.txtRateApplied = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.lblPedido = new System.Windows.Forms.Label();
             this.txtOrderTotal = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.txtSubTotal = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.txtDays = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
@@ -68,6 +65,8 @@
             this.lblQuilometragem = new System.Windows.Forms.Label();
             this.txtCor = new System.Windows.Forms.TextBox();
             this.lblCor = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtSubTotal = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnPedido
@@ -77,8 +76,9 @@
             this.btnPedido.Name = "btnPedido";
             this.btnPedido.Size = new System.Drawing.Size(216, 31);
             this.btnPedido.TabIndex = 204;
-            this.btnPedido.Text = "Novo Pedido Locação/Resetar";
+            this.btnPedido.Text = "Novo Pedido ";
             this.btnPedido.UseVisualStyleBackColor = true;
+            this.btnPedido.Click += new System.EventHandler(this.btnPedido_Click);
             // 
             // btnClose
             // 
@@ -116,22 +116,13 @@
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(632, 194);
+            this.btnCalculate.Location = new System.Drawing.Point(632, 180);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(98, 23);
             this.btnCalculate.TabIndex = 201;
             this.btnCalculate.Text = "Calcular";
             this.btnCalculate.UseVisualStyleBackColor = true;
-            // 
-            // btnRentalRates
-            // 
-            this.btnRentalRates.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRentalRates.Location = new System.Drawing.Point(632, 140);
-            this.btnRentalRates.Name = "btnRentalRates";
-            this.btnRentalRates.Size = new System.Drawing.Size(98, 23);
-            this.btnRentalRates.TabIndex = 199;
-            this.btnRentalRates.Text = "Taxas";
-            this.btnRentalRates.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // txtRateApplied
             // 
@@ -183,7 +174,7 @@
             // 
             this.txtOrderTotal.Enabled = false;
             this.txtOrderTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOrderTotal.Location = new System.Drawing.Point(539, 192);
+            this.txtOrderTotal.Location = new System.Drawing.Point(539, 180);
             this.txtOrderTotal.Name = "txtOrderTotal";
             this.txtOrderTotal.Size = new System.Drawing.Size(69, 22);
             this.txtOrderTotal.TabIndex = 202;
@@ -195,33 +186,11 @@
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.Color.Transparent;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(407, 197);
+            this.label24.Location = new System.Drawing.Point(407, 184);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(93, 16);
             this.label24.TabIndex = 230;
             this.label24.Text = "Valor Total :";
-            // 
-            // txtSubTotal
-            // 
-            this.txtSubTotal.Enabled = false;
-            this.txtSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubTotal.Location = new System.Drawing.Point(539, 167);
-            this.txtSubTotal.Name = "txtSubTotal";
-            this.txtSubTotal.Size = new System.Drawing.Size(69, 22);
-            this.txtSubTotal.TabIndex = 200;
-            this.txtSubTotal.Text = "0.00";
-            this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(407, 171);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(80, 16);
-            this.label26.TabIndex = 229;
-            this.label26.Text = "Sub-Total:";
             // 
             // txtDays
             // 
@@ -251,6 +220,7 @@
             this.dtpEndDate.Name = "dtpEndDate";
             this.dtpEndDate.Size = new System.Drawing.Size(225, 22);
             this.dtpEndDate.TabIndex = 196;
+            this.dtpEndDate.ValueChanged += new System.EventHandler(this.dtpEndDate_ValueChanged);
             // 
             // label23
             // 
@@ -270,6 +240,7 @@
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(225, 22);
             this.dtpStartDate.TabIndex = 195;
+            this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // label21
             // 
@@ -488,10 +459,36 @@
             this.lblCor.TabIndex = 242;
             this.lblCor.Text = "Cor :";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(407, 171);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(80, 16);
+            this.label26.TabIndex = 229;
+            this.label26.Text = "Sub-Total:";
+            this.label26.Visible = false;
+            // 
+            // txtSubTotal
+            // 
+            this.txtSubTotal.Enabled = false;
+            this.txtSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubTotal.Location = new System.Drawing.Point(539, 167);
+            this.txtSubTotal.Name = "txtSubTotal";
+            this.txtSubTotal.Size = new System.Drawing.Size(69, 22);
+            this.txtSubTotal.TabIndex = 200;
+            this.txtSubTotal.Text = "0.00";
+            this.txtSubTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtSubTotal.Visible = false;
+            // 
             // TelaAlugar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(744, 314);
             this.Controls.Add(this.txtCor);
             this.Controls.Add(this.lblCor);
@@ -510,7 +507,6 @@
             this.Controls.Add(this.txtReceiptNumber);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.btnCalculate);
-            this.Controls.Add(this.btnRentalRates);
             this.Controls.Add(this.txtRateApplied);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.label33);
@@ -549,15 +545,12 @@
         private System.Windows.Forms.TextBox txtReceiptNumber;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Button btnRentalRates;
         private System.Windows.Forms.TextBox txtRateApplied;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label lblPedido;
         public System.Windows.Forms.TextBox txtOrderTotal;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox txtSubTotal;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox txtDays;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.DateTimePicker dtpEndDate;
@@ -584,5 +577,7 @@
         private System.Windows.Forms.Label lblQuilometragem;
         private System.Windows.Forms.TextBox txtCor;
         private System.Windows.Forms.Label lblCor;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox txtSubTotal;
     }
 }
