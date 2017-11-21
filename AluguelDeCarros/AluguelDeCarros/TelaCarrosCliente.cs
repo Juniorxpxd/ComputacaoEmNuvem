@@ -43,7 +43,7 @@ namespace AluguelDeCarros
                 string estado = CarroDAO.EstadoDisp(x.EstadoDisp);
                 item.SubItems.Add(estado);
                 item.SubItems.Add(x.Empresa.Cidade);
-                item.SubItems.Add(x.Empresa.Nome);
+                item.SubItems.Add(x.Empresa.NomeEmpresa);
                 lstCarros.Items.Add(item);
             }
         }
@@ -63,7 +63,7 @@ namespace AluguelDeCarros
                 string estado = CarroDAO.EstadoDisp(x.EstadoDisp);
                 item.SubItems.Add(estado);
                 item.SubItems.Add(x.Empresa.Cidade);
-                item.SubItems.Add(x.Empresa.Nome);
+                item.SubItems.Add(x.Empresa.NomeEmpresa);
                 lstCarros.Items.Add(item);
             }
         }
@@ -84,7 +84,7 @@ namespace AluguelDeCarros
                 string estado = CarroDAO.EstadoDisp(x.EstadoDisp);
                 item.SubItems.Add(estado);
                 item.SubItems.Add(x.Empresa.Cidade);
-                item.SubItems.Add(x.Empresa.Nome);
+                item.SubItems.Add(x.Empresa.NomeEmpresa);
                 lstCarros.Items.Add(item);
             }
         }
@@ -113,11 +113,14 @@ namespace AluguelDeCarros
                 string estado = CarroDAO.EstadoDisp(i.EstadoDisp);
                 item.SubItems.Add(estado);
                 item.SubItems.Add(i.Empresa.Cidade);
-                item.SubItems.Add(i.Empresa.Nome);
+                item.SubItems.Add(i.Empresa.NomeEmpresa);
                 lstCarros.Items.Add(item);
             }
         }
 
-        
+        private void lstCarros_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

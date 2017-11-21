@@ -61,7 +61,7 @@ namespace AluguelDeCarros.DAO
         {
             try
             {
-                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.NomeEmpresa.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
             }
             catch
             {

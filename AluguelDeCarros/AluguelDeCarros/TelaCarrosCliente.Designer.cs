@@ -207,6 +207,7 @@
             this.lstCarros.TabIndex = 2;
             this.lstCarros.UseCompatibleStateImageBehavior = false;
             this.lstCarros.View = System.Windows.Forms.View.Details;
+            this.lstCarros.SelectedIndexChanged += new System.EventHandler(this.lstCarros_SelectedIndexChanged);
             this.lstCarros.BindingContextChanged += new System.EventHandler(this.lstCarros_BindingContextChanged);
             // 
             // Cidade
