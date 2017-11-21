@@ -59,6 +59,12 @@
     <Compile Include="AlterarExcluirCadastroEmpresa.Designer.cs">
       <DependentUpon>AlterarExcluirCadastroEmpresa.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrarPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarPlano.Designer.cs">
+      <DependentUpon>CadastrarPlano.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroCarro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,7 @@
     <Compile Include="DAO\CarroDAO.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\EmpresaDAO.cs" />
+    <Compile Include="DAO\PlanoDAO.cs" />
     <Compile Include="DAO\Singleton.cs" />
     <Compile Include="EditarExcluirCadastroCarro.cs">
       <SubType>Form</SubType>
@@ -129,6 +136,7 @@
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Empresa.cs" />
     <Compile Include="Model\Entities.cs" />
+    <Compile Include="Model\Plano.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelaAlugar.cs">
@@ -169,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="AlterarExcluirCadastroEmpresa.resx">
       <DependentUpon>AlterarExcluirCadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarPlano.resx">
+      <DependentUpon>CadastrarPlano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroCarro.resx">
       <DependentUpon>CadastroCarro.cs</DependentUpon>

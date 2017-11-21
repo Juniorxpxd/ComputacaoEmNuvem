@@ -34,6 +34,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pctSair = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctSair)).BeginInit();
             this.SuspendLayout();
@@ -114,6 +115,20 @@
             this.pctSair.TabStop = false;
             this.pctSair.Click += new System.EventHandler(this.pctSair_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.button1.Location = new System.Drawing.Point(12, 392);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 29);
+            this.button1.TabIndex = 45;
+            this.button1.Text = "ADM";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +136,7 @@
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.fantasy_hd_background_18457_18924_hd_wallpapers;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(495, 433);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pctSair);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -145,5 +161,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pctSair;
+        private System.Windows.Forms.Button button1;
     }
 }
