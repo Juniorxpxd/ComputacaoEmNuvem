@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -75,7 +76,42 @@ namespace AluguelDeCarros
 
         private void btnPedido_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Alugado alugado = new Alugado();
+                Carro carro = new Carro();
+                Cliente cliente = new Cliente();
+                cliente.Email = this.email;
+                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                alugado.Cliente = cliente;
+                carro.Placa = txtPlaca.Text;
+                carro = CarroDAO.obterPlaca(carro);
+                if (carro != null)
+                {
+                    if(carro.EstadoDisp == true)
+                    {
+                        carro.EstadoDisp = false;
+                        alugado.Carro = carro;
+                        alugado.DiasAlugado = int.Parse(txtDays.Text);
+                        alugado.Valor = float.Parse(txtOrderTotal.Text);
+                        AlugadoDAO.Incluir(alugado);
+                        txtReceiptNumber.Text = alugado.Id.ToString();
+                        MessageBox.Show("O carro " + carro.Nome + " foi alugado com sucesso e guarde o seu recibo: #" + alugado.Id + " para devolução", "Alugado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erro ao alugar - Carro já foi Alugado", "Erro");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao alugar - Carro incorreto", "Erro");
+                }
+            }
+            catch (SqlException c)
+            {
+                MessageBox.Show(c + "Erro ao alugar", "Erro");
+            }
         }
         private void btnCalculate_Click(object sender, EventArgs e)
         {
