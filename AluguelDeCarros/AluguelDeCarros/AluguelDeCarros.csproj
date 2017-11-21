@@ -131,6 +131,10 @@
     <Compile Include="Migrations\201711112325119_CriarClasseCarro.Designer.cs">
       <DependentUpon>201711112325119_CriarClasseCarro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711211109213_CadastroPlano.cs" />
+    <Compile Include="Migrations\201711211109213_CadastroPlano.Designer.cs">
+      <DependentUpon>201711211109213_CadastroPlano.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alugado.cs" />
     <Compile Include="Model\Carro.cs" />
@@ -214,6 +218,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711112325119_CriarClasseCarro.resx">
       <DependentUpon>201711112325119_CriarClasseCarro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711211109213_CadastroPlano.resx">
+      <DependentUpon>201711211109213_CadastroPlano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
