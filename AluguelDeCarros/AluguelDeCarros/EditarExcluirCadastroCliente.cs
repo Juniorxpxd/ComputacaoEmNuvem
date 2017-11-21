@@ -19,7 +19,7 @@ namespace AluguelDeCarros
         {
             InitializeComponent();
         }
-
+        Cliente cliente = new Cliente();
         private void EditarExcluirCadastroCliente_Load(object sender, EventArgs e)
         {
 
@@ -27,6 +27,16 @@ namespace AluguelDeCarros
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                cliente.Email = txtEmail.Text;
+                cliente = ClienteDAO.BuscarClientePorEmailESenha(cliente);
+                ClienteDAO.Excluir(cliente);
+
+            }catch(SqlException)
+            {
+                MessageBox.Show("nao deletado");
+            }
 
         }
 
@@ -34,7 +44,7 @@ namespace AluguelDeCarros
         {
             if (!txtEmail.Equals(""))
             {                
-                Cliente cliente = new Cliente();
+                
 
                 cliente.Email = txtEmail.Text;
                 cliente = ClienteDAO.BuscarClientePorEmailESenha(cliente);
@@ -60,7 +70,26 @@ namespace AluguelDeCarros
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                cliente.Nome = txtNome.Text;
+                cliente.Email = txtEmail.Text;
+                cliente.Senha = txtSenha.Text;
+                cliente.Cpf = mskCPF.Text;
+                cliente.Rg = mskRG.Text;
+                cliente.Telefone = mskTel.Text;
+                cliente.Celular = mskCel.Text;
+                cliente.Rua = txtRua.Text;
+                cliente.Cidade = txtCid.Text;
+                cliente.Estado = txtEst.Text;
+                cliente.Numero = int.Parse(txtNumero.Text);
+                ClienteDAO.Editar(cliente);
+                MessageBox.Show("alterado com sucesso");
+            }
+            catch(SqlException)
+            {
+                MessageBox.Show("não aterado");
+            }
         }
     }
 }

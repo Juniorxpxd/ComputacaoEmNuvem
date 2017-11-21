@@ -29,12 +29,41 @@ namespace AluguelDeCarros
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                carro.Placa = txtPlaca.Text;
+                carro = CarroDAO.obterPlaca(carro);
+                CarroDAO.Excluir(carro);
+
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("nao deletado");
+            }
 
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                carro.Nome = txtNome.Text;
+                carro.Cambio = txtCambio.Text;
+                carro.Cor = txtCor.Text;
+                carro.Marca = txtMarca.Text;
+                carro.Quilometragem = txtQuilometragem.Text;
+                carro.Placa = txtPlaca.Text;
+                carro.Portas = int.Parse(txtPorta.Text);
+                carro.Ano = int.Parse(txtAno.Text);
+                carro.Preco = double.Parse(txtPreco.Text);
+                carro.EstadoDisp = true;
+                CarroDAO.Editar(carro);
+                MessageBox.Show("aterado com sucesso");
 
+            }catch(SqlException)
+            {
+                MessageBox.Show("nao alterado");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
