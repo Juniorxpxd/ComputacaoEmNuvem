@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace AluguelDeCarros.DAO
 {
@@ -24,5 +25,29 @@ namespace AluguelDeCarros.DAO
                 return false;
             }
         }
-    }
+        public static Alugado ObterAluguelPorId(Alugado Alugado)
+        {
+            Entities db = Singleton.Instance.Entities;
+            try
+            {
+                return db.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
+            }
+            catch
+            {
+                return null;
+            }
+        }
+        public static bool Excluir(Alugado Alugado)
+        {
+            Entities db = Singleton.Instance.Entities;
+            try
+            {
+                db.Alugados.Remove(Alugado);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
 }
