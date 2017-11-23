@@ -50,4 +50,6 @@ namespace AluguelDeCarros.DAO
             {
                 return false;
             }
+        }
+    }
 }

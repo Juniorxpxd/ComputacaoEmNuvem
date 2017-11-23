@@ -54,7 +54,17 @@ namespace AluguelDeCarros
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
+        }
+
+        private void txtRecibo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRecibo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -118,82 +118,106 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resumo-de-fundo-com-um-desenho-geometrico_1048-1450" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resumo-de-fundo-com-um-desenho-geometrico_1048-1450.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Delete-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fantasy-hd-background-18457-18924-hd-wallpapers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fantasy-hd-background-18457-18924-hd-wallpapers.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="fullscreen-login-template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullscreen-login-template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Very-Basic-Key-Filled-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Very-Basic-Key-Filled-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Carros-Antigos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Carros-Antigos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="846127_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\846127_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sZK3FrwFxjQOQy36VqLC-yA" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sZK3FrwFxjQOQy36VqLC-yA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="popcorntime-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\popcorntime-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Business-hand-shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Business-hand-shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Delete-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Delete-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="303066" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\303066.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="logout-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logout-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fullscreen-login-template" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullscreen-login-template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="arrow-next-1-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow-next-1-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="755x430" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\755x430.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="568653" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\568653.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Aluguel-de-carro-na-Grécia" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Aluguel-de-carro-na-Grécia.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Business-hand-shake" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Business-hand-shake.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Very-Basic-Key-Filled-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Very-Basic-Key-Filled-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resumo-de-fundo-com-um-desenho-geometrico_1048-1450" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resumo-de-fundo-com-um-desenho-geometrico_1048-1450.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="303066" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\303066.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carros-Antigos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Carros-Antigos.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow-next-1-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-next-1-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Viper-Venom-Sunset-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Viper-Venom-Sunset-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="download1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sZK3FrwFxjQOQy36VqLC-yA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sZK3FrwFxjQOQy36VqLC-yA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="popcorntime-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\popcorntime-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blue-squares-backgrounds-powerpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blue-squares-backgrounds-powerpoint.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fullscreen-login-template" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fullscreen-login-template.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="846127_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\846127_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\download (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="images1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Business-hand-shake1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Business-hand-shake1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="755x430" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\755x430.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raf6cpy8qocflnpjsa12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raf6cpy8qocflnpjsa12.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="user-128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-128.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fullscreen-login-template1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fullscreen-login-template.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raf6cpy8qocflnpjsa121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raf6cpy8qocflnpjsa121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Viper-Venom-Sunset-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Viper-Venom-Sunset-11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

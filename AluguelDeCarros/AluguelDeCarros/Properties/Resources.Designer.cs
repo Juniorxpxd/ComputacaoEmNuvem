@@ -19,7 +19,7 @@ namespace AluguelDeCarros.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -103,9 +103,29 @@ namespace AluguelDeCarros.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Aluguel_de_carro_na_Grécia {
+            get {
+                object obj = ResourceManager.GetObject("Aluguel-de-carro-na-Grécia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap arrow_next_1_icon {
             get {
                 object obj = ResourceManager.GetObject("arrow-next-1-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blue_squares_backgrounds_powerpoint {
+            get {
+                object obj = ResourceManager.GetObject("blue-squares-backgrounds-powerpoint", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -273,9 +293,49 @@ namespace AluguelDeCarros.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap o_tamanho_da_roda_pode_aumentar_o_consumo_de_combustivel_do_carro {
+            get {
+                object obj = ResourceManager.GetObject("o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap o_tamanho_da_roda_pode_aumentar_o_consumo_de_combustivel_do_carro1 {
+            get {
+                object obj = ResourceManager.GetObject("o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap popcorntime_icon {
             get {
                 object obj = ResourceManager.GetObject("popcorntime-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap raf6cpy8qocflnpjsa12 {
+            get {
+                object obj = ResourceManager.GetObject("raf6cpy8qocflnpjsa12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap raf6cpy8qocflnpjsa121 {
+            get {
+                object obj = ResourceManager.GetObject("raf6cpy8qocflnpjsa121", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +376,26 @@ namespace AluguelDeCarros.Properties {
         internal static System.Drawing.Bitmap Very_Basic_Key_Filled_icon {
             get {
                 object obj = ResourceManager.GetObject("Very-Basic-Key-Filled-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Viper_Venom_Sunset_1 {
+            get {
+                object obj = ResourceManager.GetObject("Viper-Venom-Sunset-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Viper_Venom_Sunset_11 {
+            get {
+                object obj = ResourceManager.GetObject("Viper-Venom-Sunset-11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

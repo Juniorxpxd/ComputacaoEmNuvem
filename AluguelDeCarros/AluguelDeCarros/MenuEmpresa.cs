@@ -48,5 +48,11 @@ namespace AluguelDeCarros
             TelaCarro listaCarro = new TelaCarro(this.email);
             listaCarro.ShowDialog();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            PerfilEmpresa PerfilEmpresa = new PerfilEmpresa(this.email);
+            PerfilEmpresa.ShowDialog();
+        }
     }
 }
