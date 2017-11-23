@@ -101,6 +101,7 @@
             this.txtReceiptNumber.TabIndex = 203;
             this.txtReceiptNumber.Text = "0";
             this.txtReceiptNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtReceiptNumber.TextChanged += new System.EventHandler(this.txtReceiptNumber_TextChanged);
             // 
             // label31
             // 
@@ -314,6 +315,7 @@
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(283, 22);
             this.txtPlaca.TabIndex = 194;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
             this.txtPlaca.Leave += new System.EventHandler(this.txtCodigo_Leave);
             // 
             // label16

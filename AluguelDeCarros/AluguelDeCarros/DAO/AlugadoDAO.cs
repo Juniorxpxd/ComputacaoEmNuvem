@@ -27,23 +27,16 @@ namespace AluguelDeCarros.DAO
         }
         public static Alugado ObterAluguelPorId(Alugado Alugado)
         {
-            Entities db = Singleton.Instance.Entities;
-            try
-            {
-                return db.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
-            }
-            catch
-            {
-                return null;
-            }
+      
+                return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
+ 
         }
         public static bool Excluir(Alugado Alugado)
         {
-            Entities db = Singleton.Instance.Entities;
             try
             {
-                db.Alugados.Remove(Alugado);
-                db.SaveChanges();
+                entities.Alugados.Remove(Alugado);
+                entities.SaveChanges();
                 return true;
             }
             catch

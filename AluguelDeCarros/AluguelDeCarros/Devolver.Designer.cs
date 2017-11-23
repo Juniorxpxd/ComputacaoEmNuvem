@@ -47,6 +47,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(260, 138);
             this.panel1.TabIndex = 1;
+            this.panel1.Leave += new System.EventHandler(this.panel1_Leave);
             // 
             // btnSair
             // 
@@ -78,6 +79,7 @@
             this.txtRecibo.Size = new System.Drawing.Size(100, 20);
             this.txtRecibo.TabIndex = 1;
             this.txtRecibo.TextChanged += new System.EventHandler(this.txtRecibo_TextChanged);
+            this.txtRecibo.Leave += new System.EventHandler(this.txtRecibo_Leave);
             // 
             // btnDevolver
             // 
@@ -89,6 +91,7 @@
             this.btnDevolver.Text = "Devolver";
             this.btnDevolver.UseVisualStyleBackColor = true;
             this.btnDevolver.Click += new System.EventHandler(this.btnDevolver_Click);
+            this.btnDevolver.Leave += new System.EventHandler(this.btnDevolver_Leave);
             // 
             // Devolver
             // 
@@ -101,6 +104,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Devolver";
             this.Text = "Devolver";
+            this.Leave += new System.EventHandler(this.Devolver_Leave);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

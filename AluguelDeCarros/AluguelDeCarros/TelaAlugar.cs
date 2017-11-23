@@ -31,6 +31,7 @@ namespace AluguelDeCarros
             {
                 try
                 {
+            
                     carro.Placa = txtPlaca.Text;
                     carro = CarroDAO.obterPlaca(carro);
                     txtMarca.Text = carro.Marca;
@@ -144,6 +145,16 @@ namespace AluguelDeCarros
 
             ValorTotal = SubTotal + ValorImposto;
             txtOrderTotal.Text = ValorTotal.ToString("F");
+        }
+
+        private void txtPlaca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtReceiptNumber_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

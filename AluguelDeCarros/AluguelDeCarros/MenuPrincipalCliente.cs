@@ -37,5 +37,11 @@ namespace AluguelDeCarros
             TelaAlugar alugarCarro = new TelaAlugar(this.email);
             alugarCarro.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Devolver devolver = new Devolver(this.email);
+            devolver.ShowDialog();
+        }
     }
 }

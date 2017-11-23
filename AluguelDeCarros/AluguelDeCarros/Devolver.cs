@@ -15,8 +15,10 @@ namespace AluguelDeCarros
 {
     public partial class Devolver : Form
     {
-        public Devolver()
+        private string email;
+        public Devolver(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 
@@ -47,7 +49,7 @@ namespace AluguelDeCarros
             }
             catch (SqlException r)
             {
-                MessageBox.Show(r + "Erro ao Devolver Jogo", "Erro");
+                MessageBox.Show(r + "Erro ao Devolver Carro", "Erro");
             }
 
         }
@@ -65,6 +67,40 @@ namespace AluguelDeCarros
         private void lblRecibo_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnDevolver_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Devolver_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRecibo_Leave(object sender, EventArgs e)
+        {
+            Alugado alugado = new Alugado();
+            if (!txtRecibo.Text.Equals(""))
+            {
+                try
+                {
+                    alugado.Id = int.Parse(txtRecibo.Text);
+                    AlugadoDAO.ObterAluguelPorId(alugado);
+                }
+                catch
+                {
+                    MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtRecibo.Clear();
+                    txtRecibo.Focus();
+                }
+            }
         }
     }
 }
