@@ -30,17 +30,7 @@ namespace AluguelDeCarros
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            try
-            {
-                carro.Placa = txtPlaca.Text;
-                carro = CarroDAO.obterPlaca(carro);
-                CarroDAO.Excluir(carro);
 
-            }
-            catch 
-            {
-                MessageBox.Show("nao deletado");
-            }
 
         }
 
@@ -48,12 +38,16 @@ namespace AluguelDeCarros
         {
             try
             {
+                Carro Carro = new Carro();
+                carro.Placa = txtPlaca.Text;
+                Carro = CarroDAO.obterPlaca(Carro);
+
                 carro.Nome = txtNome.Text;
                 carro.Cambio = txtCambio.Text;
                 carro.Cor = txtCor.Text;
                 carro.Marca = txtMarca.Text;
                 carro.Quilometragem = txtQuilometragem.Text;
-                carro.Placa = txtPlaca.Text;
+
                 carro.Portas = int.Parse(txtPorta.Text);
                 carro.Ano = int.Parse(txtAno.Text);
                 carro.Preco = double.Parse(txtPreco.Text);
@@ -74,7 +68,7 @@ namespace AluguelDeCarros
             {
                 Carro carro = new Carro();
 
-                
+
                 try
                 {
                     carro.Placa = txtPlaca.Text;
@@ -87,8 +81,8 @@ namespace AluguelDeCarros
                     txtPorta.Text = carro.Portas.ToString();
                     txtAno.Text = carro.Ano.ToString();
                     txtPreco.Text = carro.Preco.ToString("C2");
-           
-                    
+
+
                 }
                 catch
                 {
@@ -147,6 +141,53 @@ namespace AluguelDeCarros
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPlaca_Leave(object sender, EventArgs e)
+        {
+            if (!txtPlaca.Equals(""))
+            {
+                Carro carro = new Carro();
+
+
+                try
+                {
+                    carro.Placa = txtPlaca.Text;
+                    carro = CarroDAO.obterPlaca(carro);
+                    txtNome.Text = carro.Nome;
+                    txtCambio.Text = carro.Cambio;
+                    txtCor.Text = carro.Cor;
+                    txtMarca.Text = carro.Marca;
+                    txtQuilometragem.Text = carro.Quilometragem;
+                    txtPorta.Text = carro.Portas.ToString();
+                    txtAno.Text = carro.Ano.ToString();
+                    txtPreco.Text = carro.Preco.ToString("C2");
+
+
+                }
+                catch
+                {
+                    MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtPlaca.Clear();
+                    txtPlaca.Focus();
+                }
+            }
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Carro Carro = new Carro();
+            Carro.Placa = txtPlaca.Text;
+            Carro = CarroDAO.obterPlaca(Carro);
+            if (Carro != null)
+            {
+                CarroDAO.Excluir(Carro);
+                MessageBox.Show("Carro Excluido", "Excluido");
+            }
+            else
+            {
+                MessageBox.Show("Carro inexistente", "Erro");
+            }
         }
     }
 }
