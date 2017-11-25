@@ -50,8 +50,8 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.Mostrar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +61,7 @@
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(23, 33);
+            this.lblNome.Location = new System.Drawing.Point(21, 84);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(55, 20);
             this.lblNome.TabIndex = 189;
@@ -90,7 +90,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(27, 56);
+            this.txtNome.Location = new System.Drawing.Point(25, 107);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(152, 26);
@@ -111,7 +111,7 @@
             this.lblMarca.BackColor = System.Drawing.Color.Transparent;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.ForeColor = System.Drawing.Color.Black;
-            this.lblMarca.Location = new System.Drawing.Point(23, 84);
+            this.lblMarca.Location = new System.Drawing.Point(23, 136);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(58, 20);
             this.lblMarca.TabIndex = 190;
@@ -133,7 +133,7 @@
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(27, 107);
+            this.txtMarca.Location = new System.Drawing.Point(27, 159);
             this.txtMarca.MaxLength = 100;
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(152, 26);
@@ -154,7 +154,7 @@
             this.lblAno.BackColor = System.Drawing.Color.Transparent;
             this.lblAno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAno.ForeColor = System.Drawing.Color.Black;
-            this.lblAno.Location = new System.Drawing.Point(23, 136);
+            this.lblAno.Location = new System.Drawing.Point(23, 188);
             this.lblAno.Name = "lblAno";
             this.lblAno.Size = new System.Drawing.Size(41, 20);
             this.lblAno.TabIndex = 191;
@@ -175,7 +175,7 @@
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(27, 159);
+            this.txtAno.Location = new System.Drawing.Point(27, 211);
             this.txtAno.MaxLength = 100;
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(152, 26);
@@ -184,11 +184,12 @@
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(27, 263);
+            this.txtPlaca.Location = new System.Drawing.Point(27, 56);
             this.txtPlaca.MaxLength = 100;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(152, 26);
             this.txtPlaca.TabIndex = 182;
+            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
             this.txtPlaca.Leave += new System.EventHandler(this.txtPlaca_Leave);
             // 
             // lblQuilometragem
@@ -209,11 +210,12 @@
             this.lblPlaca.BackColor = System.Drawing.Color.Transparent;
             this.lblPlaca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlaca.ForeColor = System.Drawing.Color.Black;
-            this.lblPlaca.Location = new System.Drawing.Point(23, 240);
+            this.lblPlaca.Location = new System.Drawing.Point(23, 33);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(53, 20);
+            this.lblPlaca.Size = new System.Drawing.Size(136, 20);
             this.lblPlaca.TabIndex = 194;
-            this.lblPlaca.Text = "Placa";
+            this.lblPlaca.Text = "Bucar por Placa";
+            this.lblPlaca.Click += new System.EventHandler(this.lblPlaca_Click);
             // 
             // txtQuilometragem
             // 
@@ -225,7 +227,7 @@
             // 
             // txtPorta
             // 
-            this.txtPorta.Location = new System.Drawing.Point(27, 211);
+            this.txtPorta.Location = new System.Drawing.Point(27, 263);
             this.txtPorta.MaxLength = 100;
             this.txtPorta.Name = "txtPorta";
             this.txtPorta.Size = new System.Drawing.Size(152, 26);
@@ -238,7 +240,7 @@
             this.lblPorta.BackColor = System.Drawing.Color.Transparent;
             this.lblPorta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPorta.ForeColor = System.Drawing.Color.Black;
-            this.lblPorta.Location = new System.Drawing.Point(23, 188);
+            this.lblPorta.Location = new System.Drawing.Point(23, 240);
             this.lblPorta.Name = "lblPorta";
             this.lblPorta.Size = new System.Drawing.Size(61, 20);
             this.lblPorta.TabIndex = 193;
@@ -307,20 +309,6 @@
             this.groupBox1.Text = "Editar Excluir Carro";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnVoltar
-            // 
-            this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
-            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnVoltar.Location = new System.Drawing.Point(6, 315);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(89, 59);
-            this.btnVoltar.TabIndex = 199;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // btnExcluir
             // 
             this.btnExcluir.BackColor = System.Drawing.SystemColors.Window;
@@ -334,6 +322,20 @@
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.button1_Click_2);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnVoltar.Location = new System.Drawing.Point(6, 315);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(89, 59);
+            this.btnVoltar.TabIndex = 199;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // EditarExcluirCadastroCarro
             // 

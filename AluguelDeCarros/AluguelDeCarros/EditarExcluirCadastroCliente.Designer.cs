@@ -80,7 +80,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(10, 102);
+            this.txtEmail.Location = new System.Drawing.Point(10, 47);
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(167, 26);
@@ -100,7 +100,7 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(10, 50);
+            this.txtNome.Location = new System.Drawing.Point(10, 105);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(167, 26);
@@ -213,7 +213,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 24);
+            this.label3.Location = new System.Drawing.Point(6, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 20);
             this.label3.TabIndex = 166;
@@ -226,11 +226,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 79);
+            this.label2.Location = new System.Drawing.Point(6, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 20);
+            this.label2.Size = new System.Drawing.Size(145, 20);
             this.label2.TabIndex = 167;
-            this.label2.Text = "Email";
+            this.label2.Text = "Buscar por Email";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label4

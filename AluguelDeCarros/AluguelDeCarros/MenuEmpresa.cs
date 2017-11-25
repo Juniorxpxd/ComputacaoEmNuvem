@@ -54,5 +54,10 @@ namespace AluguelDeCarros
             PerfilEmpresa PerfilEmpresa = new PerfilEmpresa(this.email);
             PerfilEmpresa.ShowDialog();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

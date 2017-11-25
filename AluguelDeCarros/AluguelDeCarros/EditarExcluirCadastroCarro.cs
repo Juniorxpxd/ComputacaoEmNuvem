@@ -38,16 +38,12 @@ namespace AluguelDeCarros
         {
             try
             {
-                Carro Carro = new Carro();
-                carro.Placa = txtPlaca.Text;
-                Carro = CarroDAO.obterPlaca(Carro);
-                
+                carro.Placa = txtPlaca.Text;         
                 carro.Nome = txtNome.Text;
                 carro.Cambio = txtCambio.Text;
                 carro.Cor = txtCor.Text;
                 carro.Marca = txtMarca.Text;
                 carro.Quilometragem = txtQuilometragem.Text;
-
                 carro.Portas = int.Parse(txtPorta.Text);
                 carro.Ano = int.Parse(txtAno.Text);
                 carro.Preco = double.Parse(txtPreco.Text);
@@ -159,6 +155,7 @@ namespace AluguelDeCarros
                 {
                     CarroDAO.Excluir(Carro);
                     MessageBox.Show("Carro Excluido", "Excluido");
+                    this.Close();
                 }
                 else
                 {
@@ -169,6 +166,16 @@ namespace AluguelDeCarros
             {
 
             }
+        }
+
+        private void lblPlaca_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPlaca_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
