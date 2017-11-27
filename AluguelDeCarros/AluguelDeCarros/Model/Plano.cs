@@ -14,7 +14,6 @@ namespace AluguelDeCarros.Model
         [Key]
         public int Id { get; set; }
         public string PlanoCarro { get; set; }
-
     }
 
 }

@@ -26,7 +26,7 @@ namespace AluguelDeCarros.DAO
         }
         public static Empresa BuscarEmpresaPorEmailESenha(Empresa Empresa)
         {
-            return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email) && x.Senha.Equals(Empresa.Senha));
+            return entities.Empresas.Include("Plano").FirstOrDefault(x => x.Email.Equals(Empresa.Email) && x.Senha.Equals(Empresa.Senha));
         }
         public static Empresa BuscarEmpresaPorId(int? id)
         {
@@ -34,15 +34,15 @@ namespace AluguelDeCarros.DAO
         }
         public static Empresa BuscarEmpresaPorEmail(Empresa Empresa)
         {
-            return entities.Empresas.FirstOrDefault(x => x.Email.Equals(Empresa.Email));
+            return entities.Empresas.Include("Plano").FirstOrDefault(x => x.Email.Equals(Empresa.Email));
         }
         public static Empresa BuscarEmpresaPorCNPJ(Empresa Empresa)
         {
-            return entities.Empresas.FirstOrDefault(x => x.CNPJ.Equals(Empresa.CNPJ));
+            return entities.Empresas.Include("Plano").FirstOrDefault(x => x.CNPJ.Equals(Empresa.CNPJ));
         }
         public static Empresa BuscarEmpresaPorNomeEmpresa(Empresa Empresa)
         {
-            return entities.Empresas.FirstOrDefault(x => x.NomeEmpresa.Equals(Empresa.NomeEmpresa));
+            return entities.Empresas.Include("Plano").FirstOrDefault(x => x.NomeEmpresa.Equals(Empresa.NomeEmpresa));
         }
     }
 }

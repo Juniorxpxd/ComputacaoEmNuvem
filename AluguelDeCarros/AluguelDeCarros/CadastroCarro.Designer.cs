@@ -313,6 +313,7 @@
             this.Name = "CadastroCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro do Carro";
+            this.Load += new System.EventHandler(this.CadastroCarro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

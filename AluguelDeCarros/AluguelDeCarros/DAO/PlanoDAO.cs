@@ -38,5 +38,16 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Planos.FirstOrDefault(x => x.PlanoCarro.Equals(Plano.PlanoCarro));
         }
+        //public static IEnumerable<Plano> ObterPlanosPelaEmpresa(Plano Plano)
+        //{
+        //    try
+        //    {
+        //        return entities.Planos.Include("Empresa").Where(x => x.empresa.Id == Plano.empresa.Id);
+        //    }
+        //    catch
+        //    {
+        //        return null;
+        //    }
+        //}
     }
 }
