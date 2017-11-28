@@ -126,7 +126,7 @@ namespace AluguelDeCarros
                 cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
                 if (alugar.Cliente == cliente)
                 {
-                    if (AlugadoDAO.ObterAluguelPorIdEquipamento(alugar) != null)
+                    if (EquipadoDAO.BuscarCarroEquipadoPorRecibo(alugar) != null)
                     {
                         if (!txtValorTotal.Text.Equals(""))
                         {
