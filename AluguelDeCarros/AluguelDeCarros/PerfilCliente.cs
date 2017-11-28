@@ -53,6 +53,7 @@ namespace AluguelDeCarros
             }
             else
             {
+                lblReciboo.Text = "";
                 lblTotal.Text = "";
                 lblDataEntrega.Text = "";
             }
