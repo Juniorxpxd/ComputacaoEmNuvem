@@ -90,6 +90,17 @@ namespace AluguelDeCarros.DAO
                 return null;
             }
         }
+        public static IEnumerable<Carro> ObterCarrosPelaCidade(string iniciais, Carro carro)
+        {
+            try
+            {
+                return entities.Carros.Include("Empresa").Where(x => x.Empresa.Cidade.Equals(carro.Empresa.Cidade) && x.Nome.Contains(iniciais)).ToList().OrderBy(x => x.Placa);
+            }
+            catch
+            {
+                return null;
+            }
+        }
         public static string EstadoDisp(bool EstadoDisp)
         {
             if (EstadoDisp == true)

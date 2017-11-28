@@ -16,13 +16,14 @@ namespace AluguelDeCarros
     {
         Carro carro = new Carro();
         Empresa empresa = new Empresa();
+        Cliente cliente = new Cliente();
         private string email;
         public TelaCarrosCliente(string email)
         {
             this.email = email;
             InitializeComponent();
         }
-        
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Close();
@@ -31,7 +32,12 @@ namespace AluguelDeCarros
         {
             lstCarros.Items.Clear();
             ListViewItem item;
-            IOrderedEnumerable<Carro> carros = CarroDAO.ObterCarros(txtInicialCarro.Text);
+            cliente.Email = this.email;
+            cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+            empresa.Email = cliente.Empresa.Email;
+            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+            carro.Empresa = empresa;
+            IEnumerable<Carro> carros = CarroDAO.ObterCarrosPelaEmpresa(txtInicialCarro.Text, carro);
             foreach (Carro x in carros)
             {
                 item = new ListViewItem();
@@ -47,51 +53,17 @@ namespace AluguelDeCarros
                 lstCarros.Items.Add(item);
             }
         }
-        private void btnConsultarEmpresa_Click(object sender, EventArgs e)
-        {
-            lstCarros.Items.Clear();
-            ListViewItem item;
-            IOrderedEnumerable<Carro> carros = CarroDAO.ObterCarrosEmpresa(txtInicialEmpresa.Text);
-            foreach (Carro x in carros)
-            {
-                item = new ListViewItem();
-                item.Text = x.Placa;
-                item.SubItems.Add(x.Marca);
-                item.SubItems.Add(x.Nome);
-                item.SubItems.Add(x.Ano.ToString());
-                item.SubItems.Add(x.Preco.ToString("C2"));
-                string estado = CarroDAO.EstadoDisp(x.EstadoDisp);
-                item.SubItems.Add(estado);
-                item.SubItems.Add(x.Empresa.Cidade);
-                item.SubItems.Add(x.Empresa.NomeEmpresa);
-                lstCarros.Items.Add(item);
-            }
-        }
-
-        private void btnConsultarCidade_Click(object sender, EventArgs e)
-        {
-            lstCarros.Items.Clear();
-            ListViewItem item;
-            IOrderedEnumerable<Carro> carros = CarroDAO.ObterCarrosCidade(txtInicialCidade.Text);
-            foreach (Carro x in carros)
-            {
-                item = new ListViewItem();
-                item.Text = x.Placa;
-                item.SubItems.Add(x.Marca);
-                item.SubItems.Add(x.Nome);
-                item.SubItems.Add(x.Ano.ToString());
-                item.SubItems.Add(x.Preco.ToString("C2"));
-                string estado = CarroDAO.EstadoDisp(x.EstadoDisp);
-                item.SubItems.Add(estado);
-                item.SubItems.Add(x.Empresa.Cidade);
-                item.SubItems.Add(x.Empresa.NomeEmpresa);
-                lstCarros.Items.Add(item);
-            }
-        }
+       
         private void TelaCarro_Load(object sender, EventArgs e)
         {
             AutoCompleteStringCollection lista = new AutoCompleteStringCollection();
-            foreach (Carro x in CarroDAO.ObterCarros())
+            cliente.Email = this.email;
+            cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+            empresa.Email = cliente.Empresa.Email;
+            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+            carro.Empresa = empresa;
+            IEnumerable<Carro> carros = CarroDAO.ObterCarrosPelaEmpresa(carro);
+            foreach (Carro x in carros)
             {
                 lista.Add(x.Nome);
             }
@@ -102,7 +74,13 @@ namespace AluguelDeCarros
         {
             lstCarros.Items.Clear();
             ListViewItem item;
-            foreach (Carro i in CarroDAO.ObterCarros())
+            cliente.Email = this.email;
+            cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+            empresa.Email = cliente.Empresa.Email;
+            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+            carro.Empresa = empresa;
+            IEnumerable<Carro> carros = CarroDAO.ObterCarrosPelaEmpresa(carro);
+            foreach (Carro i in carros)
             {
                 item = new ListViewItem();
                 item.Text = i.Placa;
@@ -115,6 +93,7 @@ namespace AluguelDeCarros
                 item.SubItems.Add(i.Empresa.Cidade);
                 item.SubItems.Add(i.Empresa.NomeEmpresa);
                 lstCarros.Items.Add(item);
+
             }
         }
 

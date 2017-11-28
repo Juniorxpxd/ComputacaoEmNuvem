@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AluguelDeCarros.DAO;
+using AluguelDeCarros.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +15,8 @@ namespace AluguelDeCarros
     public partial class PerfilEmpresa : Form
     {
         private string email;
+        Empresa empresa = new Empresa();
+        Carro carro = new Carro();
         public PerfilEmpresa(string email)
         {
             this.email = email;
@@ -34,6 +38,15 @@ namespace AluguelDeCarros
         {
             EditarExcluirCadastroCliente b = new EditarExcluirCadastroCliente(this.email);
             b.ShowDialog();
+        }
+
+        private void PerfilEmpresa_Load(object sender, EventArgs e)
+        {
+            empresa.Email = this.email;
+            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+            carro.Empresa = empresa;
+            IEnumerable<Carro> carros = CarroDAO.ObterCarrosPelaEmpresa(carro);
+            lblCarros.Text = empresa.Carro.Count.ToString();
         }
     }
 }

@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.Empresaa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnConsultarCidade = new System.Windows.Forms.Button();
-            this.btnConsultarEmpresa = new System.Windows.Forms.Button();
-            this.txtInicialCidade = new System.Windows.Forms.TextBox();
-            this.txtInicialEmpresa = new System.Windows.Forms.TextBox();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.lblEmpresa = new System.Windows.Forms.Label();
             this.btnConsultarCarro = new System.Windows.Forms.Button();
             this.Disponibilidade = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Preco = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -59,70 +53,6 @@
             // 
             this.Empresaa.Text = "Empresa";
             this.Empresaa.Width = 136;
-            // 
-            // btnConsultarCidade
-            // 
-            this.btnConsultarCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarCidade.ForeColor = System.Drawing.Color.Black;
-            this.btnConsultarCidade.Location = new System.Drawing.Point(776, 80);
-            this.btnConsultarCidade.Name = "btnConsultarCidade";
-            this.btnConsultarCidade.Size = new System.Drawing.Size(82, 25);
-            this.btnConsultarCidade.TabIndex = 9;
-            this.btnConsultarCidade.Text = "&OK";
-            this.btnConsultarCidade.UseVisualStyleBackColor = true;
-            this.btnConsultarCidade.Click += new System.EventHandler(this.btnConsultarCidade_Click);
-            // 
-            // btnConsultarEmpresa
-            // 
-            this.btnConsultarEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultarEmpresa.ForeColor = System.Drawing.Color.Black;
-            this.btnConsultarEmpresa.Location = new System.Drawing.Point(776, 48);
-            this.btnConsultarEmpresa.Name = "btnConsultarEmpresa";
-            this.btnConsultarEmpresa.Size = new System.Drawing.Size(82, 25);
-            this.btnConsultarEmpresa.TabIndex = 8;
-            this.btnConsultarEmpresa.Text = "&OK";
-            this.btnConsultarEmpresa.UseVisualStyleBackColor = true;
-            this.btnConsultarEmpresa.Click += new System.EventHandler(this.btnConsultarEmpresa_Click);
-            // 
-            // txtInicialCidade
-            // 
-            this.txtInicialCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInicialCidade.Location = new System.Drawing.Point(159, 80);
-            this.txtInicialCidade.MaxLength = 50;
-            this.txtInicialCidade.Name = "txtInicialCidade";
-            this.txtInicialCidade.Size = new System.Drawing.Size(611, 24);
-            this.txtInicialCidade.TabIndex = 7;
-            // 
-            // txtInicialEmpresa
-            // 
-            this.txtInicialEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInicialEmpresa.Location = new System.Drawing.Point(159, 47);
-            this.txtInicialEmpresa.MaxLength = 50;
-            this.txtInicialEmpresa.Name = "txtInicialEmpresa";
-            this.txtInicialEmpresa.Size = new System.Drawing.Size(611, 24);
-            this.txtInicialEmpresa.TabIndex = 6;
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.ForeColor = System.Drawing.Color.Black;
-            this.lblCidade.Location = new System.Drawing.Point(16, 84);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(111, 16);
-            this.lblCidade.TabIndex = 5;
-            this.lblCidade.Text = "Nome da Cidade";
-            // 
-            // lblEmpresa
-            // 
-            this.lblEmpresa.AutoSize = true;
-            this.lblEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresa.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpresa.Location = new System.Drawing.Point(16, 52);
-            this.lblEmpresa.Name = "lblEmpresa";
-            this.lblEmpresa.Size = new System.Drawing.Size(122, 16);
-            this.lblEmpresa.TabIndex = 4;
-            this.lblEmpresa.Text = "Nome da Empresa";
             // 
             // btnConsultarCarro
             // 
@@ -200,10 +130,10 @@
             this.Empresaa});
             this.lstCarros.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstCarros.FullRowSelect = true;
-            this.lstCarros.Location = new System.Drawing.Point(9, 110);
+            this.lstCarros.Location = new System.Drawing.Point(9, 45);
             this.lstCarros.MultiSelect = false;
             this.lstCarros.Name = "lstCarros";
-            this.lstCarros.Size = new System.Drawing.Size(863, 290);
+            this.lstCarros.Size = new System.Drawing.Size(863, 355);
             this.lstCarros.TabIndex = 2;
             this.lstCarros.UseCompatibleStateImageBehavior = false;
             this.lstCarros.View = System.Windows.Forms.View.Details;
@@ -217,12 +147,6 @@
             // 
             // tbCarros
             // 
-            this.tbCarros.Controls.Add(this.btnConsultarCidade);
-            this.tbCarros.Controls.Add(this.btnConsultarEmpresa);
-            this.tbCarros.Controls.Add(this.txtInicialCidade);
-            this.tbCarros.Controls.Add(this.txtInicialEmpresa);
-            this.tbCarros.Controls.Add(this.lblCidade);
-            this.tbCarros.Controls.Add(this.lblEmpresa);
             this.tbCarros.Controls.Add(this.txtInicialCarro);
             this.tbCarros.Controls.Add(this.lblIniciais);
             this.tbCarros.Controls.Add(this.lstCarros);
@@ -298,12 +222,6 @@
         #endregion
 
         private System.Windows.Forms.ColumnHeader Empresaa;
-        private System.Windows.Forms.Button btnConsultarCidade;
-        private System.Windows.Forms.Button btnConsultarEmpresa;
-        private System.Windows.Forms.TextBox txtInicialCidade;
-        private System.Windows.Forms.TextBox txtInicialEmpresa;
-        private System.Windows.Forms.Label lblCidade;
-        private System.Windows.Forms.Label lblEmpresa;
         private System.Windows.Forms.Button btnConsultarCarro;
         private System.Windows.Forms.ColumnHeader Disponibilidade;
         private System.Windows.Forms.ColumnHeader Preco;

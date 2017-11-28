@@ -47,6 +47,10 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Empresa.Email.Equals(Cliente.Empresa.Email));
         }
+        public static Cliente BuscarCarroPorCliente(Cliente Cliente)
+        {
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Empresa.Carro.Equals(Cliente.Empresa));
+        }
 
         public static bool Excluir(Cliente Cliente)
         {
