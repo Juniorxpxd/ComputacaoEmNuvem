@@ -27,7 +27,7 @@ namespace AluguelDeCarros.DAO
 
         public static Alugado BuscarCarroEquipadoPorRecibo(Alugado equipado)
         {
-            return entities.Alugados.FirstOrDefault(x => x.Id.Equals(equipado.Id));
+            return entities.Alugados.Find(equipado.Id);
         }
     }
 }

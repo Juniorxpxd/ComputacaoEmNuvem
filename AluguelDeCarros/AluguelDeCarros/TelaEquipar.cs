@@ -15,6 +15,9 @@ namespace AluguelDeCarros
 {
     public partial class TelaEquipar : Form
     {
+        Equipado equipado = new Equipado();
+        Alugado alugar = new Alugado();
+        Cliente cliente = new Cliente();
         double ValorTotal = 0.00;
         private string email;
         public TelaEquipar(string email)
@@ -115,17 +118,16 @@ namespace AluguelDeCarros
         {
             try
             {
-
                 Equipado equipado = new Equipado();
                 Alugado alugar = new Alugado();
                 alugar.Id = int.Parse(txtRecibo.Text);
-
                 alugar = AlugadoDAO.ObterAluguelPorId(alugar);
-                if (alugar != null)
+                cliente.Email = email;
+                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                if (alugar.Cliente == cliente)
                 {
-                    if (EquipadoDAO.BuscarCarroEquipadoPorRecibo(alugar) == null)
+                    if (EquipadoDAO.BuscarCarroEquipadoPorRecibo(alugar) != null)
                     {
-                        alugar.Carro.EstadoDisp = true;
                         if (!txtValorTotal.Text.Equals(""))
                         {
                             equipado.Alugado = alugar;
@@ -145,14 +147,11 @@ namespace AluguelDeCarros
                     {
                         MessageBox.Show("Carro já foi Equipado.", "Carro já Equipado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-
                 }
                 else
                 {
-                    MessageBox.Show("Carro inexistente", "Erro");
+                    MessageBox.Show("Você não alugou este carro", "Erro");
                 }
-
-
             }
             catch
             {
