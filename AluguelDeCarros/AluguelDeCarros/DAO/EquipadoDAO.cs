@@ -29,5 +29,28 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Alugados.Find(equipado.Id);
         }
+
+        public static bool Excluir(Equipado Equipado)
+        {
+            try
+            {
+                entities.Equipados.Remove(Equipado);
+                entities.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public static Equipado ObterEquipadoPorId(Equipado Equipado)
+        {
+
+            return entities.Equipados.Include("Alugado").FirstOrDefault(x => x.Id == Equipado.Id);
+
+        }
+
+
     }
 }

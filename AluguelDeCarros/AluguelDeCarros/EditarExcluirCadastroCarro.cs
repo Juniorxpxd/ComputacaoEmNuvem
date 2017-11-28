@@ -31,42 +31,51 @@ namespace AluguelDeCarros
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            try
+            if (!txtPlaca.Text.Equals(""))
             {
-                Carro carro = new Carro();
-                carro.Placa = txtPlaca.Text;
-                carro = CarroDAO.obterPlaca(carro);
-                carro.Nome = txtNome.Text;
-                carro.Cambio = txtCambio.Text;
-                carro.Cor = txtCor.Text;
-                carro.Marca = txtMarca.Text;
-                carro.Quilometragem = txtQuilometragem.Text;
-                carro.Portas = int.Parse(txtPorta.Text);
-                carro.Ano = int.Parse(txtAno.Text);
-                carro.Preco = double.Parse(txtPreco.Text);
-                carro.EstadoDisp = true;
-                CarroDAO.Editar(carro);
-                MessageBox.Show("Cadastro do carro: " + carro.Nome + " foi alterado !!!", "Alterado");
+                try
+                {
+
+                    Carro carro = new Carro();
+                    carro.Placa = txtPlaca.Text;
+                    carro = CarroDAO.obterPlaca(carro);
+                    carro.Nome = txtNome.Text;
+                    carro.Cambio = txtCambio.Text;
+                    carro.Cor = txtCor.Text;
+                    carro.Marca = txtMarca.Text;
+                    carro.Quilometragem = txtQuilometragem.Text;
+                    carro.Portas = int.Parse(txtPorta.Text);
+                    carro.Ano = int.Parse(txtAno.Text);
+                    carro.Preco = double.Parse(txtPreco.Text);
+                    carro.EstadoDisp = true;
+                    CarroDAO.Editar(carro);
+                    MessageBox.Show("Cadastro do carro: " + carro.Nome + " foi alterado !!!", "Alterado");
+                }
+                catch
+                {
+                    MessageBox.Show(e + "Erro ao Alterar Cadastro", "Erro");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show(e + "Erro ao Alterar Cadastro", "Erro");
+                MessageBox.Show("O campo Placa é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            empresa.Email = this.email;
-            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
-            carro.Empresa = empresa;
-            carro.Placa = txtPlaca.Text;
-            carro = CarroDAO.obterPlaca(carro);
-            if (carro != null)
+            if (!txtPlaca.Text.Equals(""))
             {
-                if (carro.Empresa == empresa)
+                empresa.Email = this.email;
+                empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+                carro.Empresa = empresa;
+                carro.Placa = txtPlaca.Text;
+                carro = CarroDAO.obterPlaca(carro);
+                if (carro != null)
                 {
-                    if (!txtPlaca.Equals(""))
+                    if (carro.Empresa == empresa)
                     {
+
                         Carro carro = new Carro();
                         try
                         {
@@ -96,6 +105,12 @@ namespace AluguelDeCarros
                             txtPlaca.Clear();
                             txtPlaca.Focus();
                         }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
                     }
                 }
                 else
@@ -105,7 +120,8 @@ namespace AluguelDeCarros
             }
             else
             {
-                MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("O campo Placa é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
 

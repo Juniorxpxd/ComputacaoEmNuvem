@@ -42,12 +42,14 @@
             this.cGPS = new System.Windows.Forms.CheckBox();
             this.lblRecibo = new System.Windows.Forms.Label();
             this.txtRecibo = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.gpEquipar.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpEquipar
             // 
             this.gpEquipar.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
+            this.gpEquipar.Controls.Add(this.button1);
             this.gpEquipar.Controls.Add(this.btnCalcular);
             this.gpEquipar.Controls.Add(this.lblPreço);
             this.gpEquipar.Controls.Add(this.txtValorTotal);
@@ -64,7 +66,7 @@
             this.gpEquipar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpEquipar.Location = new System.Drawing.Point(12, 12);
             this.gpEquipar.Name = "gpEquipar";
-            this.gpEquipar.Size = new System.Drawing.Size(593, 324);
+            this.gpEquipar.Size = new System.Drawing.Size(593, 370);
             this.gpEquipar.TabIndex = 0;
             this.gpEquipar.TabStop = false;
             this.gpEquipar.Text = "Equipar Carro ";
@@ -72,7 +74,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(224, 224);
+            this.btnCalcular.Location = new System.Drawing.Point(224, 281);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(91, 26);
             this.btnCalcular.TabIndex = 13;
@@ -84,7 +86,7 @@
             // 
             this.lblPreço.AutoSize = true;
             this.lblPreço.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreço.Location = new System.Drawing.Point(32, 227);
+            this.lblPreço.Location = new System.Drawing.Point(32, 284);
             this.lblPreço.Name = "lblPreço";
             this.lblPreço.Size = new System.Drawing.Size(56, 20);
             this.lblPreço.TabIndex = 12;
@@ -93,14 +95,14 @@
             // txtValorTotal
             // 
             this.txtValorTotal.Enabled = false;
-            this.txtValorTotal.Location = new System.Drawing.Point(108, 224);
+            this.txtValorTotal.Location = new System.Drawing.Point(108, 281);
             this.txtValorTotal.Name = "txtValorTotal";
             this.txtValorTotal.Size = new System.Drawing.Size(100, 26);
             this.txtValorTotal.TabIndex = 11;
             // 
             // btnVoltar
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(36, 272);
+            this.btnVoltar.Location = new System.Drawing.Point(38, 327);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(88, 37);
             this.btnVoltar.TabIndex = 10;
@@ -110,7 +112,7 @@
             // 
             // btnEquipar
             // 
-            this.btnEquipar.Location = new System.Drawing.Point(467, 272);
+            this.btnEquipar.Location = new System.Drawing.Point(469, 327);
             this.btnEquipar.Name = "btnEquipar";
             this.btnEquipar.Size = new System.Drawing.Size(88, 37);
             this.btnEquipar.TabIndex = 9;
@@ -122,44 +124,44 @@
             // 
             this.cCDplayer.AutoSize = true;
             this.cCDplayer.BackColor = System.Drawing.Color.Transparent;
-            this.cCDplayer.Location = new System.Drawing.Point(430, 164);
+            this.cCDplayer.Location = new System.Drawing.Point(330, 155);
             this.cCDplayer.Name = "cCDplayer";
-            this.cCDplayer.Size = new System.Drawing.Size(112, 24);
+            this.cCDplayer.Size = new System.Drawing.Size(191, 24);
             this.cCDplayer.TabIndex = 8;
-            this.cCDplayer.Text = "CD Player ";
+            this.cCDplayer.Text = "CD Player - R$30,00";
             this.cCDplayer.UseVisualStyleBackColor = false;
             // 
             // cPortacopo
             // 
             this.cPortacopo.AutoSize = true;
             this.cPortacopo.BackColor = System.Drawing.Color.Transparent;
-            this.cPortacopo.Location = new System.Drawing.Point(224, 164);
+            this.cPortacopo.Location = new System.Drawing.Point(36, 218);
             this.cPortacopo.Name = "cPortacopo";
-            this.cPortacopo.Size = new System.Drawing.Size(118, 24);
+            this.cPortacopo.Size = new System.Drawing.Size(289, 24);
             this.cPortacopo.TabIndex = 7;
-            this.cPortacopo.Text = "Porta Copo";
+            this.cPortacopo.Text = "Bolsa Porta Acessório - R$15,00";
             this.cPortacopo.UseVisualStyleBackColor = false;
             // 
             // cSuporteCelular
             // 
             this.cSuporteCelular.AutoSize = true;
             this.cSuporteCelular.BackColor = System.Drawing.Color.Transparent;
-            this.cSuporteCelular.Location = new System.Drawing.Point(224, 122);
+            this.cSuporteCelular.Location = new System.Drawing.Point(36, 185);
             this.cSuporteCelular.Name = "cSuporteCelular";
-            this.cSuporteCelular.Size = new System.Drawing.Size(194, 24);
+            this.cSuporteCelular.Size = new System.Drawing.Size(278, 24);
             this.cSuporteCelular.TabIndex = 6;
-            this.cSuporteCelular.Text = "Suporte para Celular";
+            this.cSuporteCelular.Text = "Suporte para Celular - R$10,00";
             this.cSuporteCelular.UseVisualStyleBackColor = false;
             // 
             // ckitferramenta
             // 
             this.ckitferramenta.AutoSize = true;
             this.ckitferramenta.BackColor = System.Drawing.Color.Transparent;
-            this.ckitferramenta.Location = new System.Drawing.Point(36, 164);
+            this.ckitferramenta.Location = new System.Drawing.Point(36, 155);
             this.ckitferramenta.Name = "ckitferramenta";
-            this.ckitferramenta.Size = new System.Drawing.Size(172, 24);
+            this.ckitferramenta.Size = new System.Drawing.Size(256, 24);
             this.ckitferramenta.TabIndex = 5;
-            this.ckitferramenta.Text = "Kit de Ferramenta";
+            this.ckitferramenta.Text = "Kit de Ferramenta - R$70,00";
             this.ckitferramenta.UseVisualStyleBackColor = false;
             // 
             // cDVDAutomotivo
@@ -168,20 +170,20 @@
             this.cDVDAutomotivo.BackColor = System.Drawing.Color.Transparent;
             this.cDVDAutomotivo.Location = new System.Drawing.Point(36, 122);
             this.cDVDAutomotivo.Name = "cDVDAutomotivo";
-            this.cDVDAutomotivo.Size = new System.Drawing.Size(161, 24);
+            this.cDVDAutomotivo.Size = new System.Drawing.Size(245, 24);
             this.cDVDAutomotivo.TabIndex = 4;
-            this.cDVDAutomotivo.Text = "DVD Automotivo";
+            this.cDVDAutomotivo.Text = "DVD Automotivo - R$50,00";
             this.cDVDAutomotivo.UseVisualStyleBackColor = false;
             // 
             // cGPS
             // 
             this.cGPS.AutoSize = true;
             this.cGPS.BackColor = System.Drawing.Color.Transparent;
-            this.cGPS.Location = new System.Drawing.Point(430, 122);
+            this.cGPS.Location = new System.Drawing.Point(330, 122);
             this.cGPS.Name = "cGPS";
-            this.cGPS.Size = new System.Drawing.Size(65, 24);
+            this.cGPS.Size = new System.Drawing.Size(149, 24);
             this.cGPS.TabIndex = 3;
-            this.cGPS.Text = "GPS";
+            this.cGPS.Text = "GPS - R$60,00";
             this.cGPS.UseVisualStyleBackColor = false;
             // 
             // lblRecibo
@@ -201,12 +203,22 @@
             this.txtRecibo.Size = new System.Drawing.Size(186, 26);
             this.txtRecibo.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(142, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 37);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Devolver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TelaEquipar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.Parrot_RNB6_1;
-            this.ClientSize = new System.Drawing.Size(617, 348);
+            this.ClientSize = new System.Drawing.Size(617, 394);
             this.Controls.Add(this.gpEquipar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -236,5 +248,6 @@
         private System.Windows.Forms.Label lblPreço;
         private System.Windows.Forms.TextBox txtValorTotal;
         private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.Button button1;
     }
 }

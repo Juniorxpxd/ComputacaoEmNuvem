@@ -24,6 +24,7 @@ namespace AluguelDeCarros
         {
             try
             {
+
                 if (!txtNome.Text.Equals(""))
                 {
                     if (!mskCel.Text.Equals(""))
@@ -44,48 +45,55 @@ namespace AluguelDeCarros
                                                 {
                                                     if (!mskTel.Text.Equals(""))
                                                     {
-                                                        empresa.NomeEmpresa = txtNomeEmpresa.Text;
-                                                        if (EmpresaDAO.BuscarEmpresaPorNomeEmpresa(empresa) == null)
+                                                        if (!cmbPlano.Text.Equals(""))
                                                         {
                                                             empresa.NomeEmpresa = txtNomeEmpresa.Text;
-                                                            empresa.Email = txtEmail.Text;
-                                                            if (EmpresaDAO.BuscarEmpresaPorEmail(empresa) == null)
+                                                            if (EmpresaDAO.BuscarEmpresaPorNomeEmpresa(empresa) == null)
                                                             {
+                                                                empresa.NomeEmpresa = txtNomeEmpresa.Text;
                                                                 empresa.Email = txtEmail.Text;
-                                                                empresa.CNPJ = mskCNPJ.Text;
-                                                                if (EmpresaDAO.BuscarEmpresaPorCNPJ(empresa) == null)
+                                                                if (EmpresaDAO.BuscarEmpresaPorEmail(empresa) == null)
                                                                 {
+                                                                    empresa.Email = txtEmail.Text;
                                                                     empresa.CNPJ = mskCNPJ.Text;
-                                                                    empresa.Nome = txtNome.Text;
-                                                                    empresa.Celular = mskCel.Text;
-                                                                    empresa.Cidade = txtCid.Text;
-                                                                    empresa.Estado = txtEst.Text;
-                                                                    empresa.Rua = txtRua.Text;
-                                                                    empresa.Senha = txtSenha.Text;
-                                                                    empresa.Telefone = mskTel.Text;
-                                                                    Plano Plano = new Plano();
-                                                                    Plano.PlanoCarro = cmbPlano.Text;
-                                                                    Plano = PlanoDAO.NomeMesmo(Plano);
-                                                                    empresa.Plano = Plano;
-                                                                    EmpresaDAO.Incluir(empresa);
+                                                                    if (EmpresaDAO.BuscarEmpresaPorCNPJ(empresa) == null)
+                                                                    {
+                                                                        empresa.CNPJ = mskCNPJ.Text;
+                                                                        empresa.Nome = txtNome.Text;
+                                                                        empresa.Celular = mskCel.Text;
+                                                                        empresa.Cidade = txtCid.Text;
+                                                                        empresa.Estado = txtEst.Text;
+                                                                        empresa.Rua = txtRua.Text;
+                                                                        empresa.Senha = txtSenha.Text;
+                                                                        empresa.Telefone = mskTel.Text;
+                                                                        Plano Plano = new Plano();
+                                                                        Plano.PlanoCarro = cmbPlano.Text;
+                                                                        Plano = PlanoDAO.NomeMesmo(Plano);
+                                                                        empresa.Plano = Plano;
+                                                                        EmpresaDAO.Incluir(empresa);
 
-                                                                    MessageBox.Show("O cadastro da empresa: " + empresa.NomeEmpresa + " foi concluido com sucesso", "Cadastrado");
-                                                                    this.Close();
+                                                                        MessageBox.Show("O cadastro da empresa: " + empresa.NomeEmpresa + " foi concluido com sucesso", "Cadastrado");
+                                                                        this.Close();
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        MessageBox.Show("CNPJ já foi Registrado.", "CNPJ já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                                    }
                                                                 }
                                                                 else
                                                                 {
-                                                                    MessageBox.Show("CNPJ já foi Registrado.", "CNPJ já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                                    MessageBox.Show("Email já foi Registrado.", "Email já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                                                                 }
                                                             }
                                                             else
                                                             {
-                                                                MessageBox.Show("Email já foi Registrado.", "Email já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
+                                                                MessageBox.Show("Nome de Empresa já foi Registrado.", "Nome de Empresa já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                                             }
                                                         }
                                                         else
                                                         {
-                                                            MessageBox.Show("Nome de Empresa já foi Registrado.", "Nome de Empresa já Existente", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                                            MessageBox.Show("O campo Plano é de obrigatória seleção.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                                                         }
                                                     }
                                                     else
@@ -137,7 +145,8 @@ namespace AluguelDeCarros
                 {
                     MessageBox.Show("O campo Nome é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
+
+
             }
             catch (SqlException e)
             {

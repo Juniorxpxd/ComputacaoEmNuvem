@@ -126,7 +126,7 @@ namespace AluguelDeCarros
                 cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
                 if (alugar.Cliente == cliente)
                 {
-                    if (EquipadoDAO.BuscarCarroEquipadoPorRecibo(alugar) != null)
+                    if (AlugadoDAO.ObterAluguelPorIdEquipamento(alugar) != null)
                     {
                         if (!txtValorTotal.Text.Equals(""))
                         {
@@ -156,6 +156,32 @@ namespace AluguelDeCarros
             catch
             {
 
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Equipado equipado = new Equipado();
+                equipado.Id = int.Parse(txtRecibo.Text);
+                equipado = EquipadoDAO.ObterEquipadoPorId(equipado);
+                if (equipado != null)
+                {
+
+
+                    EquipadoDAO.Excluir(equipado);
+                    MessageBox.Show("Equipamento Devolvido", "Devolvido");
+
+                }
+                else
+                {
+                    MessageBox.Show("Equipamento inexistente", "Erro");
+                }
+            }
+            catch (SqlException r)
+            {
+                MessageBox.Show(r + "Erro ao Devolver Equipamento", "Erro");
             }
         }
     }

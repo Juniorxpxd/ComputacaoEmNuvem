@@ -25,42 +25,51 @@ namespace AluguelDeCarros
         Empresa empresa = new Empresa();
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            try
+            if (!txtEmail.Text.Equals(""))
             {
-                Cliente cliente = new Cliente();
-                cliente.Email = txtEmail.Text;
-                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
-                cliente.Nome = txtNome.Text;
-                cliente.Senha = txtSenha.Text;
-                cliente.Cpf = mskCPF.Text;
-                cliente.Rg = mskRG.Text;
-                cliente.Telefone = mskTel.Text;
-                cliente.Celular = mskCel.Text;
-                cliente.Rua = txtRua.Text;
-                cliente.Cidade = txtCid.Text;
-                cliente.Estado = txtEst.Text;
-                cliente.Numero = int.Parse(txtNumero.Text);
-                ClienteDAO.Editar(cliente);
-                MessageBox.Show("Cadastro do cliente: " + cliente.Nome + " foi alterado !!!", "Alterado");
+                try
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.Email = txtEmail.Text;
+                    cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                    cliente.Nome = txtNome.Text;
+                    cliente.Senha = txtSenha.Text;
+                    cliente.Cpf = mskCPF.Text;
+                    cliente.Rg = mskRG.Text;
+                    cliente.Telefone = mskTel.Text;
+                    cliente.Celular = mskCel.Text;
+                    cliente.Rua = txtRua.Text;
+                    cliente.Cidade = txtCid.Text;
+                    cliente.Estado = txtEst.Text;
+                    cliente.Numero = int.Parse(txtNumero.Text);
+                    ClienteDAO.Editar(cliente);
+                    MessageBox.Show("Cadastro do cliente: " + cliente.Nome + " foi alterado !!!", "Alterado");
+                }
+                catch
+                {
+                    MessageBox.Show(e + "Erro ao Alterar Cadastro", "Erro");
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show(e + "Erro ao Alterar Cadastro", "Erro");
+                MessageBox.Show("O campo Email é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            empresa.Email = this.email;
-            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
-            cliente.Empresa = empresa;
-            cliente.Email = txtEmail.Text;
-            cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
-            if (cliente != null)
+            if (!txtEmail.Text.Equals(""))
             {
-                if (cliente.Empresa == empresa)
+                empresa.Email = this.email;
+                empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+                cliente.Empresa = empresa;
+                cliente.Email = txtEmail.Text;
+                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                if (cliente != null)
                 {
-                    if (!txtEmail.Equals(""))
+                    if (cliente.Empresa == empresa)
                     {
+
                         Cliente cliente = new Cliente();
                         try
                         {
@@ -96,6 +105,12 @@ namespace AluguelDeCarros
                             txtEmail.Clear();
                             txtEmail.Focus();
                         }
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cliente não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        this.Close();
                     }
                 }
                 else
@@ -105,7 +120,7 @@ namespace AluguelDeCarros
             }
             else
             {
-                MessageBox.Show("Cliente não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("O campo Email é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

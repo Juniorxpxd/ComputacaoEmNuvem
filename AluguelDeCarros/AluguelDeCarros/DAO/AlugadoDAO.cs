@@ -31,6 +31,11 @@ namespace AluguelDeCarros.DAO
                 return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
  
         }
+
+        public static Alugado ObterAluguelPorIdEquipamento(Alugado Alugado)
+        {
+            return entities.Alugados.FirstOrDefault(x => x.Id.Equals(Alugado.Id));
+        }
         public static bool Excluir(Alugado Alugado)
         {
             try
