@@ -27,19 +27,31 @@ namespace AluguelDeCarros
             try
             {
                 Alugado alugar = new Alugado();
-                alugar.Id = int.Parse(txtRecibo.Text);
-                alugar = AlugadoDAO.ObterAluguelPorId(alugar);
+                Cliente cliente = new Cliente();
+                cliente.Email = this.email;
+                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                alugar.Cliente = cliente;
+                alugar = AlugadoDAO.ObterAluguelPorCliente(alugar);
                 if (alugar != null)
                 {
-                    if (alugar.Carro.EstadoDisp == false)
+                    alugar.Id = int.Parse(txtRecibo.Text);
+                    alugar = AlugadoDAO.ObterAluguelPorId(alugar);
+                    if (alugar != null)
                     {
-                        alugar.Carro.EstadoDisp = true;
-                        AlugadoDAO.Excluir(alugar);
-                        MessageBox.Show("Carro Devolvido", "Devolvido");
+                        if (alugar.Carro.EstadoDisp == false)
+                        {
+                            alugar.Carro.EstadoDisp = true;
+                            AlugadoDAO.Excluir(alugar);
+                            MessageBox.Show("Carro Devolvido", "Devolvido");
+                        }
+                        else
+                        {
+                            MessageBox.Show("O Carro não esta locado", "Erro");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("O Carro não esta locado", "Erro");
+                        MessageBox.Show("Carro inexistente", "Erro");
                     }
                 }
                 else

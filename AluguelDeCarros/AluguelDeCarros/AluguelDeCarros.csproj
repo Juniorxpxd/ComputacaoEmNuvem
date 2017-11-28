@@ -148,6 +148,12 @@
     <Compile Include="Model\Entities.cs" />
     <Compile Include="Model\Equipado.cs" />
     <Compile Include="Model\Plano.cs" />
+    <Compile Include="PerfilCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PerfilCliente.Designer.cs">
+      <DependentUpon>PerfilCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="PerfilEmpresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201711272348463_EquipadoIncluidoNoTrab.resx">
       <DependentUpon>201711272348463_EquipadoIncluidoNoTrab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PerfilCliente.resx">
+      <DependentUpon>PerfilCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>

@@ -101,6 +101,12 @@ namespace AluguelDeCarros.DAO
                 return null;
             }
         }
+        public static Carro ObterCarroPorEmpresa(Carro carro)
+        {
+
+            return entities.Carros.Include("Empresa").FirstOrDefault(x => x.Empresa.Id == carro.Empresa.Id);
+
+        }
         public static string EstadoDisp(bool EstadoDisp)
         {
             if (EstadoDisp == true)

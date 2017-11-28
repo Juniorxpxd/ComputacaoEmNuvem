@@ -69,6 +69,7 @@
             // 
             // txtPreco
             // 
+            this.txtPreco.Enabled = false;
             this.txtPreco.Location = new System.Drawing.Point(226, 107);
             this.txtPreco.MaxLength = 100;
             this.txtPreco.Name = "txtPreco";
@@ -79,7 +80,6 @@
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.BackColor = System.Drawing.Color.Transparent;
-            this.lblPreco.Enabled = false;
             this.lblPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreco.ForeColor = System.Drawing.Color.Black;
             this.lblPreco.Location = new System.Drawing.Point(222, 84);

@@ -27,9 +27,11 @@ namespace AluguelDeCarros.DAO
         }
         public static Alugado ObterAluguelPorId(Alugado Alugado)
         {
-      
-                return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
- 
+            return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Id == Alugado.Id);
+        }
+        public static Alugado ObterAluguelPorCliente(Alugado Alugado)
+        {
+            return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Cliente.Id == Alugado.Cliente.Id);
         }
 
         public static Alugado ObterAluguelPorIdEquipamento(Alugado Alugado)
@@ -44,7 +46,7 @@ namespace AluguelDeCarros.DAO
                 entities.SaveChanges();
                 return true;
             }
-            catch
+            catch (Exception e)
             {
                 return false;
             }
