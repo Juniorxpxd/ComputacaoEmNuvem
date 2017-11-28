@@ -27,21 +27,25 @@ namespace AluguelDeCarros.DAO
 
         public static Cliente BuscarClientePorEmailESenha(Cliente cliente)
         {
-            return entities.Clientes.FirstOrDefault(x => x.Email.Equals(cliente.Email) && x.Senha.Equals(cliente.Senha));
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Email.Equals(cliente.Email) && x.Senha.Equals(cliente.Senha));
         }
 
         public static Cliente BuscarClientePorCPF(Cliente Cliente)
         {
-            return entities.Clientes.FirstOrDefault(x => x.Cpf.Equals(Cliente.Cpf));
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Cpf.Equals(Cliente.Cpf));
         }
 
         public static Cliente BuscarClientePorRG(Cliente Cliente)
         {
-            return entities.Clientes.FirstOrDefault(x => x.Rg.Equals(Cliente.Rg));
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Rg.Equals(Cliente.Rg));
         }
         public static Cliente BuscarCLientePorEmail(Cliente Cliente)
         {
-            return entities.Clientes.FirstOrDefault(x => x.Email.Equals(Cliente.Email));
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Email.Equals(Cliente.Email));
+        }
+        public static Cliente BuscarClientePorEmpresa(Cliente Cliente)
+        {
+            return entities.Clientes.Include("Empresa").FirstOrDefault(x => x.Empresa.Email.Equals(Cliente.Empresa.Email));
         }
 
         public static bool Excluir(Cliente Cliente)

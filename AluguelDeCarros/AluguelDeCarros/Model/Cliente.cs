@@ -24,5 +24,6 @@ namespace AluguelDeCarros.Model
         public string Cidade { get; set; }
         public string Estado { get; set; }
         public int Numero { get; set; }
+        public Empresa Empresa { get; set; }
     }
 }

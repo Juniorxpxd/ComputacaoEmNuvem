@@ -16,8 +16,11 @@ namespace AluguelDeCarros
     public partial class CadastroCliente : Form
     {
         Cliente cliente = new Cliente();
-        public CadastroCliente()
+        Empresa empresa = new Empresa();
+        private string email;
+        public CadastroCliente(string email)
         {
+            this.email = email;
             InitializeComponent();
         }
 
@@ -25,6 +28,9 @@ namespace AluguelDeCarros
         {
             try
             {
+                empresa.Email = this.email;
+                empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+                cliente.Empresa = empresa;
                 if (!txtNome.Text.Equals(""))
                 {
                     if (!txtEmail.Text.Equals(""))
@@ -61,7 +67,6 @@ namespace AluguelDeCarros
                                                                     {
                                                                         cliente.Rg = mskRG.Text;
                                                                         cliente.Nome = txtNome.Text;
-
                                                                         cliente.Senha = txtSenha.Text;
                                                                         cliente.Telefone = mskTel.Text;
                                                                         cliente.Celular = mskCel.Text;

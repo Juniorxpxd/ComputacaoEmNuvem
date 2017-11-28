@@ -22,7 +22,7 @@ namespace AluguelDeCarros
 
         private void btnCadCliente_Click(object sender, EventArgs e)
         {
-            CadastroCliente cadCliente = new CadastroCliente();
+            CadastroCliente cadCliente = new CadastroCliente(this.email);
             cadCliente.ShowDialog();
         }
 

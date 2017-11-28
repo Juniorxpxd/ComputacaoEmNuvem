@@ -74,7 +74,7 @@
             this.txtPreco.MaxLength = 100;
             this.txtPreco.Name = "txtPreco";
             this.txtPreco.Size = new System.Drawing.Size(168, 26);
-            this.txtPreco.TabIndex = 184;
+            this.txtPreco.TabIndex = 6;
             // 
             // lblPreco
             // 
@@ -94,7 +94,7 @@
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(152, 26);
-            this.txtNome.TabIndex = 178;
+            this.txtNome.TabIndex = 1;
             this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtCor
@@ -103,7 +103,7 @@
             this.txtCor.MaxLength = 100;
             this.txtCor.Name = "txtCor";
             this.txtCor.Size = new System.Drawing.Size(168, 26);
-            this.txtCor.TabIndex = 186;
+            this.txtCor.TabIndex = 8;
             // 
             // lblMarca
             // 
@@ -137,7 +137,7 @@
             this.txtMarca.MaxLength = 100;
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(152, 26);
-            this.txtMarca.TabIndex = 179;
+            this.txtMarca.TabIndex = 2;
             this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // txtCambio
@@ -146,7 +146,7 @@
             this.txtCambio.MaxLength = 100;
             this.txtCambio.Name = "txtCambio";
             this.txtCambio.Size = new System.Drawing.Size(168, 26);
-            this.txtCambio.TabIndex = 183;
+            this.txtCambio.TabIndex = 5;
             // 
             // lblAno
             // 
@@ -179,7 +179,7 @@
             this.txtAno.MaxLength = 100;
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(152, 26);
-            this.txtAno.TabIndex = 180;
+            this.txtAno.TabIndex = 3;
             this.txtAno.TextChanged += new System.EventHandler(this.txtAno_TextChanged);
             // 
             // txtPlaca
@@ -188,7 +188,7 @@
             this.txtPlaca.MaxLength = 100;
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(152, 26);
-            this.txtPlaca.TabIndex = 182;
+            this.txtPlaca.TabIndex = 0;
             this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
             this.txtPlaca.Leave += new System.EventHandler(this.txtPlaca_Leave);
             // 
@@ -212,9 +212,9 @@
             this.lblPlaca.ForeColor = System.Drawing.Color.Black;
             this.lblPlaca.Location = new System.Drawing.Point(23, 33);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(136, 20);
+            this.lblPlaca.Size = new System.Drawing.Size(144, 20);
             this.lblPlaca.TabIndex = 194;
-            this.lblPlaca.Text = "Bucar por Placa";
+            this.lblPlaca.Text = "Buscar por placa";
             this.lblPlaca.Click += new System.EventHandler(this.lblPlaca_Click);
             // 
             // txtQuilometragem
@@ -223,7 +223,7 @@
             this.txtQuilometragem.MaxLength = 100;
             this.txtQuilometragem.Name = "txtQuilometragem";
             this.txtQuilometragem.Size = new System.Drawing.Size(168, 26);
-            this.txtQuilometragem.TabIndex = 185;
+            this.txtQuilometragem.TabIndex = 7;
             // 
             // txtPorta
             // 
@@ -231,7 +231,7 @@
             this.txtPorta.MaxLength = 100;
             this.txtPorta.Name = "txtPorta";
             this.txtPorta.Size = new System.Drawing.Size(152, 26);
-            this.txtPorta.TabIndex = 181;
+            this.txtPorta.TabIndex = 4;
             this.txtPorta.TextChanged += new System.EventHandler(this.txtPorta_TextChanged);
             // 
             // lblPorta
@@ -255,7 +255,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(385, 315);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(89, 59);
-            this.btnSalvar.TabIndex = 187;
+            this.btnSalvar.TabIndex = 12;
             this.btnSalvar.Text = "Editar";
             this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
@@ -266,18 +266,17 @@
             this.Mostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Mostrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Mostrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Mostrar.Location = new System.Drawing.Point(114, 315);
+            this.Mostrar.Location = new System.Drawing.Point(132, 315);
             this.Mostrar.Name = "Mostrar";
             this.Mostrar.Size = new System.Drawing.Size(89, 59);
-            this.Mostrar.TabIndex = 198;
-            this.Mostrar.Text = "Mostrar";
+            this.Mostrar.TabIndex = 10;
+            this.Mostrar.Text = "Buscar";
             this.Mostrar.UseVisualStyleBackColor = false;
             this.Mostrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
-            this.groupBox1.BackgroundImage = global::AluguelDeCarros.Properties.Resources.o_tamanho_da_roda_pode_aumentar_o_consumo_de_combustivel_do_carro;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnExcluir);
             this.groupBox1.Controls.Add(this.btnVoltar);
             this.groupBox1.Controls.Add(this.lblNome);
@@ -306,7 +305,7 @@
             this.groupBox1.Size = new System.Drawing.Size(480, 380);
             this.groupBox1.TabIndex = 199;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Editar Excluir Carro";
+            this.groupBox1.Text = "Editar - Excluir - Carro";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnExcluir
@@ -315,10 +314,10 @@
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnExcluir.Location = new System.Drawing.Point(241, 315);
+            this.btnExcluir.Location = new System.Drawing.Point(263, 315);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(89, 59);
-            this.btnExcluir.TabIndex = 200;
+            this.btnExcluir.TabIndex = 11;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.button1_Click_2);
@@ -332,7 +331,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(6, 315);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(89, 59);
-            this.btnVoltar.TabIndex = 199;
+            this.btnVoltar.TabIndex = 9;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
             this.btnVoltar.Click += new System.EventHandler(this.button1_Click_1);

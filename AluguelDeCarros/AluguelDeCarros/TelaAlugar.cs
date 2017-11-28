@@ -39,9 +39,9 @@ namespace AluguelDeCarros
                     txtAno.Text = carro.Ano.ToString();
                     txtPortas.Text = carro.Portas.ToString();
                     txtCambio.Text = carro.Cambio;
-                    txtPreco.Text = carro.Preco.ToString("C2");
                     txtQuilometragem.Text = carro.Quilometragem;
                     txtCor.Text = carro.Cor;
+                    txtRateApplied.Text = carro.Preco.ToString();
                 }
                 catch
                 {
@@ -91,13 +91,20 @@ namespace AluguelDeCarros
                 {
                     if(carro.EstadoDisp == true)
                     {
-                        carro.EstadoDisp = false;
-                        alugado.Carro = carro;
-                        alugado.DiasAlugado = int.Parse(txtDays.Text);
-                        alugado.Valor = float.Parse(txtOrderTotal.Text);
-                        AlugadoDAO.Incluir(alugado);
-                        txtReceiptNumber.Text = alugado.Id.ToString();
-                        MessageBox.Show("O carro " + carro.Nome + " foi alugado com sucesso e guarde o seu recibo: #" + alugado.Id + " para devolução", "Alugado");
+                        if (carro.Empresa == cliente.Empresa)
+                        {
+                            carro.EstadoDisp = false;
+                            alugado.Carro = carro;
+                            alugado.DiasAlugado = int.Parse(txtDays.Text);
+                            alugado.Valor = float.Parse(txtOrderTotal.Text);
+                            AlugadoDAO.Incluir(alugado);
+                            txtReceiptNumber.Text = alugado.Id.ToString();
+                            MessageBox.Show("O carro " + carro.Nome + " foi alugado com sucesso e guarde o seu recibo: #" + alugado.Id + " para devolução", "Alugado");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Erro ao alugar - Carro não existe nesta empresa", "Erro");
+                        }
                     }
                     else
                     {
@@ -116,35 +123,40 @@ namespace AluguelDeCarros
         }
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            int Dias = 0;
-            double TaxaAplicada = 0.00;
-            double SubTotal = 0.00;
-            double ValorImposto = 0.00;
-            double ValorTotal = 0.00;
-
-            try
+            carro.Placa = txtPlaca.Text;
+            carro = CarroDAO.obterPlaca(carro);
+            if (carro != null)
             {
-                Dias = int.Parse(this.txtDays.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Número de dias inválido");
-            }
+                int Dias = 0;
+                double TaxaAplicada = 0.00;
+                double SubTotal = 0.00;
+                double ValorImposto = 0.00;
+                double ValorTotal = 0.00;
+                TaxaAplicada = carro.Preco;
+                try
+                {
+                    Dias = int.Parse(this.txtDays.Text);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Número de dias inválido");
+                }
 
-            try
-            {
-                TaxaAplicada = double.Parse(txtRateApplied.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Valor inválido para a taxa aplicada");
-            }
+                try
+                {
+                    TaxaAplicada = double.Parse(txtRateApplied.Text);
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Valor inválido para a taxa aplicada");
+                }
 
-            SubTotal = Dias * TaxaAplicada;
-            txtSubTotal.Text = SubTotal.ToString("F");
+                SubTotal = Dias * TaxaAplicada;
+                txtSubTotal.Text = SubTotal.ToString("F");
 
-            ValorTotal = SubTotal + ValorImposto;
-            txtOrderTotal.Text = ValorTotal.ToString("F");
+                ValorTotal = SubTotal + ValorImposto;
+                txtOrderTotal.Text = ValorTotal.ToString("F");
+            }
         }
 
         private void txtPlaca_TextChanged(object sender, EventArgs e)

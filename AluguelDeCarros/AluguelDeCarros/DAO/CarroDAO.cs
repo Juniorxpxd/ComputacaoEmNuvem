@@ -115,7 +115,7 @@ namespace AluguelDeCarros.DAO
         }
         public static Carro obterPlaca(Carro carro)
         {
-            return entities.Carros.FirstOrDefault (x => x.Placa.Equals(carro.Placa));
+            return entities.Carros.Include("Empresa").FirstOrDefault (x => x.Placa.Equals(carro.Placa));
         }
         public static bool Excluir(Carro Carro)
         {

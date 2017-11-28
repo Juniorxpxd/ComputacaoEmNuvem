@@ -31,7 +31,6 @@
             this.btnCadCliente = new System.Windows.Forms.Button();
             this.btnCadCarro = new System.Windows.Forms.Button();
             this.btnCarros = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.grpEmpresa = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -80,20 +79,6 @@
             this.btnCarros.UseVisualStyleBackColor = false;
             this.btnCarros.Click += new System.EventHandler(this.btnCarros_Click);
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.Window;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(314, 129);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(139, 51);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Lista de Clientes";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // btnSair
             // 
             this.btnSair.BackColor = System.Drawing.SystemColors.Window;
@@ -116,7 +101,6 @@
             this.grpEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.grpEmpresa.Controls.Add(this.button5);
             this.grpEmpresa.Controls.Add(this.btnCadCarro);
-            this.grpEmpresa.Controls.Add(this.button4);
             this.grpEmpresa.Controls.Add(this.btnSair);
             this.grpEmpresa.Controls.Add(this.btnCadCliente);
             this.grpEmpresa.Controls.Add(this.btnCarros);
@@ -135,7 +119,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(161, 78);
+            this.button5.Location = new System.Drawing.Point(314, 141);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(139, 51);
             this.button5.TabIndex = 7;
@@ -167,7 +151,6 @@
         private System.Windows.Forms.Button btnCadCliente;
         private System.Windows.Forms.Button btnCadCarro;
         private System.Windows.Forms.Button btnCarros;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.GroupBox grpEmpresa;
         private System.Windows.Forms.Button button5;
