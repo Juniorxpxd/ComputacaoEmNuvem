@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gpEquipar = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblPreço = new System.Windows.Forms.Label();
             this.txtValorTotal = new System.Windows.Forms.TextBox();
@@ -42,13 +43,16 @@
             this.cGPS = new System.Windows.Forms.CheckBox();
             this.lblRecibo = new System.Windows.Forms.Label();
             this.txtRecibo = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtReciboDevolver = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gpEquipar.SuspendLayout();
             this.SuspendLayout();
             // 
             // gpEquipar
             // 
             this.gpEquipar.BackgroundImage = global::AluguelDeCarros.Properties.Resources.resumo_de_fundo_com_um_desenho_geometrico_1048_1450;
+            this.gpEquipar.Controls.Add(this.label1);
+            this.gpEquipar.Controls.Add(this.txtReciboDevolver);
             this.gpEquipar.Controls.Add(this.button1);
             this.gpEquipar.Controls.Add(this.btnCalcular);
             this.gpEquipar.Controls.Add(this.lblPreço);
@@ -66,10 +70,20 @@
             this.gpEquipar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpEquipar.Location = new System.Drawing.Point(12, 12);
             this.gpEquipar.Name = "gpEquipar";
-            this.gpEquipar.Size = new System.Drawing.Size(593, 370);
+            this.gpEquipar.Size = new System.Drawing.Size(934, 370);
             this.gpEquipar.TabIndex = 0;
             this.gpEquipar.TabStop = false;
             this.gpEquipar.Text = "Equipar Carro ";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(743, 327);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 37);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Devolver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnCalcular
             // 
@@ -112,7 +126,7 @@
             // 
             // btnEquipar
             // 
-            this.btnEquipar.Location = new System.Drawing.Point(469, 327);
+            this.btnEquipar.Location = new System.Drawing.Point(433, 327);
             this.btnEquipar.Name = "btnEquipar";
             this.btnEquipar.Size = new System.Drawing.Size(88, 37);
             this.btnEquipar.TabIndex = 9;
@@ -203,22 +217,29 @@
             this.txtRecibo.Size = new System.Drawing.Size(186, 26);
             this.txtRecibo.TabIndex = 0;
             // 
-            // button1
+            // txtReciboDevolver
             // 
-            this.button1.Location = new System.Drawing.Point(142, 327);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 37);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Devolver";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.txtReciboDevolver.Location = new System.Drawing.Point(719, 41);
+            this.txtReciboDevolver.Name = "txtReciboDevolver";
+            this.txtReciboDevolver.Size = new System.Drawing.Size(186, 26);
+            this.txtReciboDevolver.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(643, 44);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Recibo:";
             // 
             // TelaEquipar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::AluguelDeCarros.Properties.Resources.Parrot_RNB6_1;
-            this.ClientSize = new System.Drawing.Size(617, 394);
+            this.ClientSize = new System.Drawing.Size(958, 394);
             this.Controls.Add(this.gpEquipar);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -249,5 +270,7 @@
         private System.Windows.Forms.TextBox txtValorTotal;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtReciboDevolver;
     }
 }

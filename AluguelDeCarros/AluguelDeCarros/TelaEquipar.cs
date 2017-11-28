@@ -116,47 +116,47 @@ namespace AluguelDeCarros
 
         private void btnEquipar_Click(object sender, EventArgs e)
         {
+
             try
             {
-                Equipado equipado = new Equipado();
-                Alugado alugar = new Alugado();
-                alugar.Id = int.Parse(txtRecibo.Text);
-                alugar = AlugadoDAO.ObterAluguelPorId(alugar);
-                cliente.Email = email;
-                cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
-                if (alugar.Cliente == cliente)
+                if (!txtValorTotal.Text.Equals(""))
                 {
-                    if (EquipadoDAO.BuscarCarroEquipadoPorRecibo(alugar) != null)
+                    Equipado equipado = new Equipado();
+                    Alugado alugar = new Alugado();
+                   
+                    alugar = AlugadoDAO.ObterAluguelPorId(alugar);
+                    cliente.Email = email;
+                    cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+
+                    if (AlugadoDAO.ObterAluguelPorId(alugar) != null)
                     {
-                        if (!txtValorTotal.Text.Equals(""))
-                        {
-                            equipado.Alugado = alugar;
-                            equipado.ValorTotal = double.Parse(txtValorTotal.Text);
-                            EquipadoDAO.Incluir(equipado);
-                            this.Close();
 
-                            MessageBox.Show("Os equipamentos solicitados para o carro: " + alugar.Carro.Nome + " foi concluido com sucesso", "Cadastrado");
-                        }
-                        else
-                        {
-                            MessageBox.Show("O campo Valor é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        equipado.Alugado = alugar;
+                        equipado.ValorTotal = double.Parse(txtValorTotal.Text);
+                        EquipadoDAO.Incluir(equipado);
+                        this.Close();
 
-                        }
+                        MessageBox.Show("O recibo do equipamento de seu carro: " + equipado.Id + " foi concluido com sucesso", "Cadastrado");
+
                     }
                     else
                     {
                         MessageBox.Show("Carro já foi Equipado.", "Carro já Equipado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Você não alugou este carro", "Erro");
+                    MessageBox.Show("O campo Valor é de preenchimento obrigatório.", "Campos em branco", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                 }
-            }
-            catch
-            {
 
             }
+            catch (SqlException r)
+            {
+                MessageBox.Show(e + "Erro ao cadastrar", "Erro");
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -164,7 +164,7 @@ namespace AluguelDeCarros
             try
             {
                 Equipado equipado = new Equipado();
-                equipado.Id = int.Parse(txtRecibo.Text);
+                equipado.Id = int.Parse(txtReciboDevolver.Text);
                 equipado = EquipadoDAO.ObterEquipadoPorId(equipado);
                 if (equipado != null)
                 {

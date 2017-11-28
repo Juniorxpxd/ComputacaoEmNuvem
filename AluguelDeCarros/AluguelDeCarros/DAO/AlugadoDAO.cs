@@ -33,6 +33,7 @@ namespace AluguelDeCarros.DAO
         {
             return entities.Alugados.Include("Carro").Include("Cliente").FirstOrDefault(x => x.Cliente.Id == Alugado.Cliente.Id);
         }
+       
 
         public static Alugado ObterAluguelPorIdEquipamento(Alugado Alugado)
         {
