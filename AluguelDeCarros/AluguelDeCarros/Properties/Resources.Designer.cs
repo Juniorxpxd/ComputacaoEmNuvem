@@ -19,7 +19,7 @@ namespace AluguelDeCarros.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -283,6 +283,16 @@ namespace AluguelDeCarros.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap instalacao_de_acessorios_no_carro_2 {
+            get {
+                object obj = ResourceManager.GetObject("instalacao-de-acessorios-no-carro-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logout_icon {
             get {
                 object obj = ResourceManager.GetObject("logout-icon", resourceCulture);
@@ -306,6 +316,16 @@ namespace AluguelDeCarros.Properties {
         internal static System.Drawing.Bitmap o_tamanho_da_roda_pode_aumentar_o_consumo_de_combustivel_do_carro1 {
             get {
                 object obj = ResourceManager.GetObject("o-tamanho-da-roda-pode-aumentar-o-consumo-de-combustivel-do-carro1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Parrot_RNB6_1 {
+            get {
+                object obj = ResourceManager.GetObject("Parrot-RNB6-1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

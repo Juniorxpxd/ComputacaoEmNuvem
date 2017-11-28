@@ -43,5 +43,16 @@ namespace AluguelDeCarros
             Devolver devolver = new Devolver(this.email);
             devolver.ShowDialog();
         }
+
+        private void btnCadCliente_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TelaEquipar telaEquipar = new TelaEquipar(this.email);
+            telaEquipar.ShowDialog();
+        }
     }
 }

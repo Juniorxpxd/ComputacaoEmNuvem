@@ -103,6 +103,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Devolver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Devolver";
             this.Leave += new System.EventHandler(this.Devolver_Leave);
             this.panel1.ResumeLayout(false);

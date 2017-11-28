@@ -87,6 +87,7 @@
     <Compile Include="DAO\CarroDAO.cs" />
     <Compile Include="DAO\ClienteDAO.cs" />
     <Compile Include="DAO\EmpresaDAO.cs" />
+    <Compile Include="DAO\EquipadoDAO.cs" />
     <Compile Include="DAO\PlanoDAO.cs" />
     <Compile Include="DAO\Singleton.cs" />
     <Compile Include="Devolver.cs">
@@ -141,12 +142,17 @@
     <Compile Include="Migrations\201711211109213_CadastroPlano.Designer.cs">
       <DependentUpon>201711211109213_CadastroPlano.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201711272348463_EquipadoIncluidoNoTrab.cs" />
+    <Compile Include="Migrations\201711272348463_EquipadoIncluidoNoTrab.Designer.cs">
+      <DependentUpon>201711272348463_EquipadoIncluidoNoTrab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Alugado.cs" />
     <Compile Include="Model\Carro.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Empresa.cs" />
     <Compile Include="Model\Entities.cs" />
+    <Compile Include="Model\Equipado.cs" />
     <Compile Include="Model\Plano.cs" />
     <Compile Include="PerfilEmpresa.cs">
       <SubType>Form</SubType>
@@ -185,6 +191,12 @@
     </Compile>
     <Compile Include="TelaDeLoginEmpresa.Designer.cs">
       <DependentUpon>TelaDeLoginEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaEquipar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaEquipar.Designer.cs">
+      <DependentUpon>TelaEquipar.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaPrecos.cs">
       <SubType>Form</SubType>
@@ -237,6 +249,9 @@
     <EmbeddedResource Include="Migrations\201711211109213_CadastroPlano.resx">
       <DependentUpon>201711211109213_CadastroPlano.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711272348463_EquipadoIncluidoNoTrab.resx">
+      <DependentUpon>201711272348463_EquipadoIncluidoNoTrab.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PerfilEmpresa.resx">
       <DependentUpon>PerfilEmpresa.cs</DependentUpon>
     </EmbeddedResource>
@@ -264,6 +279,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaDeLoginEmpresa.resx">
       <DependentUpon>TelaDeLoginEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaEquipar.resx">
+      <DependentUpon>TelaEquipar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrecos.dje.resx">
       <DependentUpon>TelaPrecos.cs</DependentUpon>
@@ -386,6 +404,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Viper-Venom-Sunset-11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\instalacao-de-acessorios-no-carro-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Parrot-RNB6-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

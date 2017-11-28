@@ -44,7 +44,7 @@ namespace AluguelDeCarros
                 }
                 else
                 {
-                    MessageBox.Show("Pedido inexistente", "Erro");
+                    MessageBox.Show("Carro inexistente", "Erro");
                 }
             }
             catch (SqlException r)

@@ -33,8 +33,9 @@
             this.btnFechar = new System.Windows.Forms.Button();
             this.btnCarros = new System.Windows.Forms.Button();
             this.grpCliente = new System.Windows.Forms.GroupBox();
-            this.btnAlugar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnAlugar = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.grpCliente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,12 +45,13 @@
             this.btnCadCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadCliente.ForeColor = System.Drawing.Color.Black;
-            this.btnCadCliente.Location = new System.Drawing.Point(106, 41);
+            this.btnCadCliente.Location = new System.Drawing.Point(33, 41);
             this.btnCadCliente.Name = "btnCadCliente";
             this.btnCadCliente.Size = new System.Drawing.Size(139, 51);
             this.btnCadCliente.TabIndex = 1;
             this.btnCadCliente.Text = "Perfil";
             this.btnCadCliente.UseVisualStyleBackColor = false;
+            this.btnCadCliente.Click += new System.EventHandler(this.btnCadCliente_Click);
             // 
             // btnFechar
             // 
@@ -74,7 +76,7 @@
             this.btnCarros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCarros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCarros.ForeColor = System.Drawing.Color.Black;
-            this.btnCarros.Location = new System.Drawing.Point(106, 115);
+            this.btnCarros.Location = new System.Drawing.Point(178, 41);
             this.btnCarros.Name = "btnCarros";
             this.btnCarros.Size = new System.Drawing.Size(139, 51);
             this.btnCarros.TabIndex = 3;
@@ -85,6 +87,7 @@
             // grpCliente
             // 
             this.grpCliente.BackColor = System.Drawing.Color.Transparent;
+            this.grpCliente.Controls.Add(this.button2);
             this.grpCliente.Controls.Add(this.button1);
             this.grpCliente.Controls.Add(this.btnAlugar);
             this.grpCliente.Controls.Add(this.btnCarros);
@@ -99,20 +102,6 @@
             this.grpCliente.TabStop = false;
             this.grpCliente.Text = "Menu do Cliente";
             // 
-            // btnAlugar
-            // 
-            this.btnAlugar.BackColor = System.Drawing.SystemColors.Window;
-            this.btnAlugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAlugar.ForeColor = System.Drawing.Color.Black;
-            this.btnAlugar.Location = new System.Drawing.Point(106, 186);
-            this.btnAlugar.Name = "btnAlugar";
-            this.btnAlugar.Size = new System.Drawing.Size(139, 51);
-            this.btnAlugar.TabIndex = 4;
-            this.btnAlugar.Text = "Alugar Carro";
-            this.btnAlugar.UseVisualStyleBackColor = false;
-            this.btnAlugar.Click += new System.EventHandler(this.btnAlugar_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Window;
@@ -126,6 +115,34 @@
             this.button1.Text = "Devolver Carro";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAlugar
+            // 
+            this.btnAlugar.BackColor = System.Drawing.SystemColors.Window;
+            this.btnAlugar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAlugar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlugar.ForeColor = System.Drawing.Color.Black;
+            this.btnAlugar.Location = new System.Drawing.Point(33, 129);
+            this.btnAlugar.Name = "btnAlugar";
+            this.btnAlugar.Size = new System.Drawing.Size(139, 51);
+            this.btnAlugar.TabIndex = 4;
+            this.btnAlugar.Text = "Alugar Carro";
+            this.btnAlugar.UseVisualStyleBackColor = false;
+            this.btnAlugar.Click += new System.EventHandler(this.btnAlugar_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(178, 129);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(139, 51);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Equipar Carro";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MenuPrincipalCliente
             // 
@@ -152,5 +169,6 @@
         private System.Windows.Forms.GroupBox grpCliente;
         private System.Windows.Forms.Button btnAlugar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
