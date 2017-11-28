@@ -76,6 +76,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.BackColor = System.Drawing.Color.Transparent;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.White;
             this.lblNome.Location = new System.Drawing.Point(76, 44);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(14, 20);
@@ -87,6 +88,7 @@
             this.lblEmpresa.AutoSize = true;
             this.lblEmpresa.BackColor = System.Drawing.Color.Transparent;
             this.lblEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresa.ForeColor = System.Drawing.Color.White;
             this.lblEmpresa.Location = new System.Drawing.Point(114, 145);
             this.lblEmpresa.Name = "lblEmpresa";
             this.lblEmpresa.Size = new System.Drawing.Size(14, 20);
@@ -98,6 +100,7 @@
             this.lblCPF.AutoSize = true;
             this.lblCPF.BackColor = System.Drawing.Color.Transparent;
             this.lblCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF.ForeColor = System.Drawing.Color.White;
             this.lblCPF.Location = new System.Drawing.Point(63, 77);
             this.lblCPF.Name = "lblCPF";
             this.lblCPF.Size = new System.Drawing.Size(14, 20);
@@ -109,6 +112,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(85, 110);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(14, 20);
@@ -131,6 +135,7 @@
             this.lblDataEntrega.AutoSize = true;
             this.lblDataEntrega.BackColor = System.Drawing.Color.Transparent;
             this.lblDataEntrega.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataEntrega.ForeColor = System.Drawing.Color.White;
             this.lblDataEntrega.Location = new System.Drawing.Point(229, 215);
             this.lblDataEntrega.Name = "lblDataEntrega";
             this.lblDataEntrega.Size = new System.Drawing.Size(14, 20);
@@ -153,6 +158,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.ForeColor = System.Drawing.Color.White;
             this.lblTotal.Location = new System.Drawing.Point(142, 249);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(14, 20);
@@ -219,6 +225,7 @@
             this.lblCarroo.AutoSize = true;
             this.lblCarroo.BackColor = System.Drawing.Color.Transparent;
             this.lblCarroo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCarroo.ForeColor = System.Drawing.Color.White;
             this.lblCarroo.Location = new System.Drawing.Point(77, 179);
             this.lblCarroo.Name = "lblCarroo";
             this.lblCarroo.Size = new System.Drawing.Size(14, 20);
@@ -241,7 +248,8 @@
             this.lblReciboo.AutoSize = true;
             this.lblReciboo.BackColor = System.Drawing.Color.Transparent;
             this.lblReciboo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReciboo.Location = new System.Drawing.Point(405, 220);
+            this.lblReciboo.ForeColor = System.Drawing.Color.White;
+            this.lblReciboo.Location = new System.Drawing.Point(399, 220);
             this.lblReciboo.Name = "lblReciboo";
             this.lblReciboo.Size = new System.Drawing.Size(14, 20);
             this.lblReciboo.TabIndex = 19;
