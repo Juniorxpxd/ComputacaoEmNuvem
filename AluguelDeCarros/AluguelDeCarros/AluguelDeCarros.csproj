@@ -53,12 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlterarExcluirCadastroEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AlterarExcluirCadastroEmpresa.Designer.cs">
-      <DependentUpon>AlterarExcluirCadastroEmpresa.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastrarPlano.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,9 +198,6 @@
     <Compile Include="TelaPrecos.Designer.cs">
       <DependentUpon>TelaPrecos.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AlterarExcluirCadastroEmpresa.resx">
-      <DependentUpon>AlterarExcluirCadastroEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastrarPlano.resx">
       <DependentUpon>CadastrarPlano.cs</DependentUpon>
     </EmbeddedResource>

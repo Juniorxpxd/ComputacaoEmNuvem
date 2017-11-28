@@ -66,7 +66,6 @@
             this.lblNome.Size = new System.Drawing.Size(55, 20);
             this.lblNome.TabIndex = 189;
             this.lblNome.Text = "Nome";
-            this.lblNome.Click += new System.EventHandler(this.lblNome_Click);
             // 
             // txtPreco
             // 
@@ -80,6 +79,7 @@
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.BackColor = System.Drawing.Color.Transparent;
+            this.lblPreco.Enabled = false;
             this.lblPreco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPreco.ForeColor = System.Drawing.Color.Black;
             this.lblPreco.Location = new System.Drawing.Point(222, 84);
@@ -90,15 +90,16 @@
             // 
             // txtNome
             // 
+            this.txtNome.Enabled = false;
             this.txtNome.Location = new System.Drawing.Point(25, 107);
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(152, 26);
             this.txtNome.TabIndex = 1;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtCor
             // 
+            this.txtCor.Enabled = false;
             this.txtCor.Location = new System.Drawing.Point(226, 211);
             this.txtCor.MaxLength = 100;
             this.txtCor.Name = "txtCor";
@@ -116,7 +117,6 @@
             this.lblMarca.Size = new System.Drawing.Size(58, 20);
             this.lblMarca.TabIndex = 190;
             this.lblMarca.Text = "Marca";
-            this.lblMarca.Click += new System.EventHandler(this.lblMarca_Click);
             // 
             // label4
             // 
@@ -129,19 +129,19 @@
             this.label4.Size = new System.Drawing.Size(37, 20);
             this.label4.TabIndex = 196;
             this.label4.Text = "Cor";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // txtMarca
             // 
+            this.txtMarca.Enabled = false;
             this.txtMarca.Location = new System.Drawing.Point(27, 159);
             this.txtMarca.MaxLength = 100;
             this.txtMarca.Name = "txtMarca";
             this.txtMarca.Size = new System.Drawing.Size(152, 26);
             this.txtMarca.TabIndex = 2;
-            this.txtMarca.TextChanged += new System.EventHandler(this.txtMarca_TextChanged);
             // 
             // txtCambio
             // 
+            this.txtCambio.Enabled = false;
             this.txtCambio.Location = new System.Drawing.Point(226, 56);
             this.txtCambio.MaxLength = 100;
             this.txtCambio.Name = "txtCambio";
@@ -159,7 +159,6 @@
             this.lblAno.Size = new System.Drawing.Size(41, 20);
             this.lblAno.TabIndex = 191;
             this.lblAno.Text = "Ano";
-            this.lblAno.Click += new System.EventHandler(this.lblAno_Click);
             // 
             // lblCambio
             // 
@@ -175,12 +174,12 @@
             // 
             // txtAno
             // 
+            this.txtAno.Enabled = false;
             this.txtAno.Location = new System.Drawing.Point(27, 211);
             this.txtAno.MaxLength = 100;
             this.txtAno.Name = "txtAno";
             this.txtAno.Size = new System.Drawing.Size(152, 26);
             this.txtAno.TabIndex = 3;
-            this.txtAno.TextChanged += new System.EventHandler(this.txtAno_TextChanged);
             // 
             // txtPlaca
             // 
@@ -189,8 +188,6 @@
             this.txtPlaca.Name = "txtPlaca";
             this.txtPlaca.Size = new System.Drawing.Size(152, 26);
             this.txtPlaca.TabIndex = 0;
-            this.txtPlaca.TextChanged += new System.EventHandler(this.txtPlaca_TextChanged);
-            this.txtPlaca.Leave += new System.EventHandler(this.txtPlaca_Leave);
             // 
             // lblQuilometragem
             // 
@@ -215,10 +212,10 @@
             this.lblPlaca.Size = new System.Drawing.Size(144, 20);
             this.lblPlaca.TabIndex = 194;
             this.lblPlaca.Text = "Buscar por placa";
-            this.lblPlaca.Click += new System.EventHandler(this.lblPlaca_Click);
             // 
             // txtQuilometragem
             // 
+            this.txtQuilometragem.Enabled = false;
             this.txtQuilometragem.Location = new System.Drawing.Point(226, 159);
             this.txtQuilometragem.MaxLength = 100;
             this.txtQuilometragem.Name = "txtQuilometragem";
@@ -227,12 +224,12 @@
             // 
             // txtPorta
             // 
+            this.txtPorta.Enabled = false;
             this.txtPorta.Location = new System.Drawing.Point(27, 263);
             this.txtPorta.MaxLength = 100;
             this.txtPorta.Name = "txtPorta";
             this.txtPorta.Size = new System.Drawing.Size(152, 26);
             this.txtPorta.TabIndex = 4;
-            this.txtPorta.TextChanged += new System.EventHandler(this.txtPorta_TextChanged);
             // 
             // lblPorta
             // 
@@ -306,7 +303,6 @@
             this.groupBox1.TabIndex = 199;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Editar - Excluir - Carro";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // btnExcluir
             // 
@@ -334,7 +330,7 @@
             this.btnVoltar.TabIndex = 9;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;
-            this.btnVoltar.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // EditarExcluirCadastroCarro
             // 
@@ -348,7 +344,6 @@
             this.Name = "EditarExcluirCadastroCarro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditarExcluirCadastroCarro";
-            this.Load += new System.EventHandler(this.EditarExcluirCadastroCarro_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

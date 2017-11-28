@@ -55,45 +55,52 @@ namespace AluguelDeCarros
             cliente.Empresa = empresa;
             cliente.Email = txtEmail.Text;
             cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
-            if (cliente.Empresa == empresa)
+            if (cliente != null)
             {
-                if (!txtEmail.Equals(""))
+                if (cliente.Empresa == empresa)
                 {
-                    Cliente cliente = new Cliente();
-                    try
+                    if (!txtEmail.Equals(""))
                     {
-                        cliente.Email = txtEmail.Text;
-                        cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
-                        txtNome.Text = cliente.Nome;
-                        txtEmail.Text = cliente.Email;
-                        txtSenha.Text = cliente.Senha;
-                        mskCPF.Text = cliente.Cpf;
-                        mskRG.Text = cliente.Rg;
-                        mskTel.Text = cliente.Telefone;
-                        mskCel.Text = cliente.Celular;
-                        txtRua.Text = cliente.Rua;
-                        txtCid.Text = cliente.Cidade;
-                        txtEst.Text = cliente.Estado;
-                        txtNumero.Text = cliente.Numero.ToString();
+                        Cliente cliente = new Cliente();
+                        try
+                        {
+                            cliente.Email = txtEmail.Text;
+                            cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
+                            txtNome.Text = cliente.Nome;
+                            txtEmail.Text = cliente.Email;
+                            txtSenha.Text = cliente.Senha;
+                            mskCPF.Text = cliente.Cpf;
+                            mskRG.Text = cliente.Rg;
+                            mskTel.Text = cliente.Telefone;
+                            mskCel.Text = cliente.Celular;
+                            txtRua.Text = cliente.Rua;
+                            txtCid.Text = cliente.Cidade;
+                            txtEst.Text = cliente.Estado;
+                            txtNumero.Text = cliente.Numero.ToString();
 
-                        txtNome.Enabled = true;
-                        txtEmail.Enabled = true;
-                        txtSenha.Enabled = true;
-                        mskCPF.Enabled = true;
-                        mskRG.Enabled = true;
-                        mskTel.Enabled = true;
-                        mskCel.Enabled = true;
-                        txtRua.Enabled = true;
-                        txtCid.Enabled = true;
-                        txtEst.Enabled = true;
-                        txtNumero.Enabled = true;
+                            txtNome.Enabled = true;
+                            txtEmail.Enabled = true;
+                            txtSenha.Enabled = true;
+                            mskCPF.Enabled = true;
+                            mskRG.Enabled = true;
+                            mskTel.Enabled = true;
+                            mskCel.Enabled = true;
+                            txtRua.Enabled = true;
+                            txtCid.Enabled = true;
+                            txtEst.Enabled = true;
+                            txtNumero.Enabled = true;
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Cliente não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txtEmail.Clear();
+                            txtEmail.Focus();
+                        }
                     }
-                    catch
-                    {
-                        MessageBox.Show("Cliente não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        txtEmail.Clear();
-                        txtEmail.Focus();
-                    }
+                }
+                else
+                {
+                    MessageBox.Show("Cliente não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -121,7 +128,7 @@ namespace AluguelDeCarros
             }
             catch
             {
-
+                MessageBox.Show("Cliente inexistente", "Erro");
             }
         }
         private void button2_Click(object sender, EventArgs e)

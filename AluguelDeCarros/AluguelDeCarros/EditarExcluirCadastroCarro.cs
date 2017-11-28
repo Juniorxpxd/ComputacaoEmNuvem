@@ -16,6 +16,7 @@ namespace AluguelDeCarros
     public partial class EditarExcluirCadastroCarro : Form
     {
         Carro carro = new Carro();
+        Empresa empresa = new Empresa();
         private string email;
         public EditarExcluirCadastroCarro(string email)
         {
@@ -23,22 +24,18 @@ namespace AluguelDeCarros
             InitializeComponent();
         }
 
-        private void EditarExcluirCadastroCarro_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-
-
+            this.Close();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
             try
             {
-                carro.Placa = txtPlaca.Text;         
+                Carro carro = new Carro();
+                carro.Placa = txtPlaca.Text;
+                carro = CarroDAO.obterPlaca(carro);
                 carro.Nome = txtNome.Text;
                 carro.Cambio = txtCambio.Text;
                 carro.Cor = txtCor.Text;
@@ -49,99 +46,72 @@ namespace AluguelDeCarros
                 carro.Preco = double.Parse(txtPreco.Text);
                 carro.EstadoDisp = true;
                 CarroDAO.Editar(carro);
-                MessageBox.Show("aterado com sucesso");
-
+                MessageBox.Show("Cadastro do carro: " + carro.Nome + " foi alterado !!!", "Alterado");
             }
-            catch 
+            catch
             {
-                MessageBox.Show("nao alterado");
+                MessageBox.Show(e + "Erro ao Alterar Cadastro", "Erro");
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!txtPlaca.Equals(""))
+            empresa.Email = this.email;
+            empresa = EmpresaDAO.BuscarEmpresaPorEmail(empresa);
+            carro.Empresa = empresa;
+            carro.Placa = txtPlaca.Text;
+            carro = CarroDAO.obterPlaca(carro);
+            if (carro != null)
             {
-                Carro carro = new Carro();
-
-
-                try
+                if (carro.Empresa == empresa)
                 {
-                    carro.Placa = txtPlaca.Text;
-                    carro = CarroDAO.obterPlaca(carro);
-                    txtNome.Text = carro.Nome;
-                    txtCambio.Text = carro.Cambio;
-                    txtCor.Text = carro.Cor;
-                    txtMarca.Text = carro.Marca;
-                    txtQuilometragem.Text = carro.Quilometragem;
-                    txtPorta.Text = carro.Portas.ToString();
-                    txtAno.Text = carro.Ano.ToString();
-                    txtPreco.Text = carro.Preco.ToString();
+                    if (!txtPlaca.Equals(""))
+                    {
+                        Carro carro = new Carro();
+                        try
+                        {
+                            carro.Placa = txtPlaca.Text;
+                            carro = CarroDAO.obterPlaca(carro);
+                            txtNome.Text = carro.Nome;
+                            txtCambio.Text = carro.Cambio;
+                            txtCor.Text = carro.Cor;
+                            txtMarca.Text = carro.Marca;
+                            txtQuilometragem.Text = carro.Quilometragem;
+                            txtPorta.Text = carro.Portas.ToString();
+                            txtAno.Text = carro.Ano.ToString();
+                            txtPreco.Text = carro.Preco.ToString();
 
-
+                            txtNome.Enabled = true;
+                            txtCambio.Enabled = true;
+                            txtCor.Enabled = true;
+                            txtMarca.Enabled = true;
+                            txtQuilometragem.Enabled = true;
+                            txtPorta.Enabled = true;
+                            txtAno.Enabled = true;
+                            txtPreco.Enabled = true;
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            txtPlaca.Clear();
+                            txtPlaca.Focus();
+                        }
+                    }
                 }
-                catch
+                else
                 {
                     MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtPlaca.Clear();
-                    txtPlaca.Focus();
                 }
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblNome_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMarca_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtAno_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblMarca_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblAno_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPorta_TextChanged(object sender, EventArgs e)
-        {
-
+            else
+            {
+                MessageBox.Show("Carro não encontrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txtPlaca_Leave(object sender, EventArgs e)
-        {
-          
         }
 
         private void button1_Click_2(object sender, EventArgs e)
@@ -164,18 +134,8 @@ namespace AluguelDeCarros
             }
             catch
             {
-
+                MessageBox.Show("Carro inexistente", "Erro");
             }
-        }
-
-        private void lblPlaca_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtPlaca_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -59,7 +59,7 @@ namespace AluguelDeCarros
                                                     { 
                                                         if (carro.Empresa.Plano.PlanoCarro == "Pequeno" || carro.Empresa.Plano.PlanoCarro == "pequeno")
                                                         {
-                                                            if (empresa.Carro.Count <= 50)
+                                                            if (empresa.Carro.Count < 50)
                                                             {
                                                                 carro.Placa = txtPlaca.Text;
                                                                 carro.Nome = txtNome.Text;

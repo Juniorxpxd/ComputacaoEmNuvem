@@ -63,7 +63,7 @@
             this.txtNomeEmpresa.MaxLength = 100;
             this.txtNomeEmpresa.Name = "txtNomeEmpresa";
             this.txtNomeEmpresa.Size = new System.Drawing.Size(204, 26);
-            this.txtNomeEmpresa.TabIndex = 143;
+            this.txtNomeEmpresa.TabIndex = 3;
             // 
             // txtEmpresa
             // 
@@ -83,7 +83,7 @@
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(161, 26);
-            this.txtRua.TabIndex = 139;
+            this.txtRua.TabIndex = 7;
             // 
             // lblRua
             // 
@@ -103,7 +103,7 @@
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(180, 26);
-            this.txtCid.TabIndex = 138;
+            this.txtCid.TabIndex = 9;
             // 
             // lblCid
             // 
@@ -124,7 +124,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(204, 26);
-            this.txtSenha.TabIndex = 124;
+            this.txtSenha.TabIndex = 2;
             // 
             // lblSenha
             // 
@@ -144,7 +144,7 @@
             this.txtEmail.MaxLength = 100;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(204, 26);
-            this.txtEmail.TabIndex = 123;
+            this.txtEmail.TabIndex = 1;
             // 
             // lblEmail
             // 
@@ -164,7 +164,7 @@
             this.txtEst.MaxLength = 100;
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(180, 26);
-            this.txtEst.TabIndex = 130;
+            this.txtEst.TabIndex = 8;
             // 
             // lblEst
             // 
@@ -184,7 +184,7 @@
             this.mskCNPJ.Mask = "99\\.999\\.999\\/9999\\-99";
             this.mskCNPJ.Name = "mskCNPJ";
             this.mskCNPJ.Size = new System.Drawing.Size(179, 26);
-            this.mskCNPJ.TabIndex = 125;
+            this.mskCNPJ.TabIndex = 4;
             this.mskCNPJ.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskCNPJ.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCNPJ_KeyPress);
             // 
@@ -230,7 +230,7 @@
             this.mskCel.Mask = "\\(99\\) 99999 \\- 9999";
             this.mskCel.Name = "mskCel";
             this.mskCel.Size = new System.Drawing.Size(161, 26);
-            this.mskCel.TabIndex = 129;
+            this.mskCel.TabIndex = 5;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskCel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskCel_KeyPress);
             // 
@@ -240,7 +240,7 @@
             this.txtNome.MaxLength = 100;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(204, 26);
-            this.txtNome.TabIndex = 122;
+            this.txtNome.TabIndex = 0;
             // 
             // mskTel
             // 
@@ -248,7 +248,7 @@
             this.mskTel.Mask = "\\(99\\) 9999 \\- 9999";
             this.mskTel.Name = "mskTel";
             this.mskTel.Size = new System.Drawing.Size(180, 26);
-            this.mskTel.TabIndex = 128;
+            this.mskTel.TabIndex = 6;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             this.mskTel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskTel_KeyPress);
             // 
@@ -283,7 +283,7 @@
             this.cmbPlano.Location = new System.Drawing.Point(497, 162);
             this.cmbPlano.Name = "cmbPlano";
             this.cmbPlano.Size = new System.Drawing.Size(161, 28);
-            this.cmbPlano.TabIndex = 147;
+            this.cmbPlano.TabIndex = 10;
             // 
             // btnSalvar
             // 
@@ -293,7 +293,7 @@
             this.btnSalvar.Location = new System.Drawing.Point(33, 268);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(204, 51);
-            this.btnSalvar.TabIndex = 148;
+            this.btnSalvar.TabIndex = 11;
             this.btnSalvar.Text = "Cadastrar";
             this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -307,7 +307,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(569, 268);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(89, 51);
-            this.btnVoltar.TabIndex = 149;
+            this.btnVoltar.TabIndex = 12;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVoltar.UseVisualStyleBackColor = true;

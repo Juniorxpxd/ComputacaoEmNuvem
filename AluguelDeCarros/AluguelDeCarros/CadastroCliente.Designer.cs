@@ -63,7 +63,7 @@
             this.txtRua.MaxLength = 100;
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(212, 26);
-            this.txtRua.TabIndex = 9;
+            this.txtRua.TabIndex = 5;
             // 
             // lblRua
             // 
@@ -83,7 +83,7 @@
             this.txtCid.MaxLength = 100;
             this.txtCid.Name = "txtCid";
             this.txtCid.Size = new System.Drawing.Size(212, 26);
-            this.txtCid.TabIndex = 8;
+            this.txtCid.TabIndex = 4;
             // 
             // lblCid
             // 
@@ -144,7 +144,7 @@
             this.txtEst.MaxLength = 100;
             this.txtEst.Name = "txtEst";
             this.txtEst.Size = new System.Drawing.Size(212, 26);
-            this.txtEst.TabIndex = 7;
+            this.txtEst.TabIndex = 3;
             // 
             // lblEst
             // 
@@ -164,7 +164,7 @@
             this.mskRG.Mask = "99\\.999\\.999\\-9";
             this.mskRG.Name = "mskRG";
             this.mskRG.Size = new System.Drawing.Size(144, 26);
-            this.mskRG.TabIndex = 4;
+            this.mskRG.TabIndex = 7;
             this.mskRG.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lblRG
@@ -185,7 +185,7 @@
             this.mskCPF.Mask = "999\\.999\\.999\\-99";
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(144, 26);
-            this.mskCPF.TabIndex = 3;
+            this.mskCPF.TabIndex = 6;
             this.mskCPF.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // lblCel
@@ -230,7 +230,7 @@
             this.mskCel.Mask = "\\(99\\) 99999 \\- 9999";
             this.mskCel.Name = "mskCel";
             this.mskCel.Size = new System.Drawing.Size(144, 26);
-            this.mskCel.TabIndex = 6;
+            this.mskCel.TabIndex = 8;
             this.mskCel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtNome
@@ -247,7 +247,7 @@
             this.mskTel.Mask = "\\(99\\) 9999 \\- 9999";
             this.mskTel.Name = "mskTel";
             this.mskTel.Size = new System.Drawing.Size(144, 26);
-            this.mskTel.TabIndex = 5;
+            this.mskTel.TabIndex = 9;
             this.mskTel.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals;
             // 
             // btnSalvar
