@@ -46,7 +46,8 @@ namespace AluguelDeCarros
 
         private void btnCadCliente_Click(object sender, EventArgs e)
         {
-
+            PerfilCliente perfil = new PerfilCliente(this.email);
+            perfil.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)

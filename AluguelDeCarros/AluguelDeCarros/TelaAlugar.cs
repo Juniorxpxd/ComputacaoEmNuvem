@@ -85,35 +85,45 @@ namespace AluguelDeCarros
                 cliente.Email = this.email;
                 cliente = ClienteDAO.BuscarCLientePorEmail(cliente);
                 alugado.Cliente = cliente;
-                carro.Placa = txtPlaca.Text;
-                carro = CarroDAO.obterPlaca(carro);
-                if (carro != null)
+                alugado = AlugadoDAO.ObterAluguelPorCliente(alugado);
+                if (alugado == null)
                 {
-                    if(carro.EstadoDisp == true)
+                    carro.Placa = txtPlaca.Text;
+                    carro = CarroDAO.obterPlaca(carro);
+                    if (carro != null)
                     {
-                        if (carro.Empresa == cliente.Empresa)
+                        if (carro.EstadoDisp == true)
                         {
-                            carro.EstadoDisp = false;
-                            alugado.Carro = carro;
-                            alugado.DiasAlugado = int.Parse(txtDays.Text);
-                            alugado.Valor = float.Parse(txtOrderTotal.Text);
-                            AlugadoDAO.Incluir(alugado);
-                            txtReceiptNumber.Text = alugado.Id.ToString();
-                            MessageBox.Show("O carro " + carro.Nome + " foi alugado com sucesso e guarde o seu recibo: #" + alugado.Id + " para devolução", "Alugado");
+                            if (carro.Empresa == cliente.Empresa)
+                            {
+                                Alugado alugados = new Alugado();
+                                carro.EstadoDisp = false;
+                                alugados.Cliente = cliente;
+                                alugados.Carro = carro;
+                                alugados.DiasAlugado = int.Parse(txtDays.Text);
+                                alugados.Valor = float.Parse(txtOrderTotal.Text);
+                                AlugadoDAO.Incluir(alugados);
+                                txtReceiptNumber.Text = alugados.Id.ToString();
+                                MessageBox.Show("O carro " + carro.Nome + " foi alugado com sucesso e guarde o seu recibo: #" + alugados.Id + " para devolução", "Alugado");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Erro ao alugar - Carro não existe nesta empresa", "Erro");
+                            }
                         }
                         else
                         {
-                            MessageBox.Show("Erro ao alugar - Carro não existe nesta empresa", "Erro");
+                            MessageBox.Show("Erro ao alugar - Carro já foi Alugado", "Erro");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Erro ao alugar - Carro já foi Alugado", "Erro");
+                        MessageBox.Show("Erro ao alugar - Carro incorreto", "Erro");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Erro ao alugar - Carro incorreto", "Erro");
+                    MessageBox.Show("Cliente já alugou um carro", "Erro");
                 }
             }
             catch (SqlException c)
